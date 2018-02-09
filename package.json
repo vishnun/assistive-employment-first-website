@@ -1,0 +1,39 @@
+{
+  "name": "assistive-employment-first-website",
+  "version": "1.0.0",
+  "description": "A website for employment first being developed with keeping assistive technologies in mind to include all people (even with disabilities) to be able to effectively use the website.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vishnun/assistive-employment-first-website.git"
+  },
+  "keywords": [
+    "assistive",
+    "website",
+    "employment-first",
+    "javascript",
+    "disabilities"
+  ],
+  "author": "Vishnu",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vishnun/assistive-employment-first-website/issues"
+  },
+  "homepage": "https://github.com/vishnun/assistive-employment-first-website#readme",
+  "devDependencies": {
+    "browser-sync": "^2.23.6",
+    "chalk": "~0.4.0",
+    "deeply": "~0.1.0",
+    "event-stream": "^3.3.4",
+    "gulp": "^3.9.1",
+    "gulp-clean": "^0.4.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-html-replace": "^1.6.2",
+    "gulp-replace": "^0.6.1",
+    "gulp-sass": "^3.1.0",
+    "gulp-uglify": "^3.0.0"
+  }
+}
