@@ -13,7 +13,9 @@ var gulp = require('gulp'),
   replace = require('gulp-replace'),
   uglify = require('gulp-uglify'),
   htmlreplace = require('gulp-html-replace'),
-  sass = require('gulp-sass');
+  sass = require('gulp-sass'),
+  useref = require('gulp-useref'),
+  gulpIf = require('gulp-if');
 
 // Discovers all AMD dependencies, concatenates together all required .js files, minifies them
 // gulp.task('js', function() {
@@ -23,6 +25,13 @@ var gulp = require('gulp'),
 //     }))
 //     .pipe(gulp.dest('./dist/'));
 // });
+
+gulp.task('useref', function(){
+  return gulp.src('app/*.html')
+    .pipe(useref())
+    .pipe(gulpIf('*.js', uglify()))
+    .pipe(gulp.dest('dist'))
+});
 
 gulp.task('images', function() {
   return es.concat(gulp.src('app/images/*')
@@ -67,15 +76,15 @@ gulp.task('watch', function() {
 });
 
 
-// Copies index.html, replacing <script> and <link> tags to reference production URLs
-gulp.task('html', function() {
-  return gulp.src('app/index.html')
-    .pipe(htmlreplace({
-      'css': 'css.css',
-      'js': 'scripts.js'
-    }))
-    .pipe(gulp.dest('dist/'));
-});
+// // Copies index.html, replacing <script> and <link> tags to reference production URLs
+// gulp.task('html', function() {
+//   return gulp.src('app/index.html')
+//     .pipe(htmlreplace({
+//       'css': 'css.css',
+//       'js': 'scripts.js'
+//     }))
+//     .pipe(gulp.dest('dist/'));
+// });
 
 // Removes all files from ./dist/
 gulp.task('clean', function() {
@@ -93,7 +102,7 @@ gulp.task('browserSync', function() {
   })
 })
 
-gulp.task('default', ['html', 'js', 'sass', 'fonts'], function(callback) {
+gulp.task('default', ['useref', 'sass', 'fonts'], function(callback) {
   callback();
   console.log('\nPlaced optimized files in ' + chalk.magenta('dist/\n'));
 });

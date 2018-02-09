@@ -7,3 +7,4 @@ bower_modules/
 .idea
 
 build/
+dist/
