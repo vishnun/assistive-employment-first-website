@@ -1,21 +1,22 @@
 // Node modules
 var fs = require('fs'),
-  vm = require('vm'),
-  merge = require('deeply'),
-  chalk = require('chalk'),
-  es = require('event-stream'),
-  browserSync = require('browser-sync').create();;
+	vm = require('vm'),
+	merge = require('deeply'),
+	chalk = require('chalk'),
+	es = require('event-stream'),
+	browserSync = require('browser-sync').create();;
 
 // Gulp and plugins
 var gulp = require('gulp'),
-  concat = require('gulp-concat'),
-  clean = require('gulp-clean'),
-  replace = require('gulp-replace'),
-  uglify = require('gulp-uglify'),
-  htmlreplace = require('gulp-html-replace'),
-  sass = require('gulp-sass'),
-  useref = require('gulp-useref'),
-  gulpIf = require('gulp-if');
+	concat = require('gulp-concat'),
+	clean = require('gulp-clean'),
+	replace = require('gulp-replace'),
+	uglify = require('gulp-uglify'),
+	htmlreplace = require('gulp-html-replace'),
+	sass = require('gulp-sass'),
+	useref = require('gulp-useref'),
+	gulpIf = require('gulp-if'),
+	webserver = require('gulp-webserver');
 
 // Discovers all AMD dependencies, concatenates together all required .js files, minifies them
 // gulp.task('js', function() {
@@ -26,53 +27,53 @@ var gulp = require('gulp'),
 //     .pipe(gulp.dest('./dist/'));
 // });
 
-gulp.task('useref', function(){
-  return gulp.src('app/*.html')
-    .pipe(useref())
-    .pipe(gulpIf('*.js', uglify()))
-    .pipe(gulp.dest('dist'))
+gulp.task('useref', function() {
+	return gulp.src('app/*.html')
+		.pipe(useref())
+		// .pipe(gulpIf('*.js', uglify()))
+		.pipe(gulp.dest('./'))
 });
 
 gulp.task('images', function() {
-  return es.concat(gulp.src('app/images/*')
-    .pipe(gulp.dest("dist/images")),
-    gulp.src('app/favicon.png')
-    .pipe(gulp.dest("dist"))
-  );
+	return es.concat(gulp.src('app/images/*')
+		.pipe(gulp.dest("./public/images")),
+		gulp.src('app/favicon.png')
+		.pipe(gulp.dest("./public/images"))
+	);
 });
 
 // Transpiles sass -> css and minifies, rewrites relative paths to Bootstrap fonts, copies Bootstrap fonts
 gulp.task('sass', function() {
-  return gulp.src('app/scss/**/*.scss')
-    .pipe(sass({
-      compress: true
-    }))
-    .pipe(concat('styles.css'))
-    .pipe(gulp.dest('app/css'))
-    .pipe(browserSync.reload({
-      stream: true
-    }));
+	return gulp.src('app/scss/**/*.scss')
+		.pipe(sass({
+			compress: true
+		}))
+		.pipe(concat('styles.css'))
+		.pipe(gulp.dest('app/css'))
+		.pipe(browserSync.reload({
+			stream: true
+		}));
 });
 
 // Moves the bootstrap fonts to the dist-folder
 gulp.task('fonts', function() {
-  return es.concat(gulp.src('./node_modules/bootstrap/fonts/*', {
-      base: './node_modules/bootstrap/components-bootstrap/'
-    })
-    .pipe(gulp.dest('./dist/fonts')),
-    gulp.src('./node_modules/font-awesome/fonts/*')
-    .pipe(gulp.dest('./dist/fonts')));
+	return es.concat(gulp.src('./node_modules/bootstrap/fonts/*', {
+			base: './node_modules/bootstrap/components-bootstrap/'
+		})
+		.pipe(gulp.dest('./public/fonts')),
+		gulp.src('./node_modules/font-awesome/fonts/*')
+		.pipe(gulp.dest('./public/fonts')));
 });
 
 gulp.task('devsass', function() {
-  return gulp.src('app/scss/**/*.scss')
-    .pipe(sass())
-    .pipe(concat('styles.css'))
-    .pipe(gulp.dest('app/css'));
+	return gulp.src('app/scss/**/*.scss')
+		.pipe(sass())
+		.pipe(concat('styles.css'))
+		.pipe(gulp.dest('app/css'));
 });
 
 gulp.task('watch', function() {
-  gulp.watch('app/scss/**/*.scss', ['devsass']);
+	gulp.watch('app/scss/**/*.scss', ['devsass']);
 });
 
 
@@ -86,23 +87,35 @@ gulp.task('watch', function() {
 //     .pipe(gulp.dest('dist/'));
 // });
 
-// Removes all files from ./dist/
+// Removes all files from ./public/
 gulp.task('clean', function() {
-  return gulp.src('dist/**/*', {
-      read: false
-    })
-    .pipe(clean());
+	return gulp.src('public/**/*', {
+			read: false
+		})
+		.pipe(clean());
 });
 
 gulp.task('browserSync', function() {
-  browserSync.init({
-    server: {
-      baseDir: 'app'
-    },
-  })
-})
+	browserSync.init({
+		server: {
+			baseDir: 'app'
+		},
+	})
+});
 
-gulp.task('default', ['useref', 'sass', 'fonts'], function(callback) {
-  callback();
-  console.log('\nPlaced optimized files in ' + chalk.magenta('dist/\n'));
+
+gulp.task('webserver', function() {
+	gulp.src('.')
+		.pipe(webserver({
+			directoryListing: false,
+			open: true
+		}));
+});
+
+gulp.task('server', ['webserver']);
+gulp.task('serve', ['webserver']);
+
+gulp.task('default', ['sass', 'fonts', 'useref'], function(callback) {
+	callback();
+	console.log('\nPlaced optimized files in ' + chalk.magenta('public/\n'));
 });
