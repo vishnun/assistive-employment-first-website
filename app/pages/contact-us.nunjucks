@@ -1,0 +1,19 @@
+<!-- index.nunjucks -->
+{% extends "layout.nunjucks" %}
+
+
+
+{% block content %}
+
+
+<div class="header">
+  {% import 'macros/nav-macro.nunjucks' as nav %}
+  {{nav.active('contact')}}
+</div>
+
+<div class="container-fluid">
+  <h1>This is the Contact-us page</h1>
+</div>
+
+
+{% endblock %}

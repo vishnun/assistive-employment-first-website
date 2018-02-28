@@ -24,5 +24,10 @@ Making employment first website and also making it assistive for people with cer
   `npm install gulp-sass --save-dev`
 
 
+### Useful information
+
+- Gulp nunjucks for modularizing the website.
+https://zellwk.com/blog/nunjucks-with-gulp/
+
 
   [a17eda96]: https://css-tricks.com/gulp-for-beginners/ "gulp tutorial"

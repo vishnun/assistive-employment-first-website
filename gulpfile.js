@@ -16,7 +16,8 @@ var gulp = require('gulp'),
 	sass = require('gulp-sass'),
 	useref = require('gulp-useref'),
 	gulpIf = require('gulp-if'),
-	webserver = require('gulp-webserver');
+	webserver = require('gulp-webserver'),
+	nunjucksRender = require('gulp-nunjucks-render');
 
 // Discovers all AMD dependencies, concatenates together all required .js files, minifies them
 // gulp.task('js', function() {
@@ -103,6 +104,16 @@ gulp.task('browserSync', function() {
 	})
 });
 
+gulp.task('nunjucks', function() {
+	// Gets .html and .nunjucks files in pages
+	return gulp.src('app/pages/**/*.+(html|nunjucks)')
+		// Renders template with nunjucks
+		.pipe(nunjucksRender({
+			path: ['app/templates']
+		}))
+		// output files in app folder
+		.pipe(gulp.dest('app'))
+});
 
 gulp.task('webserver', function() {
 	gulp.src('.')
@@ -112,10 +123,18 @@ gulp.task('webserver', function() {
 		}));
 });
 
-gulp.task('server', ['webserver']);
-gulp.task('serve', ['webserver']);
+gulp.task('server', ['default', 'webserver']);
+gulp.task('serve', ['default', 'webserver']);
 
-gulp.task('default', ['sass', 'fonts', 'useref'], function(callback) {
+
+
+gulp.task('default', ['sass', 'fonts'], function(callback) {
+	gulp.start('nunjucks', 'useref');
 	callback();
 	console.log('\nPlaced optimized files in ' + chalk.magenta('public/\n'));
+});
+
+
+gulp.task('build', ['default'], function() {
+	console.log('Now run :   gulp serve');
 });
