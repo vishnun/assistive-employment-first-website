@@ -1,1 +1,3 @@
-console.log('test.js');
+$(function() {
+  // Common functionality here.
+});

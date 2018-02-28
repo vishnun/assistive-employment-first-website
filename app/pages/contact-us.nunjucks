@@ -6,7 +6,7 @@
 {% block content %}
 
 
-<div class="header">
+<div class="header" id="contact-page">
   {% import 'macros/nav-macro.nunjucks' as nav %}
   {{nav.active('contact')}}
 </div>
