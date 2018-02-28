@@ -1,3 +1,52 @@
 .ef-nav {
   background-color: $asu-dark-bg;
+
+  .navbar-nav {
+    .nav-item {
+      .nav-link {
+        color: #ededed;
+        font-size: 16px;
+      }
+
+      &.active,
+      &:hover {
+        background-color: #1f1f1f;
+
+        .nav-link {
+          color: $asu-gold;
+        }
+      }
+    }
+
+    .dropdown-menu {
+      background-color: #1a1a1a;
+
+      .dropdown-item {
+        color: #ededed;
+        font-size: 16px;
+
+        &.active,
+        &:hover {
+          background-color: #1f1f1f;
+          color: $asu-gold;
+        }
+      }
+
+      &.show {
+        &:before {
+          content: '';
+          display: inline-block;
+          height: 0;
+          width: 0;
+          position: absolute;
+          right: 50%;
+          margin-right: -5px;
+          top: -9px;
+          border-color: transparent transparent #1a1a1a transparent;
+          border-width: 0 10px 10px 10px;
+          border-style: solid;
+        }
+      }
+    }
+  }
 }

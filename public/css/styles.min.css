@@ -1,2 +1,38 @@
+.text-gold {
+  color: #ffb204 !important; }
+
+.text-maroon {
+  color: #8d2840 !important; }
+
+.text-red {
+  color: #ff003d !important; }
+
 .ef-nav {
   background-color: #353535; }
+  .ef-nav .navbar-nav .nav-item .nav-link {
+    color: #ededed;
+    font-size: 16px; }
+  .ef-nav .navbar-nav .nav-item.active, .ef-nav .navbar-nav .nav-item:hover {
+    background-color: #1f1f1f; }
+    .ef-nav .navbar-nav .nav-item.active .nav-link, .ef-nav .navbar-nav .nav-item:hover .nav-link {
+      color: #ffb204; }
+  .ef-nav .navbar-nav .dropdown-menu {
+    background-color: #1a1a1a; }
+    .ef-nav .navbar-nav .dropdown-menu .dropdown-item {
+      color: #ededed;
+      font-size: 16px; }
+      .ef-nav .navbar-nav .dropdown-menu .dropdown-item.active, .ef-nav .navbar-nav .dropdown-menu .dropdown-item:hover {
+        background-color: #1f1f1f;
+        color: #ffb204; }
+    .ef-nav .navbar-nav .dropdown-menu.show:before {
+      content: '';
+      display: inline-block;
+      height: 0;
+      width: 0;
+      position: absolute;
+      right: 50%;
+      margin-right: -5px;
+      top: -9px;
+      border-color: transparent transparent #1a1a1a transparent;
+      border-width: 0 10px 10px 10px;
+      border-style: solid; }
