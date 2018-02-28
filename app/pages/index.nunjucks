@@ -15,7 +15,18 @@
         <p class="mb-0">Start by doing what's necessary, then what's possible, and suddenly you are doing the impossible.</p>
         <footer class="blockquote-footer text-warning">Francis of Assisi</footer>
       </blockquote>
-      <button type="button" class="btn btn-primary asu-primary-button pl-4 pr-4">Get Started</button>
+      <button type="button" class="btn btn-primary asu-primary-button pl-4 pr-4" id="get-started">Get Started</button>
+      <div class="input-group role-selection">
+        <label class="input-group-text bg-transparent border-0 text-white">I am </label>
+        <div>
+          <button class="btn btn-primary dropdown-toggle asu-primary-button" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Choose</button>
+          <div class="dropdown-menu">
+            <a class="dropdown-item" href="#">A Parent</a>
+            <a class="dropdown-item" href="#">A Job Seeker</a>
+            <a class="dropdown-item" href="#">An Employer</a>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </div>
