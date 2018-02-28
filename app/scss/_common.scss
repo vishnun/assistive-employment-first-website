@@ -13,3 +13,22 @@ $asu-maroon: #8d2840;
 .text-red {
   color: #ff003d !important;
 }
+
+.bg-transparent {
+  background-color: transparent !important;
+}
+
+.bg-maroon {
+  background-color: $asu-maroon;
+}
+
+.asu-primary-button {
+  background-color: $asu-maroon;
+  outline: none;
+  border: 1px solid $asu-maroon;
+
+  &:hover {
+    background-color: #cc214a;
+    border: 1px solid #cc214a;
+  }
+}

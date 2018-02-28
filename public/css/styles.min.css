@@ -7,6 +7,20 @@
 .text-red {
   color: #ff003d !important; }
 
+.bg-transparent {
+  background-color: transparent !important; }
+
+.bg-maroon {
+  background-color: #8d2840; }
+
+.asu-primary-button {
+  background-color: #8d2840;
+  outline: none;
+  border: 1px solid #8d2840; }
+  .asu-primary-button:hover {
+    background-color: #cc214a;
+    border: 1px solid #cc214a; }
+
 .ef-nav {
   background-color: #353535; }
   .ef-nav .navbar-nav .nav-item .nav-link {
@@ -36,3 +50,13 @@
       border-color: transparent transparent #1a1a1a transparent;
       border-width: 0 10px 10px 10px;
       border-style: solid; }
+
+.home-bg {
+  background-image: url("../images/home-bg.jpg");
+  background-position: 0 40%;
+  background-size: cover;
+  min-height: 375px; }
+  .home-bg .jumbotron-content {
+    max-width: 50%;
+    background: rgba(0, 0, 0, 0.6);
+    color: white; }

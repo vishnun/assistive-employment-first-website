@@ -1,0 +1,11 @@
+.home-bg {
+  background-image: url("../images/home-bg.jpg");
+  background-position: 0 40%;
+  background-size: cover;
+  min-height: 375px;
+  .jumbotron-content {
+    max-width: 50%;
+    background: rgba(0,0,0,0.6);
+    color: white;
+  }
+}

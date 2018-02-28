@@ -1,19 +1,23 @@
 <!-- index.nunjucks -->
-{% extends "layout.nunjucks" %}
-
-
-
-{% block content %}
+{% extends "layout.nunjucks" %} {% block content %}
 
 
 <div class="header">
-  {% import 'macros/nav-macro.nunjucks' as nav %}
-  {{nav.active('home')}}
+  {% import 'macros/nav-macro.nunjucks' as nav %} {{nav.active('home')}}
 </div>
 
-<div class="container-fluid">
-  <h1>This is the index page</h1>
-</div>
+<div class="home-bg">
+  <div class="jumbotron jumbotron-fluid bg-transparent clearfix pr-5">
+    <div class="jumbotron-content d-inline-block mr-auto p-5 float-right">
+      <h1 class="display-4">Dare to Dream</h1>
 
+      <blockquote class="blockquote">
+        <p class="mb-0">Start by doing what's necessary, then what's possible, and suddenly you are doing the impossible.</p>
+        <footer class="blockquote-footer text-warning">Francis of Assisi</footer>
+      </blockquote>
+      <button type="button" class="btn btn-primary asu-primary-button pl-4 pr-4">Get Started</button>
+    </div>
+  </div>
+</div>
 
 {% endblock %}
