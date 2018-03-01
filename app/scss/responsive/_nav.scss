@@ -1,14 +1,12 @@
-$break-small: 320px;
-$break-large: 992px;
+$nav-break-min: 768px;
+$nav-break-max: 850px;
 
-.profile-pic {
-  float: left;
-  width: 250px;
-  @media screen and (max-width: $break-small) {
-    width: 100px;
-    float: none;
+@media screen and (min-width: $nav-break-min) and (max-width: $nav-break-max) {
+  .navbar .navbar-container {
+    padding-left: 20px !important;
+    padding-right: 20px !important;
   }
-  @media screen and (min-width: $break-large) {
-    float: right;
+  .ef-nav .navbar-nav .nav-item .nav-link {
+    font-size: 12px;
   }
 }

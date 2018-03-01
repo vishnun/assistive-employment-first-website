@@ -21,6 +21,29 @@
     background-color: #cc214a;
     border: 1px solid #cc214a; }
 
+.text-gold {
+  color: #ffb204 !important; }
+
+.text-maroon {
+  color: #8d2840 !important; }
+
+.text-red {
+  color: #ff003d !important; }
+
+.bg-transparent {
+  background-color: transparent !important; }
+
+.bg-maroon {
+  background-color: #8d2840; }
+
+.asu-primary-button {
+  background-color: #8d2840;
+  outline: none;
+  border: 1px solid #8d2840; }
+  .asu-primary-button:hover {
+    background-color: #cc214a;
+    border: 1px solid #cc214a; }
+
 .ef-nav {
   background-color: #353535; }
   .ef-nav .navbar-nav .nav-item .nav-link {
@@ -60,3 +83,10 @@
     max-width: 50%;
     background: rgba(0, 0, 0, 0.6);
     color: white; }
+
+@media screen and (min-width: 768px) and (max-width: 850px) {
+  .navbar .navbar-container {
+    padding-left: 20px !important;
+    padding-right: 20px !important; }
+  .ef-nav .navbar-nav .nav-item .nav-link {
+    font-size: 12px; } }
