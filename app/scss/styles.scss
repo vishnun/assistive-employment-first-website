@@ -1,5 +1,16 @@
 @import "common";
 
+// Common and components
+@import "common";
 @import "nav";
 
+
+
+// Page specific
 @import "home";
+
+
+
+
+// responsive
+@import "responsive/nav";
