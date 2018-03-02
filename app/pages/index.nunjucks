@@ -1,5 +1,9 @@
 <!-- index.nunjucks -->
-{% extends "layout.nunjucks" %} {% block content %}
+{% extends "layout.nunjucks" %}
+
+
+
+{% block content %}
 
 
 <div class="header sticky-top">
