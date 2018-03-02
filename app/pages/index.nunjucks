@@ -2,7 +2,7 @@
 {% extends "layout.nunjucks" %} {% block content %}
 
 
-<div class="header">
+<div class="header sticky-top">
   {% import 'macros/nav-macro.nunjucks' as nav %} {{nav.active('home')}}
 </div>
 
@@ -30,5 +30,15 @@
     </div>
   </div>
 </div>
+
+<div class="container">
+
+</div>
+
+
+<div class="ef-calendar d-inline-block position-fixed d-none d-lg-block">
+  <iframe src="https://calendar.google.com/calendar/b/1/embed?height=400&amp;wkst=1&amp;bgcolor=%23ffffff&amp;src=en.usa%23holiday%40group.v.calendar.google.com&amp;color=%2329527A&amp;ctz=America%2FPhoenix" style="border-width:0" width="400" height="400" frameborder="0" scrolling="no"></iframe>
+</div>
+
 
 {% endblock %}

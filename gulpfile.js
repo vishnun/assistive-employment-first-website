@@ -129,9 +129,9 @@ gulp.task('serve', ['default', 'webserver']);
 
 
 gulp.task('default', ['sass', 'fonts', 'images'], function(callback) {
-	gulp.start('nunjucks', 'useref');
+	gulp.start('nunjucks');
+	gulp.start('useref');
 	callback();
-	console.log('\nPlaced optimized files in ' + chalk.magenta('public/\n'));
 });
 
 

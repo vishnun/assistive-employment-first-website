@@ -21,6 +21,10 @@
     background-color: #cc214a;
     border: 1px solid #cc214a; }
 
+.ef-calendar {
+  right: 0;
+  bottom: 0; }
+
 .text-gold {
   color: #ffb204 !important; }
 
@@ -43,6 +47,10 @@
   .asu-primary-button:hover {
     background-color: #cc214a;
     border: 1px solid #cc214a; }
+
+.ef-calendar {
+  right: 0;
+  bottom: 0; }
 
 .ef-nav {
   background-color: #353535; }
