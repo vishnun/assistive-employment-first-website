@@ -2,7 +2,7 @@
   color: #ffb204 !important; }
 
 .text-maroon {
-  color: #8d2840 !important; }
+  color: #c13657 !important; }
 
 .text-red {
   color: #ff003d !important; }
@@ -11,12 +11,12 @@
   background-color: transparent !important; }
 
 .bg-maroon {
-  background-color: #8d2840; }
+  background-color: #c13657; }
 
 .asu-primary-button {
-  background-color: #8d2840;
+  background-color: #c13657;
   outline: none;
-  border: 1px solid #8d2840; }
+  border: 1px solid #c13657; }
   .asu-primary-button:hover {
     background-color: #cc214a;
     border: 1px solid #cc214a; }
@@ -29,7 +29,7 @@
   color: #ffb204 !important; }
 
 .text-maroon {
-  color: #8d2840 !important; }
+  color: #c13657 !important; }
 
 .text-red {
   color: #ff003d !important; }
@@ -38,12 +38,12 @@
   background-color: transparent !important; }
 
 .bg-maroon {
-  background-color: #8d2840; }
+  background-color: #c13657; }
 
 .asu-primary-button {
-  background-color: #8d2840;
+  background-color: #c13657;
   outline: none;
-  border: 1px solid #8d2840; }
+  border: 1px solid #c13657; }
   .asu-primary-button:hover {
     background-color: #cc214a;
     border: 1px solid #cc214a; }
@@ -83,12 +83,15 @@
       border-style: solid; }
 
 .home-bg {
-  background-image: url("../images/home-bg.jpg");
+  background-image: url("../images/home-bg-3.jpg");
   background-position: 0 40%;
   background-size: cover;
-  min-height: 375px; }
+  min-height: 500px; }
+  .home-bg .jumbotron-fluid {
+    padding-top: 200px;
+    padding-bottom: 25px; }
   .home-bg .jumbotron-content {
-    max-width: 50%;
+    max-width: 40%;
     background: rgba(0, 0, 0, 0.6);
     color: white; }
 
@@ -98,3 +101,17 @@
     padding-right: 20px !important; }
   .ef-nav .navbar-nav .nav-item .nav-link {
     font-size: 12px; } }
+
+@media screen and (min-width: 1200px) {
+  .home-bg {
+    background-image: url(../images/home-bg-3.jpg);
+    background-position: 0px 24%;
+    background-size: cover;
+    min-height: 700px; }
+    .home-bg .jumbotron-fluid {
+      padding-top: 315px;
+      padding-bottom: 48px; }
+      .home-bg .jumbotron-fluid .jumbotron-content {
+        max-width: 35%; }
+  .ef-calendar {
+    display: inline-block; } }

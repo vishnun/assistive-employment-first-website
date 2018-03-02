@@ -1,0 +1,23 @@
+$break-sm: 320px;
+$break-md: 768px;
+$break-lg: 920px;
+$break-xl: 1200px;
+
+@media screen and (min-width: $break-xl) {
+  .home-bg{
+    background-image: url(../images/home-bg-3.jpg);
+    background-position: 0px 24%;
+    background-size: cover;
+    min-height: 700px;
+    .jumbotron-fluid {
+      padding-top: 315px;
+      padding-bottom: 48px;
+      .jumbotron-content {
+        max-width: 35%;
+      }
+    }
+  }
+  .ef-calendar {
+    display: inline-block;
+  }
+}
