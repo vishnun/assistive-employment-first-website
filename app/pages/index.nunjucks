@@ -32,15 +32,20 @@
 </div>
 
 <div class="container-fluid">
-  <div class="d-flex flex-row align-items-center justify-content-center align-items-center">
-    <p class="display-4 mr-5 mb-1">I am a ...</p>
-    <ul class="list-group d-inline">
-      <a href="#" class="d-inline list-group-item bg-primary text-white list-group-item-action rounded p-4">Job Seeker</a>
-      <a href="#" class="d-inline list-group-item bg-primary text-white list-group-item-action rounded p-4">Family Member</a>
-      <a href="#" class="d-inline list-group-item bg-primary text-white list-group-item-action rounded p-4">Educator</a>
-      <a href="#" class="d-inline list-group-item bg-primary text-white list-group-item-action rounded p-4">Employer</a>
-      <a href="#" class="d-inline list-group-item bg-primary text-white list-group-item-action rounded p-4">Provider</a>
-    </ul>
+  <div class="row justify-content-center">
+    <div class="col-sm-12">
+      <p class="display-4 mb-1 text-center">I am a ...</p>
+    </div>
+
+    <div class="col-sm-12 text-center">
+      <ul class="list-unstyled">
+        <li class="d-sm-block d-md-inline-block pt-1 pb-0 p-sm-1"><a href="#" class="btn btn-primary btn-block p-4">Job Seeker</a></li>
+        <li class="d-sm-block d-md-inline-block pt-1 pb-0 p-sm-1"><a href="#" class="btn btn-primary btn-block p-4">Family Member</a></li>
+        <li class="d-sm-block d-md-inline-block pt-1 pb-0 p-sm-1"><a href="#" class="btn btn-primary btn-block p-4">Educator</a></li>
+        <li class="d-sm-block d-md-inline-block pt-1 pb-0 p-sm-1"><a href="#" class="btn btn-primary btn-block p-4">Employer</a></li>
+        <li class="d-sm-block d-md-inline-block pt-1 pb-0 p-sm-1"><a href="#" class="btn btn-primary btn-block p-4">Provider</a></li>
+      </ul>
+    </div>
   </div>
 </div>
 
