@@ -12,7 +12,7 @@
 </div>
 
 <div class="container-fluid">
-  <h1>This is the About-us page</h1>
+  <h1 class="about-title">This is the About-us page</h1>
 </div>
 
 
