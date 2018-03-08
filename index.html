@@ -15,6 +15,10 @@
   <link rel="icon" href="favicon.png?" type="image/x-icon" />
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
+  <link href="https://fonts.googleapis.com/css?family=Noto+Sans" rel="stylesheet">
+
+  <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+
   <link rel="stylesheet" href="public/css/styles.min.css">
 
 </head>
@@ -26,7 +30,7 @@
 
 
 <div class="header sticky-top">
-   
+     
 <!-- Macro stuff here -->
 
 <nav class="navbar navbar-expand-md navbar-dark ef-nav pt-0 pb-0">
@@ -41,7 +45,7 @@
           <a class="nav-link" href="./">Home <span class="sr-only">(current)</span></a>
         </li>
         <li class="nav-item p-2 ">
-          <a class="nav-link" href="#">About</a>
+          <a class="nav-link" href="./about.html">About</a>
         </li>
         <li class="nav-item p-2 ">
           <a class="nav-link" href="#">Stories</a>
@@ -78,52 +82,86 @@
 </div>
 
 <div class="home-bg" id="home-page">
-  <div class="jumbotron jumbotron-fluid bg-transparent clearfix pr-5">
-    <div class="jumbotron-content d-inline-block rounded mr-auto p-3 float-right">
-      <h1 class="display-4">Dare to Dream</h1>
+    <div class="jumbotron jumbotron-fluid bg-transparent clearfix p-5 m-0">
+        <div class="jumbotron-content d-inline-block rounded p-4 float-left">
+            <h1 class="display-4">Dare to Dream</h1>
 
-      <blockquote class="blockquote">
-        <p class="mb-0">Start by doing what's necessary, then what's possible, and suddenly you are doing the impossible.</p>
-        <footer class="blockquote-footer text-warning">Francis of Assisi</footer>
-      </blockquote>
-      <button type="button" class="btn btn-primary asu-primary-button pl-4 pr-4" id="get-started">Get Started</button>
-      <div class="input-group role-selection">
-        <label class="input-group-text bg-transparent border-0 text-white">I am </label>
-        <div>
-          <button class="btn btn-primary dropdown-toggle asu-primary-button" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Choose</button>
-          <div class="dropdown-menu">
-            <a class="dropdown-item" href="#">A Parent</a>
-            <a class="dropdown-item" href="#">A Job Seeker</a>
-            <a class="dropdown-item" href="#">An Employer</a>
-          </div>
+            <blockquote class="blockquote">
+                <p class="mb-0">Start by doing what's necessary, then what's possible, and suddenly you are doing the
+                    impossible.</p>
+                <footer class="blockquote-footer text-warning">Francis of Assisi</footer>
+            </blockquote>
+            <button type="button" class="btn btn-primary asu-primary-button pl-4 pr-4" id="get-started">Get Started
+            </button>
+            <div class="role-selection">
+                <div class="input-group">
+                    <label class="input-group-text bg-transparent border-0 text-white">I am </label>
+                    <div>
+                        <button class="btn btn-primary dropdown-toggle asu-primary-button" type="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Choose
+                        </button>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#">A Job Seeker</a>
+                            <a class="dropdown-item" href="#">A Family Member</a>
+                            <a class="dropdown-item" href="#">An Educator</a>
+                            <a class="dropdown-item" href="#">An Employer</a>
+                            <a class="dropdown-item" href="#">A Provider</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
         </div>
-      </div>
     </div>
-  </div>
 </div>
 
 <div class="container-fluid">
-  <div class="row justify-content-center">
-    <div class="col-sm-12">
-      <p class="display-4 mb-1 text-center">I am a ...</p>
-    </div>
+    <div class="row justify-content-center">
+        <div class="col-sm-12">
+            <p class="display-4 mb-1 text-center display-font">I am a ...</p>
+        </div>
 
-    <div class="col-sm-12 text-center">
-      <ul class="list-unstyled">
-        <li class="d-sm-block d-md-inline-block pt-1 pb-0 p-sm-1"><a href="#" class="btn btn-primary btn-block p-4">Job Seeker</a></li>
-        <li class="d-sm-block d-md-inline-block pt-1 pb-0 p-sm-1"><a href="#" class="btn btn-primary btn-block p-4">Family Member</a></li>
-        <li class="d-sm-block d-md-inline-block pt-1 pb-0 p-sm-1"><a href="#" class="btn btn-primary btn-block p-4">Educator</a></li>
-        <li class="d-sm-block d-md-inline-block pt-1 pb-0 p-sm-1"><a href="#" class="btn btn-primary btn-block p-4">Employer</a></li>
-        <li class="d-sm-block d-md-inline-block pt-1 pb-0 p-sm-1"><a href="#" class="btn btn-primary btn-block p-4">Provider</a></li>
-      </ul>
+        <div class="col-sm-12 text-center">
+            <ul class="list-unstyled">
+                <li class="d-sm-block d-md-inline-block pt-1 pb-0 p-sm-1">
+                    <a href="#"
+                       class="btn btn-primary btn-block p-4">Job
+                        Seeker</a></li>
+                <li class="d-sm-block d-md-inline-block pt-1 pb-0 p-sm-1">
+                    <a href="#"
+                       class="btn btn-primary btn-block p-4">Family
+                        Member</a></li>
+                <li class="d-sm-block d-md-inline-block pt-1 pb-0 p-sm-1">
+                    <a href="#"
+                       class="btn btn-primary btn-block p-4">Educator</a>
+                </li>
+                <li class="d-sm-block d-md-inline-block pt-1 pb-0 p-sm-1">
+                    <a href="#"
+                       class="btn btn-primary btn-block p-4">Employer</a>
+                </li>
+                <li class="d-sm-block d-md-inline-block pt-1 pb-0 p-sm-1">
+                    <a href="#"
+                       class="btn btn-primary btn-block p-4">Provider</a>
+                </li>
+            </ul>
+        </div>
     </div>
-  </div>
 </div>
 
-
-<div class="ef-calendar position-fixed d-none d-xl-block">
-  <iframe src="https://calendar.google.com/calendar/b/1/embed?height=400&amp;wkst=1&amp;bgcolor=%23ffffff&amp;src=en.usa%23holiday%40group.v.calendar.google.com&amp;color=%2329527A&amp;ctz=America%2FPhoenix" style="border-width:0" width="400" height="400"
-    frameborder="0" scrolling="no"></iframe>
+<div class="ef-calendar-icon position-fixed">
+    <button type="button" class="expand-calendar" aria-label="show calendar">
+        <i aria-hidden="true" class="fas fa-calendar-alt fa-3x"></i>
+    </button>
+</div>
+<div class="ef-calendar position-fixed">
+    <div class="ef-calendar-container pt-3 pl-3 bg-white">
+        <button type="button" class="close close-button" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+        </button>
+        <iframe src="https://calendar.google.com/calendar/b/1/embed?height=400&amp;wkst=1&amp;bgcolor=%23ffffff&amp;src=en.usa%23holiday%40group.v.calendar.google.com&amp;color=%2329527A&amp;ctz=America%2FPhoenix"
+                style="border-width:0" width="400" height="400"
+                frameborder="0" scrolling="no"></iframe>
+    </div>
 </div>
 
 
