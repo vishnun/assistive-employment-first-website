@@ -37,38 +37,3 @@
 .role-selection {
   display: none;
 }
-
-.ef-calendar {
-  transition: all 0.5s ease;
-  height: 0px;
-  width: 0px;
-  background: white;
-  .ef-calendar-container {
-    position: relative;
-  }
-  .close-button {
-    position: absolute;
-    top: 0;
-    right: 0;
-    z-index: 10;
-    padding: 0;
-    border: 0;
-    width: 30px;
-    height: 30px;
-    background: #838384;
-    color: black;
-  }
-  &.show {
-    width: 430px;
-    height: 428px;
-  }
-}
-
-.ef-calendar-icon {
-  right: 5px;
-  bottom: 5px;
-  box-shadow: 1px 1px 9px 0px #444;
-  overflow: hidden;
-  border-radius: 10px;
-  border: none;
-}
