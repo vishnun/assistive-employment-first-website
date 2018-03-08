@@ -1,0 +1,17 @@
+<ul class="nav justify-content-center">
+  <li class="nav-item">
+    <a class="nav-link" href="#about">About Us</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="#resources">Resources</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="#testimonials">Testimonials</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="#faqs">FAQs</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="#contact-us">Contact Us</a>
+  </li>
+</ul>
