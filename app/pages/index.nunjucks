@@ -6,6 +6,8 @@
   {% import 'macros/nav-macro.nunjucks' as nav %} {{nav.active('home')}}
 </div>
 
+{% import 'macros/page-title-macro.nunjucks' as pt %} {{pt.pageTitle("Dream it ! Believe it ! Achieve it !")}}
+
 <div class="home-bg" id="home-page">
   <div class="jumbotron jumbotron-fluid bg-transparent clearfix p-5 m-0">
     <div class="jumbotron-content d-inline-block rounded p-4 float-left">
@@ -103,21 +105,6 @@
     </div>
   </div>
 
-</div>
-
-<div class="ef-calendar-icon position-fixed">
-  <button type="button" class="expand-calendar" aria-label="show calendar">
-        <i aria-hidden="true" class="fas fa-calendar-alt fa-3x"></i>
-    </button>
-</div>
-<div class="ef-calendar position-fixed">
-  <div class="ef-calendar-container pt-3 pl-3 bg-white">
-    <button type="button" class="close close-button" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-        </button>
-    <iframe src="https://calendar.google.com/calendar/b/1/embed?height=400&amp;wkst=1&amp;bgcolor=%23ffffff&amp;src=en.usa%23holiday%40group.v.calendar.google.com&amp;color=%2329527A&amp;ctz=America%2FPhoenix" style="border-width:0" width="400" height="400"
-      frameborder="0" scrolling="no"></iframe>
-  </div>
 </div>
 
 <div class="footer pt-3 pb-3">

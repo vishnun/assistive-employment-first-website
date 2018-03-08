@@ -4,12 +4,8 @@ $break-lg: 920px;
 $break-xl: 1200px;
 
 @media screen and (min-width: $break-xl) {
-  .home-bg{
-    background: url(../images/home-bg-3.jpg) fixed;
-    background-size: contain;
-    min-height: 520px;
-    background-position: top;
-    background-repeat: no-repeat;
+  .home-bg {
+
     .jumbotron-fluid {
       padding-top: 315px;
       padding-bottom: 48px;
