@@ -1,9 +1,9 @@
 .home-bg {
-  background-image: url("../images/home-bg-3.jpg");
-  background-position: 0 40%;
+  background: url("../images/home-bg-3.jpg") fixed 0 40%;
   background-size: cover;
   min-height: 520px;
   position: relative;
+  box-shadow: 1px -2px 14px -2px #000 inset;
   .jumbotron {
     position: absolute;
     bottom: 0;
@@ -17,7 +17,9 @@
   }
 
 }
-
+.role-selection-container {
+  background-color: rgba(0,0,0,.1);
+}
 .role-selection {
   display: none;
 }

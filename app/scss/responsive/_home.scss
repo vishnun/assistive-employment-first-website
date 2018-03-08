@@ -5,7 +5,7 @@ $break-xl: 1200px;
 
 @media screen and (min-width: $break-xl) {
   .home-bg{
-    background: url("../images/home-bg-3.jpg") 0px 24%;
+    background: url("../images/home-bg-3.jpg") fixed 0px 24%;
     background-size: cover;
     min-height: 520px;
   }

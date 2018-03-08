@@ -59,11 +59,11 @@
       border-style: solid; }
 
 .home-bg {
-  background-image: url("../images/home-bg-3.jpg");
-  background-position: 0 40%;
+  background: url("../images/home-bg-3.jpg") fixed 0 40%;
   background-size: cover;
   min-height: 520px;
-  position: relative; }
+  position: relative;
+  box-shadow: 1px -2px 14px -2px #000 inset; }
   .home-bg .jumbotron {
     position: absolute;
     bottom: 0;
@@ -73,6 +73,9 @@
     max-width: 50%;
     background: rgba(0, 0, 0, 0.6);
     color: white; }
+
+.role-selection-container {
+  background-color: rgba(0, 0, 0, 0.1); }
 
 .role-selection {
   display: none; }
@@ -119,7 +122,7 @@
 
 @media screen and (min-width: 1200px) {
   .home-bg {
-    background: url("../images/home-bg-3.jpg") 0px 24%;
+    background: url("../images/home-bg-3.jpg") fixed 0px 24%;
     background-size: cover;
     min-height: 520px; }
   .ef-calendar {
