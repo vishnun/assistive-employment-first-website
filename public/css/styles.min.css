@@ -29,22 +29,22 @@
   bottom: 0; }
 
 .ef-nav {
-  background-color: #353535; }
+  background-color: white; }
   .ef-nav .navbar-nav .nav-item .nav-link {
-    color: #ededed;
-    font-size: 16px; }
+    color: #656565;
+    font-size: 18px; }
   .ef-nav .navbar-nav .nav-item.active, .ef-nav .navbar-nav .nav-item:hover {
-    background-color: #1f1f1f; }
+    background-color: #eaeaea; }
     .ef-nav .navbar-nav .nav-item.active .nav-link, .ef-nav .navbar-nav .nav-item:hover .nav-link {
-      color: #ffb204; }
+      color: black; }
   .ef-nav .navbar-nav .dropdown-menu {
-    background-color: #1a1a1a; }
+    background-color: white; }
     .ef-nav .navbar-nav .dropdown-menu .dropdown-item {
-      color: #ededed;
-      font-size: 16px; }
+      color: #656565;
+      font-size: 18px; }
       .ef-nav .navbar-nav .dropdown-menu .dropdown-item.active, .ef-nav .navbar-nav .dropdown-menu .dropdown-item:hover {
-        background-color: #1f1f1f;
-        color: #ffb204; }
+        background-color: #eaeaea;
+        color: black; }
     .ef-nav .navbar-nav .dropdown-menu.show:before {
       content: '';
       display: inline-block;
@@ -59,9 +59,11 @@
       border-style: solid; }
 
 .home-bg {
-  background: url("../images/home-bg-3.jpg") fixed 0 40%;
-  background-size: cover;
+  background: url("../images/home-bg-3.jpg") fixed;
+  background-size: contain;
   min-height: 520px;
+  background-position: top;
+  background-repeat: no-repeat;
   position: relative;
   box-shadow: 1px -2px 14px -2px #000 inset; }
   .home-bg .jumbotron {
@@ -74,8 +76,15 @@
     background: rgba(0, 0, 0, 0.6);
     color: white; }
 
+.home-cards-container {
+  box-shadow: 0px 7px 17px -10px #000 inset;
+  background-color: #fdf6ea; }
+
+.footer {
+  background-color: #fdf6ea; }
+
 .role-selection-container {
-  background-color: rgba(0, 0, 0, 0.1); }
+  background-color: white; }
 
 .role-selection {
   display: none; }
@@ -122,8 +131,15 @@
 
 @media screen and (min-width: 1200px) {
   .home-bg {
-    background: url("../images/home-bg-3.jpg") fixed 0px 24%;
-    background-size: cover;
-    min-height: 520px; }
+    background: url(../images/home-bg-3.jpg) fixed;
+    background-size: contain;
+    min-height: 520px;
+    background-position: top;
+    background-repeat: no-repeat; }
+    .home-bg .jumbotron-fluid {
+      padding-top: 315px;
+      padding-bottom: 48px; }
+      .home-bg .jumbotron-fluid .jumbotron-content {
+        max-width: 35%; }
   .ef-calendar {
     display: inline-block; } }

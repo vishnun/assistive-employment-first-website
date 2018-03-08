@@ -1,7 +1,9 @@
 .home-bg {
-  background: url("../images/home-bg-3.jpg") fixed 0 40%;
-  background-size: cover;
+  background: url("../images/home-bg-3.jpg") fixed;
+  background-size: contain;
   min-height: 520px;
+  background-position: top;
+  background-repeat: no-repeat;
   position: relative;
   box-shadow: 1px -2px 14px -2px #000 inset;
   .jumbotron {
@@ -17,8 +19,18 @@
   }
 
 }
+
+.home-cards-container {
+  box-shadow: 0px 7px 17px -10px #000 inset;
+  background-color: #fdf6ea;
+}
+
+.footer {
+  background-color: #fdf6ea;
+}
+
 .role-selection-container {
-  background-color: rgba(0,0,0,.1);
+  background-color: white;
 }
 .role-selection {
   display: none;
