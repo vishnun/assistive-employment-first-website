@@ -41,6 +41,7 @@
 
   <!--build:js public/js/main.min.js -->
   <script src="js/lib/jquery-extension.js"></script>
+  <script src="js/text-to-speech.js"></script>
   <script src="js/speech-commands.js"></script>
   <script src="js/home-page.js"></script>
   <script src="js/about-page.js"></script>

@@ -46,8 +46,9 @@ html {
   transition: all 0.5s ease;
   height: 0px;
   width: 0px;
-  right: 0;
-  bottom: 0;
+  right: 10px;
+  bottom: 78px;
+  overflow: hidden;
   background: white;
   .ef-calendar-container {
     position: relative;

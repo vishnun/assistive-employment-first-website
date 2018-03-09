@@ -10,4 +10,14 @@ $(function() {
     $('.role-selection').show();
   });
 
+
+  var reader = new ScreenReader();
+
+  var readEls = $("[data-reader-text]");
+
+  readEls.on('mouseenter', function() {
+    var text = $(this).data('reader-text');
+    reader.read(text);
+  });
+
 });
