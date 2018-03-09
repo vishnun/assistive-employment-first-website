@@ -5,10 +5,22 @@
     </button>
 </div>
 <div class="ef-assistive-drawer position-fixed">
-    <div class="ef-assistive-drawer-container p-3 bg-white">
-        <button type="button" class="rounded-circle clickable mic" aria-label="speech command mic">
-            <i aria-hidden="true" class="fas fa-microphone fa-3x"></i>
-        </button>
+    <div class="ef-assistive-drawer-container bg-white d-flex flex-column">
+        <div class="p-2">
+            <button type="button" class="rounded-circle clickable mic" aria-label="speech command mic">
+                <i aria-hidden="true" class="fas fa-microphone fa-3x"></i>
+            </button>
+        </div>
+        <div class="p-2 border-top">
+            <button type="button" class="rounded clickable" id="zoom-in-text"
+                    aria-label="Increases text size">
+                <i aria-hidden="true" class="fas fa-font fa-3x"></i>
+            </button>
+            <button type="button" class="rounded clickable" id="zoom-out-text"
+                    aria-label="Reduce text size">
+                <i aria-hidden="true" class="fas fa-font fa-2x"></i>
+            </button>
+        </div>
     </div>
 </div>
 

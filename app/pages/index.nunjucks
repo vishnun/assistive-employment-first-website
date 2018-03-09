@@ -117,7 +117,7 @@
 
 </div>
 
-<div class="footer pt-3 pb-3">
+<div class="footer bg-light pt-3 pb-3">
     {% include 'partials/footer.nunjucks' %}
 </div>
 
