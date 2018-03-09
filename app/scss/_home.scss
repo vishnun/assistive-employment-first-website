@@ -25,6 +25,11 @@
 .home-cards-container {
   box-shadow: 0px 7px 17px -10px #000 inset;
   background-color: #fdf6ea;
+  .card {
+    .card-text {
+      height: 120px;
+    }
+  }
 }
 
 .footer {

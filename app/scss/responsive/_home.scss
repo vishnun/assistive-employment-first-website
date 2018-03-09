@@ -5,7 +5,6 @@ $break-xl: 1200px;
 
 @media screen and (min-width: $break-xl) {
   .home-bg {
-
     .jumbotron-fluid {
       padding-top: 315px;
       padding-bottom: 48px;
@@ -16,5 +15,11 @@ $break-xl: 1200px;
   }
   .ef-calendar {
     display: inline-block;
+  }
+}
+
+@media screen and (max-height: 780px){
+  .home-bg {
+    min-height: 460px;
   }
 }

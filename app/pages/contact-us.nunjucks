@@ -11,6 +11,9 @@
   {{nav.active('contact')}}
 </div>
 
+{% import 'macros/page-title-macro.nunjucks' as pt %} {{pt.pageTitle("Contact Us")}}
+
+
 <div class="container">
   <h1>This is the Contact-us page</h1>
 

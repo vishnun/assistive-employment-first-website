@@ -109,6 +109,8 @@
 .home-cards-container {
   box-shadow: 0px 7px 17px -10px #000 inset;
   background-color: #fdf6ea; }
+  .home-cards-container .card .card-text {
+    height: 120px; }
 
 .footer {
   background-color: #fdf6ea; }
@@ -137,3 +139,7 @@
       max-width: 35%; }
   .ef-calendar {
     display: inline-block; } }
+
+@media screen and (max-height: 780px) {
+  .home-bg {
+    min-height: 460px; } }

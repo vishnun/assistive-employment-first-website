@@ -4,7 +4,7 @@
 <nav class="navbar navbar-expand-md navbar-light ef-nav pt-0 pb-0">
   <div class="container-fluid navbar-container pl-3 pr-3">
     <a class="navbar-brand" href="./">
-      <img src="./public/images/logo.png" height="100" alt="AZ Employment First - Job Opportunities Build Success">
+      <img src="./public/images/logo.png" height="75" alt="AZ Employment First - Job Opportunities Build Success">
     </a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -12,16 +12,16 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav ml-auto">
         <li class="nav-item {%if activePage == 'home' %} active {% endif %}">
-          <a class="nav-link p-4 pt-5 pb-5" href="./">Home <span class="sr-only">(current)</span></a>
+          <a class="nav-link p-4" href="./">Home <span class="sr-only">(current)</span></a>
         </li>
         <li class="nav-item {%if activePage == 'about' %} active {% endif %}">
-          <a class="nav-link p-4 pt-5 pb-5" href="./about.html">About</a>
+          <a class="nav-link p-4" href="./about.html">About</a>
         </li>
         <li class="nav-item {%if activePage == 'stories' %} active {% endif %}">
-          <a class="nav-link p-4 pt-5 pb-5" href="#">Stories</a>
+          <a class="nav-link p-4" href="#">Stories</a>
         </li>
         <li class="nav-item dropdown {%if activePage == 'resources' %} active {% endif %}">
-          <a class="nav-link p-4 pt-5 pb-5 dropdown-toggle" href="#" id="resources-navbar" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          <a class="nav-link p-4 dropdown-toggle" href="#" id="resources-navbar" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             Resources
           </a>
           <div class="dropdown-menu" aria-labelledby="resources-navbar">
@@ -35,13 +35,13 @@
         </li>
 
         <li class="nav-item {%if activePage == 'events' %} active {% endif %}">
-          <a class="nav-link p-4 pt-5 pb-5" href="#">Events</a>
+          <a class="nav-link p-4" href="#">Events</a>
         </li>
         <li class="nav-item {%if activePage == 'faqs' %} active {% endif %}">
-          <a class="nav-link p-4 pt-5 pb-5" href="#">FAQs</a>
+          <a class="nav-link p-4" href="#">FAQs</a>
         </li>
         <li class="nav-item {%if activePage == 'contact' %} active {% endif %}">
-          <a class="nav-link p-4 pt-5 pb-5" href="./contact-us.html">Contact Us</a>
+          <a class="nav-link p-4" href="./contact-us.html">Contact Us</a>
         </li>
       </ul>
 
