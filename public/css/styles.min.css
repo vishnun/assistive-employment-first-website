@@ -72,7 +72,7 @@
   .ef-assistive-drawer .ef-calendar-container {
     position: relative; }
   .ef-assistive-drawer.show {
-    height: 100px;
+    height: 200px;
     border: 1px solid #000; }
 
 .ef-nav {
@@ -112,7 +112,7 @@
   background-repeat: no-repeat;
   background-attachment: fixed;
   min-height: 520px;
-  background-color: #594730;
+  background-color: #413c38;
   position: relative;
   box-shadow: 1px -2px 14px -2px #000 inset; }
   .home-bg .jumbotron {
@@ -127,12 +127,12 @@
 
 .home-cards-container {
   box-shadow: 0px 7px 17px -10px #000 inset;
-  background-color: #fdf6ea; }
+  background-color: #413c38; }
   .home-cards-container .card .card-text {
     height: 120px; }
 
 .footer {
-  background-color: #fdf6ea; }
+  background-color: #413c38; }
 
 .role-selection-container {
   background-color: white; }
