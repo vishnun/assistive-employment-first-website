@@ -2,6 +2,11 @@ $asu-gold: #ffb204;
 $asu-dark-bg: #353535;
 $asu-maroon: #c13657;
 
+html {
+  font-size: 100%;
+}
+
+
 .text-gold {
   color: $asu-gold !important;
 }
@@ -75,6 +80,9 @@ $asu-maroon: #c13657;
 
 .ef-assistive-icon,
 .ef-calendar-icon {
+  button {
+    font-size: 16px;
+  }
   bottom: 10px;
   border-radius: 5px;
   overflow: hidden;
@@ -89,6 +97,7 @@ $asu-maroon: #c13657;
   overflow: hidden;
   background: white;
   border: 0px solid #000;
+  font-size: 16px;
   .ef-calendar-container {
     position: relative;
   }
