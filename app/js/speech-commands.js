@@ -1,11 +1,3 @@
-$(function () {
-  $.expr[":"].contains = $.expr.createPseudo(function (arg) {
-    return function (elem) {
-      return $(elem).text().toUpperCase().indexOf(arg.toUpperCase()) >= 0;
-    };
-  });
-});
-
 var accessToken = "a364a593a00349f1ba80c89172914701";
 var baseUrl = "https://api.api.ai/v1/";
 
@@ -121,50 +113,3 @@ function send(text) {
     }
   });
 }
-
-$(function() {
-  if ($('#home-page').length === 0) {
-    return;
-  }
-
-  $('.role-selection').hide();
-
-  $('#get-started').on('click', function() {
-    $(this).hide();
-    $('.role-selection').show();
-  });
-
-});
-
-$(function() {
-
-	if ($('#about-page').length === 0) {
-		return;
-	}
-
-
-});
-
-$(function() {
-
-
-	if ($('#contact-page').length == 0) {
-		return;
-	}
-
-
-
-});
-
-$(function () {
-  $('.expand-calendar').on('click', function () {
-    $('.ef-calendar').addClass('show');
-  });
-  
-  $('.close-button').on('click', function () {
-    $('.ef-calendar').removeClass('show');
-  })
-  
-  
-  
-});

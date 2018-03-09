@@ -46,16 +46,16 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav ml-auto">
         <li class="nav-item  active ">
-          <a class="nav-link p-4" href="./">Home <span class="sr-only">(current)</span></a>
+          <a class="clickable nav-link p-4" href="./">Home <span class="sr-only">(current)</span></a>
         </li>
         <li class="nav-item ">
-          <a class="nav-link p-4" href="./about.html">About</a>
+          <a class="clickable nav-link p-4" href="./about.html">About</a>
         </li>
         <li class="nav-item ">
-          <a class="nav-link p-4" href="#">Stories</a>
+          <a class="clickable nav-link p-4" href="#">Stories</a>
         </li>
         <li class="nav-item dropdown ">
-          <a class="nav-link p-4 dropdown-toggle" href="#" id="resources-navbar" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          <a class="clickable nav-link p-4 dropdown-toggle" href="#" id="resources-navbar" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             Resources
           </a>
           <div class="dropdown-menu" aria-labelledby="resources-navbar">
@@ -69,13 +69,13 @@
         </li>
 
         <li class="nav-item ">
-          <a class="nav-link p-4" href="#">Events</a>
+          <a class="clickable nav-link p-4" href="#">Events</a>
         </li>
         <li class="nav-item ">
-          <a class="nav-link p-4" href="#">FAQs</a>
+          <a class="clickable nav-link p-4" href="#">FAQs</a>
         </li>
         <li class="nav-item ">
-          <a class="nav-link p-4" href="./contact-us.html">Contact Us</a>
+          <a class="clickable nav-link p-4" href="./contact-us.html">Contact Us</a>
         </li>
       </ul>
 
@@ -232,18 +232,20 @@
 
 
   <div class="ef-calendar-icon position-fixed">
-  <button type="button" class="expand-calendar" aria-label="show calendar">
+    <button type="button" class="clickable expand-calendar" aria-label="event calendar">
         <i aria-hidden="true" class="fas fa-calendar-alt fa-3x"></i>
+        <span aria-hidden="true" class="float-right ml-3">Events<br>calendar</span>
     </button>
 </div>
 <div class="ef-calendar position-fixed">
-  <div class="ef-calendar-container pt-3 pl-3 bg-white">
-    <button type="button" class="close close-button" aria-label="Close">
+    <div class="ef-calendar-container pt-3 pl-3 bg-white">
+        <button type="button" class="clickable close close-button" aria-label="close | exit | cross">
             <span aria-hidden="true">&times;</span>
         </button>
-    <iframe src="https://calendar.google.com/calendar/b/1/embed?height=400&amp;wkst=1&amp;bgcolor=%23ffffff&amp;src=en.usa%23holiday%40group.v.calendar.google.com&amp;color=%2329527A&amp;ctz=America%2FPhoenix" style="border-width:0" width="400" height="400"
-      frameborder="0" scrolling="no"></iframe>
-  </div>
+        <iframe src="https://calendar.google.com/calendar/b/1/embed?height=400&amp;wkst=1&amp;bgcolor=%23ffffff&amp;src=en.usa%23holiday%40group.v.calendar.google.com&amp;color=%2329527A&amp;ctz=America%2FPhoenix"
+                style="border-width:0" width="400" height="400"
+                frameborder="0" scrolling="no"></iframe>
+    </div>
 </div>
 
 
@@ -252,12 +254,13 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
   <!--build:js public/js/main.min.js -->
+  <script src="js/lib/jquery-extension.js"></script>
+  <script src="js/speech-commands.js"></script>
   <script src="js/home-page.js"></script>
   <script src="js/about-page.js"></script>
   <script src="js/contact-page.js"></script>
   <script src="js/main.js"></script>
   <!-- endbuild -->
-
 
 </body>
 
