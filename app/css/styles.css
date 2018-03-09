@@ -49,12 +49,31 @@
     height: 428px; }
 
 .ef-calendar-icon {
-  right: 10px;
+  right: 10px; }
+
+.ef-assistive-icon {
+  left: 10px; }
+
+.ef-assistive-icon,
+.ef-calendar-icon {
   bottom: 10px;
-  box-shadow: 1px 1px 9px 0px #444;
+  border-radius: 5px;
+  overflow: hidden; }
+
+.ef-assistive-drawer {
+  transition: height 0.5s ease;
+  height: 0;
+  width: 146px;
+  left: 10px;
+  bottom: 76px;
   overflow: hidden;
-  border-radius: 10px;
-  border: none; }
+  background: white;
+  border: 0px solid #000; }
+  .ef-assistive-drawer .ef-calendar-container {
+    position: relative; }
+  .ef-assistive-drawer.show {
+    height: 100px;
+    border: 1px solid #000; }
 
 .ef-nav {
   background-color: white; }

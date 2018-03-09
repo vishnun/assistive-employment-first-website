@@ -1,5 +1,5 @@
-<div class="ef-calendar-icon position-fixed">
-    <button type="button" class="clickable expand-calendar" aria-label="events calendar">
+<div class="ef-calendar-icon position-fixed bg-light">
+    <button type="button" class="clickable expand-calendar btn btn-outline-dark" aria-label="events calendar">
         <i aria-hidden="true" class="fas fa-calendar-alt fa-3x"></i>
         <span aria-hidden="true" class="float-right ml-3">Events<br>calendar</span>
     </button>

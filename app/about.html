@@ -107,15 +107,15 @@
 
 
 
-  <div class="ef-calendar-icon position-fixed">
-    <button type="button" class="clickable expand-calendar" aria-label="event calendar">
+  <div class="ef-calendar-icon position-fixed bg-light">
+    <button type="button" class="clickable expand-calendar btn btn-outline-dark" aria-label="events calendar">
         <i aria-hidden="true" class="fas fa-calendar-alt fa-3x"></i>
         <span aria-hidden="true" class="float-right ml-3">Events<br>calendar</span>
     </button>
 </div>
 <div class="ef-calendar position-fixed">
     <div class="ef-calendar-container pt-3 pl-3 bg-white">
-        <button type="button" class="clickable close close-button" aria-label="close | exit | cross">
+        <button type="button" class="clickable close close-button" aria-label="close or exit">
             <span aria-hidden="true">&times;</span>
         </button>
         <iframe src="https://calendar.google.com/calendar/b/1/embed?height=400&amp;wkst=1&amp;bgcolor=%23ffffff&amp;src=en.usa%23holiday%40group.v.calendar.google.com&amp;color=%2329527A&amp;ctz=America%2FPhoenix"
@@ -123,6 +123,26 @@
                 frameborder="0" scrolling="no"></iframe>
     </div>
 </div>
+
+
+  <div class="ef-assistive-icon position-fixed bg-light">
+    <button type="button" class="clickable assistive-support btn btn-outline-dark" aria-label="assistive support">
+        <i aria-hidden="true" class="fab fa-accessible-icon fa-3x"></i>
+        <span aria-hidden="true" class="float-right ml-3">Assistive<br>Support</span>
+    </button>
+</div>
+<div class="ef-assistive-drawer position-fixed">
+    <div class="ef-assistive-drawer-container p-3 bg-white">
+        <button type="button" class="rounded-circle clickable mic" aria-label="speech command mic">
+            <i aria-hidden="true" class="fas fa-microphone fa-3x"></i>
+        </button>
+    </div>
+</div>
+
+
+
+
+
 
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
