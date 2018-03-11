@@ -19,9 +19,7 @@
 
   <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
 
-  <!-- build:css public/css/styles.min.css -->
-  <link href="css/styles.css" rel="stylesheet">
-  <!-- endbuild -->
+  <link rel="stylesheet" href="public/css/styles.min.css">
 
 </head>
 
@@ -30,10 +28,8 @@
 
   
 
-
-<div class="header" id="contact-page">
-  
-  
+<div class="header sticky-top">
+     
 <!-- Macro stuff here -->
 
 <nav class="navbar navbar-expand-lg navbar-light ef-nav pt-0 pb-0">
@@ -56,14 +52,14 @@
                 <li class="nav-item ">
                     <a class="clickable nav-link p-4" href="#">Stories</a>
                 </li>
-                <li class="nav-item dropdown ">
+                <li class="nav-item dropdown  active ">
                     <a class="clickable nav-link p-4 dropdown-toggle" href="#" id="resources-navbar" role="button"
                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         Resources
                     </a>
                     <div class="dropdown-menu" aria-labelledby="resources-navbar">
                         <a class="dropdown-item pl-4 pr-4 pt-3 pb-3" href="#">A Job Seeker</a>
-                        <a class="dropdown-item pl-4 pr-4 pt-3 pb-3 "
+                        <a class="dropdown-item pl-4 pr-4 pt-3 pb-3  active "
                            href="./family.html">A Family Member</a>
                         <a class="dropdown-item pl-4 pr-4 pt-3 pb-3" href="#">An Educator</a>
                         <a class="dropdown-item pl-4 pr-4 pt-3 pb-3" href="#">An Employer</a>
@@ -78,7 +74,7 @@
                 <li class="nav-item ">
                     <a class="clickable nav-link p-4" href="#">FAQs</a>
                 </li>
-                <li class="nav-item  active ">
+                <li class="nav-item ">
                     <a class="clickable nav-link p-4" href="./contact-us.html">Contact Us</a>
                 </li>
             </ul>
@@ -96,26 +92,103 @@
 
 <div class="page-title pt-4 pb-4 bg-warning" style="font-family: 'Noto Sans', san-serif;">
   <div class="container">
-    <h1 class="m-0 text-center">Contact Us</h1>
+    <h1 class="m-0 text-center">Family Role in Employment First</h1>
   </div>
 </div>
 
 
 
 
-
-<div class="container">
-  <h1>This is the Contact-us page</h1>
-
-
-  <form>
-  <div class="form-group">
-    <label for="exampleFormControlTextarea1">Example textarea</label>
-    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+<div class="container-fluid pt-5 pb-5 role-selection-container">
+  <div class="row justify-content-center">
+    <div class="col-sm-12">
+        <p>Families provide vital support for individuals with disabilities seeking, obtaining and retaining employment. This page provides resources for families and other members of their support networks. Employment First recognizes that families are often the most consistent support in an individual’s life and these resources are here to guide you.</p>
+    </div>
   </div>
-</form>
 </div>
 
+<div class="container-fluid pt-5 pb-5" style="background-color: #413c38">
+    <div class="container">
+        <div class="row text-center">
+          <div class="col-sm-12">
+                <div class="card"  style="background-color: #DFB13F">
+                  <div class="card-body">
+                        <h3 class="card-title h3">RESOURCES - Youth and Young Adults</h3>
+                        <p class="card-text p1">These resources are tailored for families supporting a jobseeker between the ages of 14 and 26.</p>
+                        <!--<button type="button" id="youth_btn" onclick="goToYouthPage()" class="btn btn-primary btn1">LEARN MORE</button>-->
+                        <a class="btn btn-large btn-primary" href="youth1.html" data-toggle="tooltip" title="Clicking this button will take you to the resources page for Youth and Young Adults">LEARN MORE</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--adults-->
+<div class="container-fluid pt-5 pb-5" style="background-color: #413c38">
+    <div class="container">
+        <div class="row text-center">
+          <div class="col col-sm-12">
+                <div class="card" style="background-color: #DFB13F">
+                  <div class="card-body">
+                        <h3 class="card-title h3">RESOURCES - Adults</h3>
+                        <p class="card-text p1">These resources are tailored for families supporting a jobseeker 27 or older.</p>
+                        <button type="button" id="adults_btn" class="btn btn-primary btn1" data-toggle="tooltip" title="Clicking this button will take you to the resources page for Adults">LEARN MORE</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--testimonial and new resources-->
+ <div class="container-fluid pt-5 pb-5 home-cards-container">
+  <div class="container">
+    <div class="row text-center">
+      <div class="col-8 col-md-4 mt-3" style="margin-left: auto">
+        <div class="card" style="background-color: #DFB13F">
+          <img class="card-img-top" src="./public/images/image3.jpg" height="232px" width="348px" alt="Beacon Group Logo">
+          <div class="card-body">
+            <h5 class="card-title">TESTIMONIAL</h5>
+            <p class="card-text">"Talking to employers is critical. Now they understand because Kyle has worked there and they see his dedication and perormance. He has only missed one day of work in 2 years!”</p>
+            <a href="#" class="btn btn-primary" data-toggle="tooltip" title="Clicking this button will help you read more about this testimonial">Learn More</a>
+          </div> 
+        </div>
+      </div>
+      <div class="col-8 col-md-4 mt-3" style="margin-right: auto">
+        <div class="card" style="background-color: #DFB13F;height:483px">
+          <img class="card-img-top" src="./public/images/family-image1.png" height="232px" width="348px" alt="Resources">
+          <div class="card-body">
+            <h5 class="card-title">What's New?</h5>
+            <a href="./public/images/cap_brochure.pdf" target="_blank">Client Assistance Program Brochure</a><br>
+            <a href="./public/images/order1.jpg" target="_blank">State of Arizona Executive Order 1</a><br>
+            <a href="./public/images/order2.png" target="_blank">State of Arizona Executive Order 2</a>
+      </div>
+        </div>
+      </div>
+      </div>
+  </div>
+</div>
+
+<div class="footer bg-light pt-3 pb-3">
+    <ul class="nav justify-content-center">
+  <li class="nav-item">
+    <a class="nav-link" href="#about">About Us</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="#resources">Resources</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="#testimonials">Testimonials</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="#faqs">FAQs</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="#contact-us">Contact Us</a>
+  </li>
+</ul>
+</div>
 
 
 
@@ -173,16 +246,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
-  <!--build:js public/js/main.min.js -->
-  <script src="js/lib/jquery-extension.js"></script>
-  <script src="js/text-to-speech.js"></script>
-  <script src="js/speech-commands.js"></script>
-  <script src="js/home-page.js"></script>
-  <script src="js/about-page.js"></script>
-  <script src="js/contact-page.js"></script>
-  <script src="js/main.js"></script>
-  <script src="js/youth.js"></script>
-  <!-- endbuild -->
+  <script src="public/js/main.min.js"></script>
 
 </body>
 

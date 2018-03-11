@@ -1,143 +1,16 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="employment first assistive website.">
-
-  <link href="https://fonts.googleapis.com/css?family=Flamenco" rel="stylesheet">
-
-  <link rel="canonical" href="http://vishnun.github.io/assistive-employment-first-website">
-
-  <title>Employment First</title>
-  <link rel="icon" href="favicon.png?" type="image/x-icon" />
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-
-  <link href="https://fonts.googleapis.com/css?family=Noto+Sans" rel="stylesheet">
-
-  <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-
-  <!-- build:css public/css/styles.min.css -->
-  <link href="css/styles.css" rel="stylesheet">
-  <!-- endbuild -->
-
-</head>
-
-<body>
-
-
-  
+<!-- family.nunjucks -->
+{% extends "layout.nunjucks" %} {% block content %}
 
 <div class="header sticky-top">
-   
-<!-- Macro stuff here -->
-
-<nav class="navbar navbar-expand-lg navbar-light ef-nav pt-0 pb-0">
-  <div class="container-fluid navbar-container pl-3 pr-3">
-    <a class="navbar-brand" href="./">
-      <img src="./public/images/logo.png" height="75" alt="AZ Employment First - Job Opportunities Build Success">
-    </a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav ml-auto">
-        <li class="nav-item  active ">
-          <a class="clickable nav-link p-4" href="./">Home <span class="sr-only">(current)</span></a>
-        </li>
-        <li class="nav-item ">
-          <a class="clickable nav-link p-4" href="./about.html">About</a>
-        </li>
-        <li class="nav-item ">
-          <a class="clickable nav-link p-4" href="#">Stories</a>
-        </li>
-        <li class="nav-item dropdown ">
-          <a class="clickable nav-link p-4 dropdown-toggle" href="#" id="resources-navbar" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            Resources
-          </a>
-          <div class="dropdown-menu" aria-labelledby="resources-navbar">
-            <a class="dropdown-item pl-4 pr-4 pt-3 pb-3" href="#">A Job Seeker</a>
-            <a class="dropdown-item pl-4 pr-4 pt-3 pb-3" href="#">A Family Member</a>
-            <a class="dropdown-item pl-4 pr-4 pt-3 pb-3" href="#">An Educator</a>
-            <a class="dropdown-item pl-4 pr-4 pt-3 pb-3" href="#">An Employer</a>
-            <a class="dropdown-item pl-4 pr-4 pt-3 pb-3" href="#">A Provider</a>
-            <!-- <div class="dropdown-divider"></div> -->
-          </div>
-        </li>
-
-        <li class="nav-item ">
-          <a class="clickable nav-link p-4" href="#">Events</a>
-        </li>
-        <li class="nav-item ">
-          <a class="clickable nav-link p-4" href="#">FAQs</a>
-        </li>
-        <li class="nav-item ">
-          <a class="clickable nav-link p-4" href="./contact-us.html">Contact Us</a>
-        </li>
-      </ul>
-
-    </div>
-  </div>
-
-</nav>
-
-
+    {% import 'macros/nav-macro.nunjucks' as nav %} {{nav.active('resources', 'family')}}
 </div>
 
- 
-<!-- Macro stuff here -->
-
-<div class="page-title pt-4 pb-4 bg-warning" style="font-family: 'Noto Sans', san-serif;">
-  <div class="container">
-    <h1 class="m-0 text-center">Dream it ! Believe it ! Achieve it !</h1>
-  </div>
-</div>
-
-
-
-
-<div class="home-bg" id="home-page">
-  <div class="jumbotron jumbotron-fluid bg-transparent clearfix p-5 m-0">
-    <div class="jumbotron-content d-inline-block rounded p-4 float-left">
-      <h1 class="display-4" data-reader-text="Dare to Dream">Dare to Dream</h1>
-
-      <blockquote class="blockquote">
-        <p data-reader-text="Start by doing what's necessary and then what's possible and before you know it, you are doing the impossible" class="mb-0">
-          Start by doing what's necessary, then what's possible, and suddenly you are doing the impossible.
-        </p>
-        <footer class="blockquote-footer text-warning">Francis of Assisi</footer>
-      </blockquote>
-      <button type="button" class="btn btn-primary asu-primary-button pl-4 pr-4 clickable" id="get-started">Get Started
-        </button>
-      <div class="role-selection">
-        <div class="input-group">
-          <label class="input-group-text bg-transparent border-0 text-white">I am
-            </label>
-          <div>
-            <button class="btn btn-primary dropdown-toggle asu-primary-button" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Choose
-            </button>
-            <div class="dropdown-menu">
-              <a class="dropdown-item pl-4 pr-4 pt-3 pb-3" href="#">A Job Seeker</a>
-              <a class="dropdown-item pl-4 pr-4 pt-3 pb-3" href="./youth.html">A Family Member</a>
-              <a class="dropdown-item pl-4 pr-4 pt-3 pb-3" href="#">An Educator</a>
-              <a class="dropdown-item pl-4 pr-4 pt-3 pb-3" href="#">An Employer</a> <a class="dropdown-item pl-4 pr-4 pt-3 pb-3" href="#">A Provider</a>
-            </div>
-          </div>
-        </div>
-      </div>
-
-    </div>
-  </div>
-</div>
+{% import 'macros/page-title-macro.nunjucks' as pt %} {{pt.pageTitle("Family Role in Employment First")}}
 
 <div class="container-fluid pt-5 pb-5 role-selection-container">
   <div class="row justify-content-center">
     <div class="col-sm-12">
-      <h2 class="display-4 text-center display-font">Family Role in Employment First</h2>
-            <p>Families provide vital support for individuals with disabilities seeking, obtaining and retaining employment. This page provides resources for families and other members of their support networks. Employment First recognizes that families are often the most consistent support in an individual’s life and these resources are here to guide you.</p>
+        <p>Families provide vital support for individuals with disabilities seeking, obtaining and retaining employment. This page provides resources for families and other members of their support networks. Employment First recognizes that families are often the most consistent support in an individual’s life and these resources are here to guide you.</p>
     </div>
   </div>
 </div>
@@ -148,7 +21,7 @@
           <div class="col-sm-12">
                 <div class="card"  style="background-color: #DFB13F">
                   <div class="card-body">
-                        <h3 class="card-title h3">RESOURCES - Youth and Young Adults</h5>
+                        <h3 class="card-title h3">RESOURCES - Youth and Young Adults</h3>
                         <p class="card-text p1">These resources are tailored for families supporting a jobseeker between the ages of 14 and 26.</p>
                         <!--<button type="button" id="youth_btn" onclick="goToYouthPage()" class="btn btn-primary btn1">LEARN MORE</button>-->
                         <a class="btn btn-large btn-primary" href="youth1.html" data-toggle="tooltip" title="Clicking this button will take you to the resources page for Youth and Young Adults">LEARN MORE</a>
@@ -205,94 +78,8 @@
   </div>
 </div>
 
-
 <div class="footer bg-light pt-3 pb-3">
-  <ul class="nav justify-content-center">
-  <li class="nav-item">
-    <a class="nav-link" href="#about">About Us</a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link" href="#resources">Resources</a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link" href="#testimonials">Testimonials</a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link" href="#faqs">FAQs</a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link" href="#contact-us">Contact Us</a>
-  </li>
-</ul>
+    {% include 'partials/footer.nunjucks' %}
 </div>
 
-
-
-  <div class="ef-calendar-icon position-fixed bg-light">
-    <button type="button" class="clickable expand-calendar btn btn-outline-dark" aria-label="events calendar">
-        <i aria-hidden="true" class="fas fa-calendar-alt fa-3x"></i>
-        <span aria-hidden="true" class="float-right ml-3">Events<br>calendar</span>
-    </button>
-</div>
-<div class="ef-calendar position-fixed">
-    <div class="ef-calendar-container pt-3 pl-3 bg-white">
-        <button type="button" class="clickable close close-button" aria-label="close or exit">
-            <span aria-hidden="true">&times;</span>
-        </button>
-        <iframe src="https://calendar.google.com/calendar/b/1/embed?height=400&amp;wkst=1&amp;bgcolor=%23ffffff&amp;src=en.usa%23holiday%40group.v.calendar.google.com&amp;color=%2329527A&amp;ctz=America%2FPhoenix"
-                style="border-width:0" width="400" height="400"
-                frameborder="0" scrolling="no"></iframe>
-    </div>
-</div>
-
-
-  <div class="ef-assistive-icon position-fixed bg-light">
-    <button type="button" class="clickable assistive-support btn btn-outline-dark" aria-label="assistive support">
-        <i aria-hidden="true" class="fab fa-accessible-icon fa-3x"></i>
-        <span aria-hidden="true" class="float-right ml-3">Assistive<br>Support</span>
-    </button>
-</div>
-<div class="ef-assistive-drawer position-fixed">
-    <div class="ef-assistive-drawer-container bg-white d-flex flex-column">
-        <div class="p-2">
-            <button type="button" class="rounded-circle clickable mic" aria-label="speech command mic">
-                <i aria-hidden="true" class="fas fa-microphone fa-3x"></i>
-            </button>
-        </div>
-        <div class="p-2 border-top">
-            <button type="button" class="rounded clickable" id="zoom-in-text"
-                    aria-label="Increases text size">
-                <i aria-hidden="true" class="fas fa-font fa-3x"></i>
-            </button>
-            <button type="button" class="rounded clickable" id="zoom-out-text"
-                    aria-label="Reduce text size">
-                <i aria-hidden="true" class="fas fa-font fa-2x"></i>
-            </button>
-        </div>
-    </div>
-</div>
-
-
-
-
-
-
-
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-
-  <!--build:js public/js/main.min.js -->
-  <script src="js/lib/jquery-extension.js"></script>
-  <script src="js/text-to-speech.js"></script>
-  <script src="js/speech-commands.js"></script>
-  <script src="js/home-page.js"></script>
-  <script src="js/about-page.js"></script>
-  <script src="js/contact-page.js"></script>
-  <script src="js/main.js"></script>
-  <script src="js/youth.js"></script>
-  <!-- endbuild -->
-
-</body>
-
-</html>
+{% endblock %}
