@@ -29,7 +29,7 @@
             </button>
             <div class="dropdown-menu">
               <a class="dropdown-item pl-4 pr-4 pt-3 pb-3" href="#">A Job Seeker</a>
-              <a class="dropdown-item pl-4 pr-4 pt-3 pb-3" href="#">A Family Member</a>
+              <a class="dropdown-item pl-4 pr-4 pt-3 pb-3" href="family.html">A Family Member</a>
               <a class="dropdown-item pl-4 pr-4 pt-3 pb-3" href="#">An Educator</a>
               <a class="dropdown-item pl-4 pr-4 pt-3 pb-3" href="#">An Employer</a> <a class="dropdown-item pl-4 pr-4 pt-3 pb-3" href="#">A Provider</a>
             </div>
@@ -53,7 +53,7 @@
           <a href="#" class="btn btn-primary btn-block p-4">Job Seeker</a>
         </li>
         <li class="d-sm-block d-md-inline-block pt-1 pb-0 p-sm-1">
-          <a href="#" class="btn btn-primary btn-block p-4">Family Member</a>
+          <a href="family.html" class="btn btn-primary btn-block p-4">Family Member</a>
         </li>
         <li class="d-sm-block d-md-inline-block pt-1 pb-0 p-sm-1">
           <a href="#" class="btn btn-primary btn-block p-4">Educator</a>
