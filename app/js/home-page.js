@@ -17,6 +17,7 @@ $(function() {
 
   readEls.on('mouseenter', function() {
     var text = $(this).data('reader-text');
+    // If the assistive support toggle is ON (from cookies or local storage) else return
     reader.read(text);
   });
 
