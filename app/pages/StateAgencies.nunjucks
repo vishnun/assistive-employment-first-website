@@ -36,29 +36,14 @@
 </style>
 
 <div class="header sticky-top">
-    {% import 'macros/nav-macro.nunjucks' as nav %} {{nav.active('StateAgencies')}}
+    {% import 'macros/nav-macro.nunjucks' as nav %} {{nav.active('resources','family')}}
 </div>
 
-{% import 'macros/page-title-macro.nunjucks' as pt %} {{pt.pageTitle("Dream it ! Believe it ! Achieve it !")}}
+{% import 'macros/page-title-macro.nunjucks' as pt %} {{pt.pageTitle("State Agencies")}}
 
-<div class="home-bg" id="StateAgencies-page">
-    <div class="jumbotron jumbotron-fluid bg-transparent clearfix p-5 m-0">
-        <div class="jumbotron-content d-inline-block rounded p-4 float-left">
-            <h1 class="display-4">Dare to Dream</h1>
 
-            <blockquote class="blockquote">
-                <p class="mb-0">Believe in yourself! Have faith in your abilities. Without a humble or reasonable confidence in your own powers you cannot be successful or happy.
-                </p>
-                <footer class="blockquote-footer text-warning">Norman Vincent Peale</footer>
-            </blockquote>
-        </div>
-    </div>
-</div>
 <div class="container-fluid pt-5 pb-5 role-selection-container">
     <div class="row justify-content-center">
-        <div class="col-sm-12">
-            <p class="display-4 mb-3 text-center display-font">State Agencies</p>
-        </div>
         <div class="col-sm-12">
             <p>Descriptive text about organizations featured. These state agencies provide support in obtaining and maintaining employment. Each agency has its own eligibility requirements. These state agencies provide support in obtaining and maintaining employment. Each agency has its own eligibility requirements.</p>
         </div>
@@ -187,14 +172,14 @@ for (i = 0; i < acc.length; i++) {
 </script>
 
   <!--build:js public/js/main.min.js -->
-  <script src="js/lib/jquery-extension.js"></script>
+  <!--<script src="js/lib/jquery-extension.js"></script>
   <script src="js/text-to-speech.js"></script>
   <script src="js/speech-commands.js"></script>
   <script src="js/home-page.js"></script>
   <script src="js/about-page.js"></script>
   <script src="js/contact-page.js"></script>
   <script src="js/main.js"></script>
-  <script src="js/youth.js"></script>
+  <script src="js/youth.js"></script>-->
   <!-- endbuild -->
 
 {% endblock %}

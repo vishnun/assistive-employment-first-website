@@ -151,6 +151,114 @@ html {
 .about-title {
   color: red; }
 
+.home-bg {
+  background: url(/images/home-bg-5.jpg);
+  background-size: contain;
+  background-position: top;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  min-height: 520px;
+  background-color: #413c38;
+  position: relative;
+  box-shadow: 1px -2px 14px -2px #000 inset; }
+  .home-bg .jumbotron {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0; }
+  .home-bg .jumbotron-content {
+    max-width: 50%;
+    background: rgba(0, 0, 0, 0.6);
+    color: white; }
+
+.youth-cards-container {
+  box-shadow: 0px 7px 17px -10px #000 inset;
+  background-color: #413c38;
+  height: 50%;
+  width: 50%; }
+  .youth-cards-container .card .card-text {
+    min-height: 120px; }
+
+.footer {
+  background-color: #413c38; }
+
+.role-selection-container {
+  background-color: white; }
+
+.role-selection {
+  display: none; }
+
+.testimonial {
+  color: white;
+  max-width: 336px;
+  margin-left: auto; }
+
+.resources {
+  color: white;
+  max-width: 336px;
+  height: 325px;
+  margin-left: 20px;
+  margin-right: auto; }
+
+.bg {
+  background-color: #413c38; }
+
+.card1 {
+  background-color: #EDC153; }
+
+.card2 {
+  background-color: #EDC153;
+  width: auto;
+  height: auto; }
+
+.card3 {
+  width: 700px;
+  margin: 0 auto;
+  /* Added */
+  float: none;
+  /* Added */
+  margin-bottom: 10px;
+  /* Added */ }
+
+.col1 {
+  margin-left: auto; }
+
+.col2 {
+  margin-right: auto; }
+
+.h3 {
+  font-weight: bold;
+  font-size: 2rem;
+  color: #000000; }
+
+.btn1 {
+  align-content: center;
+  font-size: 1.25rem;
+  background-color: #000000;
+  color: white; }
+
+.logo {
+  width: 120px;
+  height: 111px; }
+
+.p2 {
+  width: 165px;
+  color: white; }
+
+.p1 {
+  font-size: 1.25rem;
+  color: #000000; }
+
+.p3 {
+  font-size: 1.25rem;
+  font-weight: bold;
+  text-align: center;
+  color: #000000; }
+
+.link1 {
+  color: black;
+  font-size: 1.25rem; }
+
 @media screen and (min-width: 768px) and (max-width: 850px) {
   .navbar .navbar-container {
     padding-left: 20px !important;

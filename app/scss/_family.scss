@@ -12,14 +12,46 @@
 	margin-right:auto;
 }
 
+.bg{
+	background-color: #413c38;
+}
+
+.card1{
+	 background-color: #EDC153;
+}
+
+.card2{
+	background-color: #EDC153;
+	width:auto;
+	height:auto;
+}
+
+.card3{
+	width:700px;
+	margin: 0 auto; /* Added */
+    float: none; /* Added */
+    margin-bottom: 10px; /* Added */
+}
+
+.col1{
+	 margin-left: auto
+}
+
+.col2{
+	margin-right: auto;
+}
+
 .h3 {
 	font-weight: bold;
 	font-size:2rem;
-	color:white;
+	color:#000000;
 }
 
 .btn1 {
 	align-content:center;
+	font-size:1.25rem;
+	background-color: #000000;
+	color:white;
 }
 
 .logo {
@@ -33,16 +65,19 @@
 }
 
 .p1 {
-	font-size:2rem;
-	color:white;
+	font-size:1.25rem;
+	color:#000000;
 }
 
-.a {
-	color:#FFDAB9;
+.p3{
+
+	font-size:1.25rem;
+	font-weight:bold;
+	text-align: center;
+	color:#000000;
 }
 
-.col2{
-	background-color: #AC5A4F;
-	width:336px;
-	height:325px;
+.link1{
+	color:black;
+	font-size: 1.25rem;
 }
