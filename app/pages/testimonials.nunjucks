@@ -1,0 +1,52 @@
+<!-- index.nunjucks -->
+{% extends "layout.nunjucks" %}
+
+
+
+{% block content %}
+
+
+<div class="header" id="about-page">
+    {% import 'macros/nav-macro.nunjucks' as nav %}
+    {{nav.active('testimonials')}}
+</div>
+
+{% import 'macros/page-title-macro.nunjucks' as pt %} {{pt.pageTitle("Testimonials")}}
+
+<div class="container-fluid pt-5 pb-5" style="background-color: #413c38">
+    <div class="container">
+        <div class="row text-center">
+            <div class="col col-sm-12">
+                <div class="media" style="background-color: #DFB13F">
+                    <img class="media-left" src="./public/images/dummy_person.png" height="232px" width="348px" alt="Testimonial contact's image">
+                    <div class="media-body">
+                        <h4 class="card-title h3">Lorema Ipsuma</h4>
+                        <p class="card-text p1">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid pt-5 pb-5" style="background-color: #413c38">
+    <div class="container">
+        <div class="row text-center">
+            <div class="col col-sm-12">
+                <div class="media" style="background-color: #DFB13F">
+                    <img class="media-left" src="./public/images/dummy_person.png" height="232px" width="348px" alt="Testimonial contact's image">
+                    <div class="media-body">
+                        <h4 class="card-title h3">Ipsuma Lorema</h4>
+                        <p class="card-text p1">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="footer bg-light pt-3 pb-3">
+    {% include 'partials/footer.nunjucks' %}
+</div>
+
+{% endblock %}
