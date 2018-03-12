@@ -1,6 +1,9 @@
 html {
   font-size: 100%; }
 
+.container-fluid {
+  max-width: 1600px; }
+
 .text-gold {
   color: #ffb204 !important; }
 
@@ -165,18 +168,19 @@ html {
     .home-bg .jumbotron-fluid .jumbotron-content {
       max-width: 45%; } }
 
-@media screen and (min-width: 1400px) {
+@media screen and (min-width: 1441px) {
   .home-bg {
-    min-height: 700px; } }
+    min-height: 790px;
+    background-size: auto; } }
 
 @media screen and (max-width: 768px) {
   .home-bg {
-    min-height: 500px;
-    background-position: 100% 5%;
-    background-size: auto; }
+    min-height: 400px;
+    background-size: 120% 58%; }
     .home-bg .jumbotron-fluid .jumbotron-content {
       max-width: 100%; } }
 
 @media screen and (max-height: 780px) {
   .home-bg {
+    background-position: center;
     min-height: 420px; } }
