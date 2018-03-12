@@ -6,6 +6,9 @@ html {
   font-size: 100%;
 }
 
+.container-fluid {
+    max-width: 1600px;
+}
 
 .text-gold {
   color: $asu-gold !important;
