@@ -1,14 +1,4 @@
-.home-bg {
-  background: url(/images/home-bg-5.jpg);
-  background-size: contain;
-  background-position: top;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  min-height: 520px;
-  background-color: #413c38;
-  position: relative;
-  box-shadow: 1px -2px 14px -2px #000 inset;
-  .jumbotron {
+.jumbotron {
     position: absolute;
     bottom: 0;
     right: 0;
@@ -20,27 +10,126 @@
     color: white;
   }
 
+.accordion {
+    background-color: #EDC153;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    border: thin;
+    border-color: white;
+    outline: none;
+    transition: 0.4s;
+    font-weight: bold;
+    font-size:2rem;
+    color:#000000;
 }
 
-.youth-cards-container {
-  box-shadow: 0px 7px 17px -10px #000 inset;
-  background-color: #413c38;
-  height: 50%;
+.active, .accordion:hover {
+    background-color: white;
+}
+.p{
+  font-weight: bold;
+    font-size:2rem;
+    color:#000000;
+}
+.accordion:after {
+    content: '\002B';
+    color: #777;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+}
+
+.active:after {
+    content: "\2212";
+}
+
+.card-text {
+    font-weight: bold;
+    color:#000000;
+}
+
+/*body {
+  color: #2c3e50;
+  background: #ecf0f1;
+}
+h1 {
+  text-align: center;
+}
+.half {
+  float: left;
   width: 50%;
-  .card {
-    .card-text {
-      min-height: 120px;
-    }
-  }
+  padding: 0 1em;
+}*/
+/* Acordeon styles */
+/*.tab {
+  position: relative;
+  margin-bottom: 1px;
+  width: 100%;
+  color: #fff;
+  overflow: hidden;
 }
-
-.footer {
-  background-color: #413c38;
+input {
+  position: absolute;
+  opacity: 0;
+  z-index: -1;
 }
-
-.role-selection-container {
-  background-color: white;
+label {
+  position: relative;
+  display: block;
+  padding: 0 0 0 1em;
+  background: #EDC153;
+  font-weight: bold;
+  line-height: 3;
+  cursor: pointer;
 }
-.role-selection {
-  display: none;
+.blue label {
+  background: #2980b9;
 }
+.tab-content {
+  max-height: 0;
+  overflow: hidden;
+  background: #EDC153;
+  -webkit-transition: max-height .35s;
+  -o-transition: max-height .35s;
+  transition: max-height .35s;
+}
+.blue .tab-content {
+  background: #3498db;
+}
+.tab-content p {
+  margin: 1em;
+}*/
+/* :checked */
+/*input:checked ~ .tab-content {
+  max-height: 100em;
+  max-width: 100em;
+}*/
+/* Icon */
+/*label::after {
+  position: absolute;
+  right: 0;
+  top: 0;
+  display: block;
+  width: 3em;
+  height: 3em;
+  line-height: 3;
+  text-align: center;
+  -webkit-transition: all .35s;
+  -o-transition: all .35s;
+  transition: all .35s;
+}
+input[type=checkbox] + label::after {
+  content: "+";
+}
+input[type=radio] + label::after {
+  content: "\25BC";
+}
+input[type=checkbox]:checked + label::after {
+  transform: rotate(315deg);
+}
+input[type=radio]:checked + label::after {
+  transform: rotateX(180deg);
+}*/
