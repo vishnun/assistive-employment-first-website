@@ -1,13 +1,15 @@
 .home-bg {
-  background: url(../images/home-bg-5.jpg);
-  background-size: contain;
-  background-position: top;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  min-height: 420px;
-  background-color: #413c38;
+  min-height: 650px;
+  background-color: #000000;
   position: relative;
-  box-shadow: 1px -2px 14px -2px #000 inset;
+  .jumbotron-fluid {
+    background-image: url(../images/stephen-hawking-6.png);
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 650px;
+    max-width: 1522px;
+  }
   .jumbotron {
     position: absolute;
     bottom: 0;
@@ -24,7 +26,7 @@
 
 .home-cards-container {
   box-shadow: 0px 7px 17px -10px #000 inset;
-  background-color: #413c38;
+  background-color: #000;
   .card {
     .card-text {
       min-height: 120px;
@@ -33,12 +35,13 @@
 }
 
 .footer {
-  background-color: #413c38;
+  background-color: #fff;
 }
 
 .role-selection-container {
   background-color: white;
 }
+
 .role-selection {
   display: none;
 }

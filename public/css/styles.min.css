@@ -1,6 +1,21 @@
 html {
   font-size: 100%; }
 
+.pa-1 {
+  font-size: 1rem; }
+
+.pa-2 {
+  font-size: 1.5rem; }
+
+.pa-3 {
+  font-size: 2rem; }
+
+.pa-4 {
+  font-size: 2.5rem; }
+
+.pa-5 {
+  font-size: 3rem; }
+
 .container-fluid {
   max-width: 1600px; }
 
@@ -117,15 +132,16 @@ html {
       border-style: solid; }
 
 .home-bg {
-  background: url(../images/home-bg-5.jpg);
-  background-size: contain;
-  background-position: top;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  min-height: 420px;
-  background-color: #413c38;
-  position: relative;
-  box-shadow: 1px -2px 14px -2px #000 inset; }
+  min-height: 650px;
+  background-color: #000000;
+  position: relative; }
+  .home-bg .jumbotron-fluid {
+    background-image: url(../images/stephen-hawking-6.png);
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 650px;
+    max-width: 1522px; }
   .home-bg .jumbotron {
     position: absolute;
     bottom: 0;
@@ -138,12 +154,12 @@ html {
 
 .home-cards-container {
   box-shadow: 0px 7px 17px -10px #000 inset;
-  background-color: #413c38; }
+  background-color: #000; }
   .home-cards-container .card .card-text {
     min-height: 120px; }
 
 .footer {
-  background-color: #413c38; }
+  background-color: #fff; }
 
 .role-selection-container {
   background-color: white; }
@@ -248,26 +264,15 @@ html {
   .ef-nav .navbar-nav .nav-item .nav-link {
     font-size: 1rem; } }
 
-@media screen and (min-width: 1200px) {
-  .home-bg .jumbotron-fluid {
-    padding-top: 315px;
-    padding-bottom: 48px; }
-    .home-bg .jumbotron-fluid .jumbotron-content {
-      max-width: 45%; } }
+@media screen and (max-width: 920px) {
+  .home-bg .jumbotron-content {
+    max-width: 100%;
+    position: absolute;
+    top: 0;
+    bottom: 0; } }
 
-@media screen and (min-width: 1441px) {
+@media screen and (max-width: 1441px) {
   .home-bg {
-    min-height: 790px;
-    background-size: auto; } }
-
-@media screen and (max-width: 768px) {
-  .home-bg {
-    min-height: 400px;
-    background-size: 120% 58%; }
-    .home-bg .jumbotron-fluid .jumbotron-content {
-      max-width: 100%; } }
-
-@media screen and (max-height: 780px) {
-  .home-bg {
-    background-position: center;
-    min-height: 420px; } }
+    min-height: 480px; }
+    .home-bg .jumbotron-fluid {
+      height: 480px; } }

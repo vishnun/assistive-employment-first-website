@@ -6,36 +6,32 @@ $break-xxl: 1441px;
 @media screen and (min-width: $break-xl) {
   .home-bg {
     .jumbotron-fluid {
-      padding-top: 315px;
-      padding-bottom: 48px;
-
-      .jumbotron-content {
-        max-width: 45%;
-      }
     }
   }
 }
+
 @media screen and (min-width: $break-xxl) {
   .home-bg {
-    min-height: 790px;
-    background-size: auto;
   }
 }
-@media screen and (max-width: $break-md) {
-  .home-bg {
-    min-height: 400px;
-    background-size: 120% 58%;
 
-    .jumbotron-fluid {
-      .jumbotron-content {
-        max-width: 100%;
-      }
+@media screen and (max-width: $break-lg) {
+  .home-bg {
+    .jumbotron-content {
+      max-width: 100%;
+      position: absolute;
+      top: 0;
+      bottom: 0;
     }
   }
 }
-@media screen and (max-height: 780px) {
+
+@media screen and (max-width: $break-xxl) {
   .home-bg {
-    background-position: center;
-    min-height: 420px;
+    min-height: 480px;
+
+    .jumbotron-fluid {
+      height: 480px;
+    }
   }
 }
