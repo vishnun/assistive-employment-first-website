@@ -1,9 +1,7 @@
 <!-- index.nunjucks -->
 {% extends "layout.nunjucks" %} {% block content %}
 
-<div class="header container-fluid sticky-top">
-  {% import 'macros/nav-macro.nunjucks' as nav %} {{nav.active('home')}}
-</div>
+{% import 'macros/nav-macro.nunjucks' as nav %} {{nav.active('home')}}
 
 {% import 'macros/page-title-macro.nunjucks' as pt %} {{pt.pageTitle("Dream it ! Believe it ! Achieve it !")}}
 
