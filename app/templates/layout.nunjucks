@@ -23,6 +23,11 @@
   <link href="css/styles.css" rel="stylesheet">
   <!-- endbuild -->
 
+  <!--build:js public/js/settings.min.js -->
+  <script src="js/settings.js"></script>
+  <!-- endbuild -->
+
+
 </head>
 
 <body>
