@@ -28,9 +28,9 @@
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.2s ease-out;
-    margin-top: 0; 
-    margin-bottom: 0; 
-    padding-top: 0; 
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-top: 0;
     padding-bottom:0;
 }
 </style>
@@ -111,7 +111,7 @@
                 </div>
             </div>
         </div>
-    </div>    
+    </div>
 </div>
 <div class="container-fluid pt-5 pb-5 role-selection-container">
     <button data-toggle="tooltip" title="Click here to know more about Division of Developmental Disabilities" class="accordion">Division of Developmental Disabilities</button>
@@ -126,7 +126,7 @@
                 </div>
             </div>
         </div>
-    </div>    
+    </div>
 </div>
 <!-- <div class="container-fluid pt-5 pb-5 home-cards-container">
     <div class="container">
@@ -181,20 +181,9 @@ for (i = 0; i < acc.length; i++) {
       panel.style.maxHeight = null;
     } else {
       panel.style.maxHeight = panel.scrollHeight + "px";
-    } 
+    }
   });
 }
 </script>
-
-  <!--build:js public/js/main.min.js -->
-  <script src="js/lib/jquery-extension.js"></script>
-  <script src="js/text-to-speech.js"></script>
-  <script src="js/speech-commands.js"></script>
-  <script src="js/home-page.js"></script>
-  <script src="js/about-page.js"></script>
-  <script src="js/contact-page.js"></script>
-  <script src="js/main.js"></script>
-  <script src="js/youth.js"></script>
-  <!-- endbuild -->
 
 {% endblock %}

@@ -2,31 +2,30 @@ $break-sm: 320px;
 $break-md: 768px;
 $break-lg: 920px;
 $break-xl: 1200px;
-$break-xxl: 1400px;
-
+$break-xxl: 1441px;
 @media screen and (min-width: $break-xl) {
   .home-bg {
     .jumbotron-fluid {
       padding-top: 315px;
       padding-bottom: 48px;
+
       .jumbotron-content {
         max-width: 45%;
       }
     }
   }
 }
-
 @media screen and (min-width: $break-xxl) {
   .home-bg {
-    min-height: 700px;
+    min-height: 790px;
+    background-size: auto;
   }
 }
-
 @media screen and (max-width: $break-md) {
   .home-bg {
-    min-height: 500px;
-    background-position: 100% 5%;
-    background-size: auto;
+    min-height: 400px;
+    background-size: 120% 58%;
+
     .jumbotron-fluid {
       .jumbotron-content {
         max-width: 100%;
@@ -34,9 +33,9 @@ $break-xxl: 1400px;
     }
   }
 }
-
-@media screen and (max-height: 780px){
+@media screen and (max-height: 780px) {
   .home-bg {
-    min-height: 460px;
+    background-position: center;
+    min-height: 420px;
   }
 }
