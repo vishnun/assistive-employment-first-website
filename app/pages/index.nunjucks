@@ -17,7 +17,7 @@ However difficult life may seem, there is always something you can do and succee
         </p>
         <footer class="blockquote-footer text-warning pa-2">Stephen Hawkings</footer>
       </blockquote>
-      <button type="button" class="btn btn-primary asu-primary-button pl-4 pr-4 clickable" id="get-started">Get Started
+      <button type="button" class="btn btn-primary btn-lg asu-primary-button pl-4 pr-4 clickable" id="get-started">Get Started
         </button>
       <div class="role-selection">
         <div class="input-group">
@@ -49,19 +49,19 @@ However difficult life may seem, there is always something you can do and succee
     <div class="col-sm-12 text-center">
       <ul class="list-unstyled">
         <li class="d-sm-block d-md-inline-block pt-1 pb-0 p-sm-1">
-          <a href="#" class="btn btn-primary btn-block p-4">Job Seeker</a>
+          <a href="#" class="btn btn-primary asu-primary-button btn-block p-4">Job Seeker</a>
         </li>
         <li class="d-sm-block d-md-inline-block pt-1 pb-0 p-sm-1">
-          <a href="./family.html" class="btn btn-primary btn-block p-4">Family Member</a>
+          <a href="./family.html" class="btn btn-primary asu-primary-button btn-block p-4">Family Member</a>
         </li>
         <li class="d-sm-block d-md-inline-block pt-1 pb-0 p-sm-1">
-          <a href="#" class="btn btn-primary btn-block p-4">Educator</a>
+          <a href="#" class="btn btn-primary asu-primary-button btn-block p-4">Educator</a>
         </li>
         <li class="d-sm-block d-md-inline-block pt-1 pb-0 p-sm-1">
-          <a href="#" class="btn btn-primary btn-block p-4">Employer</a>
+          <a href="#" class="btn btn-primary asu-primary-button btn-block p-4">Employer</a>
         </li>
         <li class="d-sm-block d-md-inline-block pt-1 pb-0 p-sm-1">
-          <a href="#" class="btn btn-primary btn-block p-4">Provider</a>
+          <a href="#" class="btn btn-primary asu-primary-button btn-block p-4">Provider</a>
         </li>
       </ul>
     </div>
@@ -77,7 +77,7 @@ However difficult life may seem, there is always something you can do and succee
           <div class="card-body">
             <h5 class="card-title">Never Give Up !!</h5>
             <p class="card-text">After years of hardships. I was able to find the perfect job thanks to the various things that happened through my life.</p>
-            <a href="#" class="btn btn-primary">Read More</a>
+            <a href="#" class="btn btn-primary asu-primary-button">Read More</a>
           </div>
         </div>
       </div>
@@ -87,7 +87,7 @@ However difficult life may seem, there is always something you can do and succee
           <div class="card-body">
             <h5 class="card-title">Opportunity for All</h5>
             <p class="card-text">Everyone in our society has the opportunity to get a job and participate in the workforce. This executive order means more and better jobs for individuals with disabilities.</p>
-            <a href="http://www.azemploymentfirst.org" target="_blank" class="btn btn-primary">Learn More</a>
+            <a href="http://www.azemploymentfirst.org" target="_blank" class="btn btn-primary asu-primary-button">Learn More</a>
           </div>
         </div>
       </div>
@@ -97,7 +97,7 @@ However difficult life may seem, there is always something you can do and succee
           <div class="card-body">
             <h5 class="card-title">Limits exist only in your mind.</h5>
             <p class="card-text">After years of hardships. I was able to find the perfect job thanks to the various things that happened through my life.</p>
-            <a href="#" class="btn btn-primary">Read More</a>
+            <a href="#" class="btn btn-primary asu-primary-button">Read More</a>
           </div>
         </div>
       </div>
