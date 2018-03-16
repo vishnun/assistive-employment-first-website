@@ -1,4 +1,5 @@
-.jumbotron {
+#state-agencies {
+  .jumbotron {
     position: absolute;
     bottom: 0;
     right: 0;
@@ -10,126 +11,52 @@
     color: white;
   }
 
-.accordion {
+  .accordion {
     background-color: #EDC153;
     color: #444;
     cursor: pointer;
     padding: 18px;
+    margin-bottom: 0.3em;
+    margin-top: 0.3em;
     width: 100%;
+    border: none;
     text-align: left;
-    border: thin;
-    border-color: white;
     outline: none;
+    font-size: 15px;
     transition: 0.4s;
-    font-weight: bold;
-    font-size:2rem;
-    color:#000000;
-}
+  }
 
-.active, .accordion:hover {
+  .panel {
     background-color: white;
-}
-.p{
-  font-weight: bold;
-    font-size:2rem;
-    color:#000000;
-}
-.accordion:after {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 0 18px;
+  }
+  .active, .accordion:hover {
+    background-color: white;
+  }
+  .p {
+    font-weight: bold;
+    font-size: 2rem;
+    color: #000000;
+  }
+  .accordion:after {
     content: '\002B';
     color: #777;
     font-weight: bold;
     float: right;
     margin-left: 5px;
-}
+  }
 
-.active:after {
+  .active:after {
     content: "\2212";
-}
+  }
 
-.card-text {
+  .card-text {
     font-weight: bold;
-    color:#000000;
+    color: #000000;
+  }
 }
-
-/*body {
-  color: #2c3e50;
-  background: #ecf0f1;
-}
-h1 {
-  text-align: center;
-}
-.half {
-  float: left;
-  width: 50%;
-  padding: 0 1em;
-}*/
-/* Acordeon styles */
-/*.tab {
-  position: relative;
-  margin-bottom: 1px;
-  width: 100%;
-  color: #fff;
-  overflow: hidden;
-}
-input {
-  position: absolute;
-  opacity: 0;
-  z-index: -1;
-}
-label {
-  position: relative;
-  display: block;
-  padding: 0 0 0 1em;
-  background: #EDC153;
-  font-weight: bold;
-  line-height: 3;
-  cursor: pointer;
-}
-.blue label {
-  background: #2980b9;
-}
-.tab-content {
-  max-height: 0;
-  overflow: hidden;
-  background: #EDC153;
-  -webkit-transition: max-height .35s;
-  -o-transition: max-height .35s;
-  transition: max-height .35s;
-}
-.blue .tab-content {
-  background: #3498db;
-}
-.tab-content p {
-  margin: 1em;
-}*/
-/* :checked */
-/*input:checked ~ .tab-content {
-  max-height: 100em;
-  max-width: 100em;
-}*/
-/* Icon */
-/*label::after {
-  position: absolute;
-  right: 0;
-  top: 0;
-  display: block;
-  width: 3em;
-  height: 3em;
-  line-height: 3;
-  text-align: center;
-  -webkit-transition: all .35s;
-  -o-transition: all .35s;
-  transition: all .35s;
-}
-input[type=checkbox] + label::after {
-  content: "+";
-}
-input[type=radio] + label::after {
-  content: "\25BC";
-}
-input[type=checkbox]:checked + label::after {
-  transform: rotate(315deg);
-}
-input[type=radio]:checked + label::after {
-  transform: rotateX(180deg);
-}*/
