@@ -59,7 +59,7 @@
           <div class="card-body">
             <h3 class="card-title h3">TESTIMONIAL</h3>
             <p class="card-text">"Talking to employers is critical. Now they understand because Kyle has worked there and they see his dedication and perormance. He has only missed one day of work in 2 years!”</p>
-            <a href="#" class="btn btn-primary btn1" data-toggle="tooltip" title="Clicking this button will help you read more about this testimonial">Learn More</a>
+            <a href="./testimonial.html" class="btn btn-primary btn1" data-toggle="tooltip" title="Clicking this button will help you read more about this testimonial">Learn More</a>
           </div> 
         </div>
       </div>
