@@ -248,8 +248,17 @@ However difficult life may seem, there is always something you can do and succee
 <div class="ef-assistive-drawer position-fixed">
     <div class="ef-assistive-drawer-container bg-white d-flex flex-column">
         <div class="p-2">
-            <button type="button" class="rounded-circle clickable mic" aria-label="speech command mic">
+            <button type="button" class="rounded-circle clickable mic"
+                    id="speech-command-toggle"
+                    aria-label="speech command toggle">
                 <i aria-hidden="true" class="fas fa-microphone fa-3x"></i>
+            </button>
+        </div>
+        <div class="p-2 border-top">
+            <button type="button" class="rounded-circle clickable speaker"
+                    id="screen-reader-toggle"
+                    aria-label="screen reader toggle">
+                <i aria-hidden="true" class="fas fa-volume-up fa-2x"></i>
             </button>
         </div>
         <div class="p-2 border-top">
