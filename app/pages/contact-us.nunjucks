@@ -17,13 +17,17 @@
 <div class="container-fluid pt-5 pb-5 home-cards-container">
   <div class="container">
     <div class="row justify-content-center">
-      <div class="col-8 col-md-4 mt-3">
+      <div class="col-8 col-md-6 mt-3">
         <div class="card">
         	<div class="card-body">
             	<form>
   					<div class="form-group">
     				<input class="form-control" id="name" rows="1" placeholder = "Your name"></input>
+    				</div>
+    				<div class="form-group">
     				<input class="form-control" id="email" rows="1" placeholder = "Your email address"></input>
+    				</div>
+    				<div class="form-group">
     				<textarea class="form-control" id="message" rows="5" placeholder = "Message"></textarea>
   					</div>
 				</form>
@@ -31,15 +35,31 @@
           </div>
         </div>
       </div>
+      <div class="col-8 col-md-6 mt-3">
+        <div class="card">
+        	<div class="card-body">
+        		<div>
+            	<p><b>Phone:</b> 520.626.0442<br/>
+            	<b>Fax:</b> 520.626.0081<br/>
+            	<b>Email:</b> </p>
+            	</div>
+            	<div>
+            	<p><b>We are located at:</b><br/>1521 E. Helen St. <br/>Tucson, AZ 85721</p>
+            	</div>
+  				<button type="button" class="btn btn-fb"><i class="fab fa-facebook"></i></button>
+				<!--Twitter-->
+				<button type="button" class="btn btn-tw"><i class="fab fa-twitter"></i></button>
+				<!--Google +-->
+				<button type="button" class="btn btn-gplus"><i class="fab fa-google-plus"></i></button>
+				<!--Linkedin-->
+				<button type="button" class="btn btn-li"><i class="fab fa-linkedin"></i></button>
+				<!--Instagram-->
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 
-  <form>
-  <div class="form-group">
-    <label for="exampleFormControlTextarea1">Example textarea</label>
-    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-  </div>
-</form>
 </div>
 
 
