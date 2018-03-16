@@ -12,7 +12,7 @@
   <link rel="canonical" href="http://vishnun.github.io/assistive-employment-first-website">
 
   <title>Employment First</title>
-  <link rel="icon" href="favicon.png?" type="image/x-icon" />
+  <link rel="icon" href="./favicon.png?" type="image/x-icon" />
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
   <link href="https://fonts.googleapis.com/css?family=Noto+Sans" rel="stylesheet">
@@ -23,9 +23,14 @@
   <link href="css/styles.css" rel="stylesheet">
   <!-- endbuild -->
 
+  <!--build:js public/js/settings.min.js -->
+  <script src="js/settings.js"></script>
+  <!-- endbuild -->
+
+
 </head>
 
-<body>
+<body class="bg-light">
 
 
   {% block content %} {% endblock %}

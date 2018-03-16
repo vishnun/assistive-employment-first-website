@@ -2,20 +2,69 @@
 {% extends "layout.nunjucks" %}
 
 
-
 {% block content %}
 
 
 <div class="header" id="about-page">
-  {% import 'macros/nav-macro.nunjucks' as nav %}
-  {{nav.active('about')}}
+    {% import 'macros/nav-macro.nunjucks' as nav %}
+    {{nav.active('about')}}
 </div>
 
 {% import 'macros/page-title-macro.nunjucks' as pt %} {{pt.pageTitle("About Us")}}
 
-<div class="container-fluid">
-  <h1 class="about-title">This is the About-us page</h1>
+<div class="container pt-5 text-dark">
+    <div class="row">
+        <div class="col-12 col-md-8">
+            <h2>What is Employment First?</h2>
+            <p class="pa-2 text-justify">
+                Employment First encompasses the belief that community-based, integrated employment should be the
+                primary day activity for working age youth and adults with disabilities. It supports an overarching goal
+                that eligible persons with disabilities will have access to integrated work settings most appropriate
+                for them, including the supports necessary to help them succeed in the workplace. Employment First does
+                not mean employment only and does not deny individual choice, but is intended to increase employment
+                opportunities for individuals with disabilities.
+            </p>
+
+            <h2 class="pt-5">Who is involved with Employment First?</h2>
+            <p class="pa-2 text-justify">Advocates, Educators, Employers, Employment Service Provider Agencies, Family
+                Members, State Agencies, University Centers for Excellence on Developmental Disabilities, Youth and
+                Young Adults.</p>
+
+            <h2 class="pt-5">Why Employment First in Arizona?</h2>
+            <p class="pa-2 text-justify">In 2014, only 22% of people in the DDD system receiving day services were in
+                integrated employment. In 2014, only 14% of DDD funding spent on day and employment services went to
+                integrated employment. People who work have a higher quality of life, greater community participation,
+                and are more likely to make their own choices in life. New regulations from the Centers for Medicare and
+                Medicaid, Department of Justice and the Department of Labor are requiring states to prioritize
+                integrated services for everyone who has a disability.</p>
+        </div>
+        <div class="col-12 col-md-4">
+            <h3 class="pa-2">AZ Employment First Documents</h3>
+            <div class="list-group">
+                <a href="http://sonoranucedd.fcm.arizona.edu/sites/sonoranucedd.fcm.arizona.edu/files/Employment%20First%20Executive%20Summary.pdf"
+                   target="_blank"
+                   class="list-group-item list-group-item-action">
+                    Employment First Executive Summary
+                </a>
+                <a href="http://sonoranucedd.fcm.arizona.edu/sites/sonoranucedd.fcm.arizona.edu/files/Employment%20First%20FactSheet.pdf"
+                   target="_blank"
+                   class="list-group-item list-group-item-action">
+                    Employment First Fact Sheet
+                </a>
+                <a href="http://sonoranucedd.fcm.arizona.edu/sites/sonoranucedd.fcm.arizona.edu/files/FINDINGS%20Employment%20First%20Forum%20September%202014.pdf"
+                   target="_blank"
+                   class="list-group-item list-group-item-action">
+                    Arizona Employment First Community Forum Findings
+                </a>
+            </div>
+        </div>
+    </div>
+
 </div>
 
+
+<div class="footer container-fluid bg-light pt-3 pb-3">
+    {% include 'partials/footer.nunjucks' %}
+</div>
 
 {% endblock %}

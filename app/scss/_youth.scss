@@ -1,46 +1,18 @@
-.home-bg {
-  background: url(/images/home-bg-5.jpg);
-  background-size: contain;
-  background-position: top;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  min-height: 520px;
-  background-color: #413c38;
-  position: relative;
-  box-shadow: 1px -2px 14px -2px #000 inset;
-  .jumbotron {
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    left: 0;
-  }
-  .jumbotron-content {
-    max-width: 50%;
-    background: rgba(0, 0, 0, 0.6);
-    color: white;
-  }
 
+
+.btn1 {
+  align-content:center;
+}
+.card-body{
+  background-color: #DFB13F;
+  align-items: center;
 }
 
-.youth-cards-container {
-  box-shadow: 0px 7px 17px -10px #000 inset;
-  background-color: #413c38;
-  height: 50%;
-  width: 50%;
-  .card {
-    .card-text {
-      min-height: 120px;
-    }
-  }
+.h3{
+font-weight: bold;
+  font-size:2rem;
+  color:white;
 }
-
-.footer {
-  background-color: #413c38;
-}
-
-.role-selection-container {
-  background-color: white;
-}
-.role-selection {
-  display: none;
+.youth-cards-container{
+background-color: #413c38
 }
