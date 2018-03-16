@@ -5,13 +5,16 @@ $(function () {
 });
 
 function initScreenReader() {
-  var reader = new ScreenReader();
   
+  if (!Settings.screenReaderOn()) {
+    return;
+  }
+  
+  var reader = new ScreenReader();
   var readEls = $("[data-reader-text]");
   
   readEls.on('mouseenter', function () {
-    var text = $(this).data('reader-text');
-    // If the assistive support toggle is ON (from cookies or local storage) else return
+    var text = $(this).data('reader-text') || $(this).text();
     reader.read(text);
   });
 }

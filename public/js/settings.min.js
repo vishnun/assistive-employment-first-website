@@ -10,8 +10,13 @@ var Settings = {
 		if (localStorageExists()) {
 			localStorage.setItem('fontSize', fontSize);
 		}
-	}
-}
+	},
+  screenReaderOn: function () {
+    if (localStorageExists()) {
+      localStorage.getItem('screenReader');
+    }
+  }
+};
 
 function updateFontSize() {
 	var rootEl = document.getElementsByTagName('html')[0];
