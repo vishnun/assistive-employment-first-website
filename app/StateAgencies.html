@@ -35,40 +35,6 @@
 
   
 
-<style>
-.accordion {
-    background-color: lightblue;
-    color: #444;
-    cursor: pointer;
-    padding: 18px;
-    margin-bottom: none;
-    margin-top: none;
-    width: 100%;
-    border: none;
-    text-align: left;
-    outline: none;
-    font-size: 15px;
-    transition: 0.4s;
-}
-
-
-.active, .accordion:hover {
-    background-color: #ccc;
-}
-
-.panel {
-    padding: 0 18px;
-    background-color: white;
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.2s ease-out;
-    margin-top: 0;
-    margin-bottom: 0;
-    padding-top: 0;
-    padding-bottom:0;
-}
-</style>
-
 <div class="header sticky-top">
      
 <!-- Macro stuff here -->
@@ -136,114 +102,134 @@
 
 
 
-
-<div class="container-fluid pt-5 pb-5 role-selection-container">
-    <div class="row justify-content-center">
-        <div class="col-sm-12">
-            <p>Descriptive text about organizations featured. These state agencies provide support in obtaining and maintaining employment. Each agency has its own eligibility requirements. These state agencies provide support in obtaining and maintaining employment. Each agency has its own eligibility requirements.</p>
-        </div>
-    </div>
-</div>
-<div class="container-fluid pt-5 pb-5 role-selection-container" margin-top= 0 margin-bottom= 0>
-    <button data-toggle="tooltip" title="Click here to know more about Vocational Rehabilitation" class="accordion">Vocational Rehabilitation</button>
-    <div class="panel">
-        <div class="row">
+<div id="state-agencies">
+    <div class="container pt-5 pb-5 role-selection-container">
+        <div class="row justify-content-center">
             <div class="col-sm-12">
                 <div class="card">
                     <div class="card-body">
-                        <p class="card-text">You may be eligible for VR services if you meet all of the following requirements:
-                            <ol class="list-unstyled">
+                        <p class="card-text">Descriptive text about organizations featured. These state agencies provide
+                            support in obtaining and maintaining employment. Each agency has its own eligibility
+                            requirements. These state agencies provide support in obtaining and maintaining employment.
+                            Each agency has its own eligibility requirements.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container pt-5 pb-5 role-selection-container" margin-top=0 margin-bottom=0>
+        <button class="accordion">Vocational Rehabilitation</button>
+        <div class="panel">
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="card">
+                        <div class="card-body">
+                            <p class="card-text">You may be eligible for VR services if you meet all of the following
+                                requirements:
+                            <ol>
                                 <li>
-                                    <a>1. You have a physical or mental impairment.</a>
+                                    <a>You have a physical or mental impairment.</a>
                                 </li>
                                 <li>
-                                    <a>2. Your physical or mental impairment constitutes or results in a substantial impediment to employment</a>
+                                    <a>Your physical or mental impairment constitutes or results in a substantial
+                                        impediment to employment</a>
                                 </li>
                                 <li>
-                                    <a>3. You require VR services in order to prepare for, secure, retain, or regain employment</a>
+                                    <a>You require VR services in order to prepare for, secure, retain, or regain
+                                        employment</a>
                                 </li>
                                 <li>
-                                    <a>4. You can benefit from the provision of VR services in terms of achieving an employment outcome.</a>
+                                    <a>You can benefit from the provision of VR services in terms of achieving an
+                                        employment outcome.</a>
                                 </li>
                             </ol>
-                            Due to limited state funding, individuals determined eligible for the vocational rehabilitation program may be placed on a waitlist for services. The waitlist is designed to ensure that individuals who are most in need of vocational rehabilitation are able to receive VR services in a timely manner.
+                            Due to limited state funding, individuals determined eligible for the vocational
+                            rehabilitation program may be placed on a waitlist for services. The waitlist is designed to
+                            ensure that individuals who are most in need of vocational rehabilitation are able to
+                            receive VR services in a timely manner.
                             Services Available:
                             <ul>
                                 <li>
-                                    Finding your local office: <a data-toggle="tooltip" title="Click here to find your local office" target="_blank" href="https://des.az.gov/rsa-contact-information">LINK</a>
+                                    Finding your local office: <a data-toggle="tooltip"
+                                                                  title="Click here to find your local office"
+                                                                  target="_blank"
+                                                                  href="https://des.az.gov/rsa-contact-information">
+                                    LINK.</a>
                                 </li>
                                 <li>
-                                    To apply for Vocational Rehabilitation Services (VRS), <a target="_blank" href ="https://des.az.gov/sites/default/files/dl/RSA-1298A.pdf"> Click Here!</a>
-                                    For Large print referral form<a target="_blank" href ="https://des.az.gov/sites/default/files/dl/RSA-1298A-LP.pdf"> click here!</a>
+                                    To apply for Vocational Rehabilitation Services (VRS), <a data-toggle="tooltip"
+                                                                                              title="Clicking this button will take you to the registration page to apply for Vocational Rehabilitation Services"
+                                                                                              target="_blank"
+                                                                                              href="https://des.az.gov/sites/default/files/dl/RSA-1298A.pdf">
+                                    Click here.</a>
+                                    If you need Large print referral form <a data-toggle="tooltip"
+                                                                             title="If you need a larger print referral forms to apply for Vocational Rehabilitation Services, please click here."
+                                                                             target="_blank"
+                                                                             href="https://des.az.gov/sites/default/files/dl/RSA-1298A-LP.pdf">
+                                    Click here.</a>
                                 </li>
                                 <li>
-                                    <a>If you are having any issues with VRS, you can refer to the Client Assistance Program. [LINK]. NOTE: PDFs must be uploaded to EF website</a>
+                                    <a>If you are having any issues with VRS, you can refer to the Client Assistance
+                                        Program. [LINK]. NOTE: PDFs must be uploaded to EF website</a>
                                 </li>
                                 <li>
-                                    Web and contact information: <a target="_blank" href="https://des.az.gov/services/employment/rehabilitation-services/vocational-rehabilitation-vr"> Vocational Rehabilitation website link</a>
+                                    Web and contact information: <a data-toggle="tooltip"
+                                                                    title="Clicking this will take you to the Vocational Rehabilitation services website."
+                                                                    target="_blank"
+                                                                    href="https://des.az.gov/services/employment/rehabilitation-services/vocational-rehabilitation-vr">
+                                    Vocational Rehabilitation website link</a>
                                 </li>
                                 <li>
-                                    <a>To speak with someone regarding general information about RSA programs or to receive assistance completing a referral for services, please call Toll-Free 1-800-563-1221.</a>
+                                    <a>To speak with someone regarding general information about RSA programs or to
+                                        receive assistance completing a referral for services, please call Toll-Free
+                                        1-800-563-1221.</a>
                                 </li>
                             </ul>
-                        </p>
+                            </p>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-</div>
-<div class="container-fluid pt-5 pb-5 role-selection-container">
-    <button data-toggle="tooltip" title="Click here to know more about Division of Developmental Disabilities" class="accordion">Division of Developmental Disabilities</button>
-    <div class="panel">
-        <div class="row">
+        <button class="accordion">Division of Developmental Disabilities</button>
+        <div class="panel">
             <div class="col-sm-12">
                 <div class="card">
                     <div class="card-body">
-                        <p class="card-text">You may be eligible for VR services if you meet all of the following requirements:
-                        </p>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur,
+                            architecto, explicabo perferendis nostrum, maxime impedit atque odit sunt pariatur illo
+                            obcaecati soluta molestias iure facere dolorum adipisci eum? Saepe, itaque.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button class="accordion">Arizona Department of Education</button>
+        <div class="panel">
+            <div class="col-sm-12">
+                <div class="card">
+                    <div class="card-body">
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur,
+                            architecto, explicabo perferendis nostrum, maxime impedit atque odit sunt pariatur illo
+                            obcaecati soluta molestias iure facere dolorum adipisci eum? Saepe, itaque.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button class="accordion">Statewide Independent Living Council</button>
+        <div class="panel">
+            <div class="col-sm-12">
+                <div class="card">
+                    <div class="card-body">
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur,
+                            architecto, explicabo perferendis nostrum, maxime impedit atque odit sunt pariatur illo
+                            obcaecati soluta molestias iure facere dolorum adipisci eum? Saepe, itaque.</p>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 </div>
-<!-- <div class="container-fluid pt-5 pb-5 home-cards-container">
-    <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-8 col-md-4 mt-3">
-                <div class="card">
-                  <img class="card-img-top" src="./public/images/person-2.jpg" height="232px" width="348px" alt="Image for Testimonial of a person">
-                      <div class="card-body">
-                            <h5 class="card-title">Division of Developmental Disabilities</h5>
-                            <p class="card-text">After years of hardships. I was able to find the perfect job thanks to the various things that happened through my life.</p>
-                            <a href="#" class="btn btn-primary">Read More</a>
-                      </div>
-                </div>
-            </div>
-            <div class="col-8 col-md-4 mt-3">
-                <div class="card">
-                    <img class="card-img-top" src="./public/images/featured-program.png" height="232px" width="348px" alt="Executive Order for Arizona as Employment First State.">
-                      <div class="card-body">
-                            <h5 class="card-title">Arizona Department of Education</h5>
-                            <p class="card-text">Everyone in our society has the opportunity to get a job and participate in the workforce. This executive order means more and better jobs for individuals with disabilities.</p>
-                            <a href="http://www.azemploymentfirst.org" target="_blank" class="btn btn-primary">Learn More</a>
-                      </div>
-                </div>
-            </div>
-            <div class="col-8 col-md-4 mt-3">
-                <div class="card">
-                    <img class="card-img-top" src="./public/images/person-4.jpg" height="232px" width="348px" alt="Image for Testimonial of a person">
-                    <div class="card-body">
-                        <h5 class="card-title">Statewide Independent Living Council</h5>
-                        <p class="card-text">After years of hardships. I was able to find the perfect job thanks to the various things that happened through my life.</p>
-                        <a href="#" data-toggle="tooltip" title="Clicking this button will take you to the resources page for Youth and Young Adults" class="btn btn-primary">Read More</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div> -->
+
 
 <div class="footer pt-3 pb-3">
     <ul class="nav justify-content-center">
@@ -266,20 +252,20 @@
 </div>
 
 <script>
-var acc = document.getElementsByClassName("accordion");
-var i;
+  var acc = document.getElementsByClassName("accordion");
+  var i;
 
-for (i = 0; i < acc.length; i++) {
-  acc[i].addEventListener("click", function() {
-    this.classList.toggle("active");
-    var panel = this.nextElementSibling;
-    if (panel.style.maxHeight){
-      panel.style.maxHeight = null;
-    } else {
-      panel.style.maxHeight = panel.scrollHeight + "px";
-    }
-  });
-}
+  for (i = 0; i < acc.length; i++) {
+    acc[i].addEventListener("click", function () {
+      this.classList.toggle("active");
+      var panel = this.nextElementSibling;
+      if (panel.style.maxHeight) {
+        panel.style.maxHeight = null;
+      } else {
+        panel.style.maxHeight = panel.scrollHeight + "px";
+      }
+    });
+  }
 </script>
 
 

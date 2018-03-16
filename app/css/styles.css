@@ -1049,10 +1049,6 @@ html {
 .btn1 {
   align-content: center; }
 
-.card-body {
-  background-color: #DFB13F;
-  align-items: center; }
-
 .h3 {
   font-weight: bold;
   font-size: 2rem;
@@ -1132,6 +1128,62 @@ html {
 .link1 {
   color: black;
   font-size: 1.25rem; }
+
+#state-agencies .jumbotron {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0; }
+
+#state-agencies .jumbotron-content {
+  max-width: 50%;
+  background: rgba(0, 0, 0, 0.6);
+  color: white; }
+
+#state-agencies .accordion {
+  background-color: #EDC153;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  margin-bottom: 0.3em;
+  margin-top: 0.3em;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  transition: 0.4s; }
+
+#state-agencies .panel {
+  background-color: white;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding: 0 18px; }
+
+#state-agencies .active, #state-agencies .accordion:hover {
+  background-color: white; }
+
+#state-agencies .p {
+  font-weight: bold;
+  font-size: 2rem;
+  color: #000000; }
+
+#state-agencies .accordion:after {
+  content: '\002B';
+  color: #777;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px; }
+
+#state-agencies .active:after {
+  content: "\2212"; }
+
+#state-agencies .card-text {
+  font-weight: bold;
+  color: #000000; }
 
 @media screen and (min-width: 768px) and (max-width: 850px) {
   .navbar .navbar-container {
