@@ -1,3 +1,5 @@
+#family {
+
 .testimonial {
 	color:white;
 	max-width: 336px;
@@ -16,12 +18,7 @@
 	background-color: #413c38;
 }
 
-.card1{
-	 background-color: #DFB13F;
-}
-
 .card2{
-	background-color: #DFB13F;
 	width:auto;
 	height:auto;
 }
@@ -48,12 +45,11 @@
 	color:#000000;
 }
 
-.btn1 {
+/*.btn1 {
 	align-content:center;
 	font-size:1.25rem;
-	background-color: #000000;
 	color:white;
-}
+}*/
 
 .logo {
     width: 120px; 
@@ -73,12 +69,11 @@
 .p3{
 
 	font-size:1.25rem;
-	font-weight:bold;
 	text-align: center;
 	color:#000000;
 }
 
 .link1{
-	color:black;
 	font-size: 1.25rem;
+}
 }

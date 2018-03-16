@@ -1046,88 +1046,69 @@ html {
 .about-title {
   color: red; }
 
-.btn1 {
+#youth .btn1 {
   align-content: center; }
 
-.h3 {
-  font-weight: bold;
+#youth .bg2 {
+  background-color: #413c38; }
+
+#youth .h3 {
   font-size: 2rem;
   color: white; }
 
-.youth-cards-container {
-  background-color: #413c38; }
-
-.testimonial {
-  color: white;
-  max-width: 336px;
-  margin-left: auto; }
-
-.resources {
-  color: white;
-  max-width: 336px;
-  height: 325px;
-  margin-left: 20px;
-  margin-right: auto; }
-
-.bg {
-  background-color: #413c38; }
-
-.card1 {
-  background-color: #DFB13F; }
-
-.card2 {
-  background-color: #DFB13F;
-  width: auto;
-  height: auto; }
-
-.card3 {
-  width: auto;
-  height: 500px;
-  margin: 0 auto;
-  /* Added */
-  float: none;
-  /* Added */
-  margin-bottom: 10px;
-  /* Added */ }
-
-.col1 {
-  margin-left: auto; }
-
-.col2 {
-  margin-right: auto; }
-
-.h3 {
-  font-weight: bold;
-  font-size: 2rem;
-  color: #000000; }
-
-.btn1 {
-  align-content: center;
-  font-size: 1.25rem;
-  background-color: #000000;
-  color: white; }
-
-.logo {
-  width: 120px;
-  height: 111px; }
-
-.p2 {
-  width: 165px;
-  color: white; }
-
-.p1 {
-  font-size: 1.25rem;
-  color: #000000; }
-
-.p3 {
-  font-size: 1.25rem;
-  font-weight: bold;
-  text-align: center;
-  color: #000000; }
-
-.link1 {
-  color: black;
-  font-size: 1.25rem; }
+#family {
+  /*.btn1 {
+	align-content:center;
+	font-size:1.25rem;
+	color:white;
+}*/ }
+  #family .testimonial {
+    color: white;
+    max-width: 336px;
+    margin-left: auto; }
+  #family .resources {
+    color: white;
+    max-width: 336px;
+    height: 325px;
+    margin-left: 20px;
+    margin-right: auto; }
+  #family .bg {
+    background-color: #413c38; }
+  #family .card2 {
+    width: auto;
+    height: auto; }
+  #family .card3 {
+    width: auto;
+    height: 500px;
+    margin: 0 auto;
+    /* Added */
+    float: none;
+    /* Added */
+    margin-bottom: 10px;
+    /* Added */ }
+  #family .col1 {
+    margin-left: auto; }
+  #family .col2 {
+    margin-right: auto; }
+  #family .h3 {
+    font-weight: bold;
+    font-size: 2rem;
+    color: #000000; }
+  #family .logo {
+    width: 120px;
+    height: 111px; }
+  #family .p2 {
+    width: 165px;
+    color: white; }
+  #family .p1 {
+    font-size: 1.25rem;
+    color: #000000; }
+  #family .p3 {
+    font-size: 1.25rem;
+    text-align: center;
+    color: #000000; }
+  #family .link1 {
+    font-size: 1.25rem; }
 
 #state-agencies .jumbotron {
   position: absolute;
@@ -1141,7 +1122,7 @@ html {
   color: white; }
 
 #state-agencies .accordion {
-  background-color: #EDC153;
+  background-color: white;
   color: #444;
   cursor: pointer;
   padding: 18px;
@@ -1151,7 +1132,7 @@ html {
   border: none;
   text-align: left;
   outline: none;
-  font-size: 15px;
+  font-size: 1.25rem;
   transition: 0.4s; }
 
 #state-agencies .panel {
@@ -1164,7 +1145,7 @@ html {
   padding: 0 18px; }
 
 #state-agencies .active, #state-agencies .accordion:hover {
-  background-color: white; }
+  background-color: #eaeaea; }
 
 #state-agencies .p {
   font-weight: bold;
@@ -1182,8 +1163,11 @@ html {
   content: "\2212"; }
 
 #state-agencies .card-text {
-  font-weight: bold;
-  color: #000000; }
+  font-size: 1.25rem;
+  text-align: center; }
+
+#state-agencies .bg3 {
+  background-color: #413c38; }
 
 @media screen and (min-width: 768px) and (max-width: 850px) {
   .navbar .navbar-container {

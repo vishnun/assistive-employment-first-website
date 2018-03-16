@@ -8,8 +8,8 @@
 
 {% import 'macros/page-title-macro.nunjucks' as pt %} {{pt.pageTitle("Resources – Youth and Young Adults")}}
 
-<div class="youth" id="youth page">
-   <div class="container-fluid pt-5 pb-5 youth-cards-container">
+<div id="youth">
+   <div class="container-fluid pt-5 pb-5 bg2">
   <div class="container">
     <div class="row justify-content-center">
       <div class="col-8 col-md-6 mt-2">
@@ -18,7 +18,7 @@
           <div class="card-body">
             <h3 class="card-title">State Agencies</h3>
             <p class="card-text">Click here for a list of state agencies that provide support in seeking and maintaining employment. Individual agencies have their own eligibility requirements. </p>
-            <a href="StateAgencies.html" class="btn btn-primary btn1" data-toggle="tooltip" title="Click this button to got to State Agencies page">Learn More</a>
+            <a href="StateAgencies.html" class="btn btn-primary asu-primary-button" data-toggle="tooltip" title="Click this button to got to State Agencies page">Learn More</a>
           </div>
         </div>
       </div>
@@ -28,14 +28,14 @@
           <div class="card-body">
             <h3 class="card-title">Tool Kits</h3>
             <p class="card-text">Click here for checklists, tools, and lessons on many skills that are useful for finding and keeping employment. </p><br>
-            <a href="#" class="btn btn-primary btn1" data-toggle="tooltip" title="Click this button to got to Tool Kits page">Learn More</a>
+            <a href="#" class="btn btn-primary asu-primary-button" data-toggle="tooltip" title="Click this button to got to Tool Kits page">Learn More</a>
           </div>
         </div>
       </div>
    </div>
   </div>
 </div>
-<div class="container-fluid pt-5 pb-5 youth-cards-container">
+<div class="container-fluid pt-5 pb-5 bg2">
   <div class="container">
     <div class="row justify-content-center">
       <div class="col-8 col-md-6 mt-2">
@@ -44,7 +44,7 @@
           <div class="card-body">
             <h3 class="card-title">Community Programs</h3>
             <p class="card-text">Click here for a  list of community programs which provide career training and support. These programs are available to anyone with a need.</p>
-            <a href="#" class="btn btn-primary btn1" data-toggle="tooltip" title="Click this button to got to Community Programs page" >Learn More</a>
+            <a href="#" class="btn btn-primary asu-primary-button" data-toggle="tooltip" title="Click this button to got to Community Programs page" >Learn More</a>
           </div>
         </div>
       </div>
@@ -54,14 +54,14 @@
           <div class="card-body">
             <h3 class="card-title">Advocacy Resources</h3>
             <p class="card-text">Click here for local, state and national support and advocacy organizations.</p><br>
-            <a href="#" target="_blank" class="btn btn-primary btn1" data-toggle="tooltip" title="Click this button to got to Advocacy Resources Page" >Learn More</a>
+            <a href="#" target="_blank" class="btn btn-primary asu-primary-button" data-toggle="tooltip" title="Click this button to got to Advocacy Resources Page" >Learn More</a>
           </div>
         </div>
       </div>
    </div>
   </div>
 </div>
-<div class="container-fluid pt-5 pb-5 youth-cards-container">
+<div class="container-fluid pt-5 pb-5 bg2">
   <div class="container">
     <div class="row justify-content-center">
       <div class="col-8 col-md-6 mt-2">
@@ -70,7 +70,7 @@
           <div class="card-body">
             <h3 class="card-title">Providers Offering Employment Services</h3>
             <p class="card-text">Click here for a list of service providers offering employment assistance. These providers work with state agencies, so eligibility is required. In some cases, families may choose to pay for services without state support. </p>
-            <a href="#" class="btn btn-primary btn1" data-toggle="tooltip" title="Click this button to got to Providers Offering Employment Services Page">Learn More</a>
+            <a href="#" class="btn btn-primary asu-primary-button" data-toggle="tooltip" title="Click this button to got to Providers Offering Employment Services Page">Learn More</a>
           </div>
         </div>
       </div>
@@ -80,7 +80,7 @@
           <div class="card-body">
             <h3 class="card-title">Additional Articles and References</h3>
             <p class="card-text">Click here for media, articles, and guidance documents. </p><br><br><br><br>
-            <a href="#" target="_blank" class="btn btn-primary btn1" data-toggle="tooltip" title="Click this button to got to Additional Articles and References">Learn More</a> 
+            <a href="#" target="_blank" class="btn btn-primary asu-primary-button" data-toggle="tooltip" title="Click this button to got to Additional Articles and References">Learn More</a> 
           </div>
         </div>
       </div>
