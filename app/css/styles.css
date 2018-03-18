@@ -1024,7 +1024,7 @@ html {
     right: 0;
     left: 0; }
   .home-bg .jumbotron-content {
-    max-width: 50%;
+    max-width: 60%;
     background: rgba(0, 0, 0, 0.6);
     color: white; }
 
@@ -1185,9 +1185,9 @@ html {
 
 @media screen and (max-width: 1441px) {
   .home-bg {
-    min-height: 480px; }
+    min-height: 420px; }
     .home-bg .jumbotron-fluid {
-      height: 480px; } }
+      height: 420px; } }
 
 /*
  * Social Buttons for Bootstrap
