@@ -193,38 +193,67 @@
 
 
   <div class="ef-assistive-icon position-fixed bg-info">
-    <button type="button" class="clickable assistive-support btn btn-outline-primary text-white" aria-label="assistive support">
+    <button type="button" class="clickable assistive-support btn btn-outline-primary text-white"
+            aria-label="assistive support">
         <i aria-hidden="true" class="fab fa-accessible-icon fa-3x"></i>
-        <span aria-hidden="true" class="float-right ml-3">Assistive<br>Support</span>
+        <span aria-hidden="true" class="float-right" style="margin-left: 16px;">Assistive<br>Support</span>
     </button>
 </div>
-<div class="ef-assistive-drawer position-fixed">
-    <div class="ef-assistive-drawer-container bg-white d-flex flex-column">
-        <div class="p-2">
-            <button type="button" class="rounded-circle clickable mic"
-                    id="speech-command-toggle"
-                    aria-label="speech command toggle">
-                <i aria-hidden="true" class="fas fa-microphone fa-3x"></i>
-            </button>
-        </div>
-        <div class="p-2 border-top">
-            <button type="button" class="rounded-circle clickable speaker"
-                    id="screen-reader-toggle"
-                    aria-label="screen reader toggle">
-                <i aria-hidden="true" class="fas fa-volume-up fa-2x"></i>
-            </button>
-        </div>
-        <div class="p-2 border-top">
-            <button type="button" class="rounded clickable" id="zoom-in-text"
-                    aria-label="Increases text size">
-                <i aria-hidden="true" class="fas fa-font fa-3x"></i>
-            </button>
-            <button type="button" class="rounded clickable" id="zoom-out-text"
-                    aria-label="Reduce text size">
-                <i aria-hidden="true" class="fas fa-font fa-2x"></i>
-            </button>
-        </div>
-    </div>
+<div class="ef-assistive-drawer position-fixed border-1">
+
+    <ul class="list-group ef-assistive-drawer-list ">
+        <li class="list-group-item list-group-item-action flex-column align-items-start">
+            <div class="list-group-item-title  w-100 justify-content-between border-bottom border-dark text-dark">
+                <h5 class="mb-0">Voice Commands</h5>
+                <small><i aria-hidden="true" aria-label="Info about voice commands" class="fas fa-question-circle"></i>
+                </small>
+            </div>
+            <div class="mb-0">
+                <button type="button" class="rounded-circle clickable mic"
+                        id="speech-command-toggle"
+                        aria-label="speech command toggle">
+                    <i aria-hidden="true" class="fas fa-microphone fa-3x"></i>
+                </button>
+            </div>
+        </li>
+        <li class="list-group-item list-group-item-action flex-column align-items-start">
+            <div class="list-group-item-title d-flex w-100 justify-content-between border-bottom border-dark text-dark">
+                <h5 class="mb-0">Screen Reader</h5>
+                <small><i aria-hidden="true" aria-label="Info about voice commands" class="fas fa-question-circle"></i>
+                </small>
+            </div>
+            <div class="mb-0">
+                <button type="button" class="rounded-circle clickable speaker"
+                        id="screen-reader-toggle"
+                        aria-label="screen reader toggle">
+                    <i aria-hidden="true" class="fas fa-volume-up fa-2x"></i>
+                </button>
+            </div>
+        </li>
+        <li class="list-group-item list-group-item-action flex-column align-items-start">
+            <div class="list-group-item-title d-flex w-100 justify-content-between border-bottom border-dark text-dark">
+                <h5 class="mb-0">Text Size</h5>
+                <small><i aria-hidden="true" aria-label="Info about voice commands" class="fas fa-question-circle"></i>
+                </small>
+            </div>
+            <div class="mb-0" style="vertical-align: bottom">
+                <div class="d-inline-block text-center text-dark">
+                    <button type="button" class="rounded clickable" id="zoom-in-text"
+                            aria-label="Increases text size">
+                        <i aria-hidden="true" class="fas fa-font fa-3x"></i>
+                    </button>
+                    <small class="d-block">Increase</small>
+                </div>
+                <div class="d-inline-block text-center text-dark ml-3">
+                    <button type="button" class="rounded clickable" id="zoom-out-text"
+                            aria-label="Reduce text size">
+                        <i aria-hidden="true" class="fas fa-font fa-2x"></i>
+                    </button>
+                    <small class="d-block">Decrease</small>
+                </div>
+            </div>
+        </li>
+    </ul>
 </div>
 
 
