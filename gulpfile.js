@@ -79,8 +79,8 @@ gulp.task('watch', function() {
 
 
 gulp.task('custom-fonts', function () {
-	gulp.src('app/scss/**/*.+(woff|woff2)')
-		.pipe(gulp.dest('public/css'));
+	return gulp.src('app/fonts/**/*.+(woff|woff2)')
+		.pipe(gulp.dest('public/fonts'));
 
 });
 

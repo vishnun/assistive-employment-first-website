@@ -877,6 +877,9 @@
 html {
   font-size: 100%; }
 
+:root, body {
+  font-family: "Inter UI", "sans-serif", "helvetica", "roboto" !important; }
+
 .pa-0 {
   font-size: 0.5rem; }
 
@@ -922,7 +925,7 @@ html {
     border: 1px solid #cc214a; }
 
 .display-font {
-  font-family: "Noto Sans", sans-serif, roboto; }
+  font-family: "Inter UI", sans-serif, roboto; }
 
 .ef-calendar {
   transition: all 0.5s ease;
