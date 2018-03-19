@@ -29,7 +29,7 @@
 
 </head>
 
-<body class="bg-light">
+<body class="bg-white">
 
 
   
@@ -40,7 +40,7 @@
 <div class="header bg-white container-fluid sticky-top">
   <nav class="navbar navbar-expand-lg navbar-light ef-nav pt-0 pb-0 bg-white">
     <div class="container-fluid navbar-container pl-3 pr-3">
-      <a class="navbar-brand" href="./">
+      <a class="navbar-brand pt-3 pb-3" href="./">
               <img src="./public/images/logo.png" height="75" alt="AZ Employment First - Job Opportunities Build Success">
           </a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -52,33 +52,45 @@
             <a class="clickable nav-link p-3" href="./">Home <span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item  active ">
-            <a class="clickable nav-link p-3" href="./about.html">About</a>
+            <a class="clickable nav-link p-3" data-reader-text="Navigation link to About Us page."
+               href="./about.html">About</a>
           </li>
           <li class="nav-item ">
             <a class="clickable nav-link p-3" href="./testimonials.html">Testimonials</a>
           </li>
           <li class="nav-item dropdown ">
-            <a class="clickable nav-link p-3 dropdown-toggle" href="#" id="resources-navbar" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-reader-text="Navigation for resources that are right for you whether you are a family member of a job seeker or any other role.">
+            <a class="clickable nav-link p-3 dropdown-toggle" href="#" id="resources-navbar" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
+               data-reader-text="Navigation link to show options for various roles.">
                           Resources
                       </a>
             <div class="dropdown-menu" aria-labelledby="resources-navbar">
-              <a class="dropdown-item pl-4 pr-4 pt-3 pb-3" href="#">A Job Seeker</a>
-              <a class="dropdown-item pl-4 pr-4 pt-3 pb-3 " href="./family.html">A Family Member</a>
-              <a class="dropdown-item pl-4 pr-4 pt-3 pb-3" href="#">An Educator</a>
-              <a class="dropdown-item pl-4 pr-4 pt-3 pb-3" href="#">An Employer</a>
-              <a class="dropdown-item pl-4 pr-4 pt-3 pb-3" href="#">A Provider</a>
+              <a class="dropdown-item pl-4 pr-4 pt-3 pb-3"
+                 data-reader-text="navigation link to resources for a job seeker."
+                 href="#">A Job Seeker</a>
+              <a class="dropdown-item pl-4 pr-4 pt-3 pb-3 "
+                 data-reader-text="navigation link to resources for a Family Member."
+                 href="./family.html">A Family Member</a>
+              <a class="dropdown-item pl-4 pr-4 pt-3 pb-3" data-reader-text="navigation link to resources for an Educator."
+                 href="#">An Educator</a>
+              <a class="dropdown-item pl-4 pr-4 pt-3 pb-3" data-reader-text="navigation link to resources for an Employer."
+                 href="#">An Employer</a>
+              <a class="dropdown-item pl-4 pr-4 pt-3 pb-3" data-reader-text="navigation link to resources for a Provider."
+                 href="#">A Provider</a>
               <!-- <div class="dropdown-divider"></div> -->
             </div>
           </li>
 
           <li class="nav-item ">
-            <a class="clickable nav-link p-3" href="#">Events</a>
+            <a class="clickable nav-link p-3" data-reader-text="navigation link to Events page"
+               href="#">Events</a>
           </li>
           <li class="nav-item ">
-            <a class="clickable nav-link p-3" href="#">FAQs</a>
+            <a class="clickable nav-link p-3" data-reader-text="navigation link to Frequently Asked Questions"
+               href="#">FAQs</a>
           </li>
           <li class="nav-item ">
-            <a class="clickable nav-link p-3" href="./contact-us.html">Contact Us</a>
+            <a class="clickable nav-link p-3" data-reader-text="navigation link to Contact Us page"
+               href="./contact-us.html">Contact Us</a>
           </li>
         </ul>
 
@@ -228,7 +240,6 @@
                         aria-label="screen reader toggle">
                     <i aria-hidden="true" class="fas fa-volume-up fa-2x"></i>
                 </button>
-                <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
             </div>
         </li>
         <li class="list-group-item list-group-item-action flex-column align-items-start">

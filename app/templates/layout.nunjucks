@@ -29,7 +29,7 @@
 
 </head>
 
-<body class="bg-light">
+<body class="bg-white">
 
 
   {% block content %} {% endblock %}
