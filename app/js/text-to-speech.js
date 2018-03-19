@@ -40,7 +40,7 @@ var ScreenReader = function () {
   };
   
   function readIt(text) {
-    event.preventDefault();
+      event && event.preventDefault();
     
     // var selectedOption = voiceSelect.selectedOptions[0].getAttribute('data-name');
     var selectedOption = 'Samantha';
