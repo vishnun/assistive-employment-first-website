@@ -6,106 +6,130 @@
 {% import 'macros/page-title-macro.nunjucks' as pt %} {{pt.pageTitle("Dream it ! Believe it ! Achieve it !")}}
 
 <div class="home-bg" id="home-page">
-  <div class="jumbotron jumbotron-fluid bg-transparent clearfix pt-5 pb-5 pl-0 pr-0 m-0 ml-auto mr-auto">
-    <div class="jumbotron-content d-inline-block rounded pt-5 pb-5 pl-5 pr-0 mt-0 float-left">
-      <h1 class="display-4" data-reader-text="Dare to Dream">Nothing is Impossible !!</h1>
-      <blockquote class="blockquote">
-        <p data-reader-text="However difficult life may seem, there is always something you can do and succeed at." class="mb-0 pa-3">
-However difficult life may seem, there is always something you can do and succeed at.
-        </p>
-        <footer class="blockquote-footer text-warning pa-2">Stephen Hawkings</footer>
-      </blockquote>
-      <button type="button" class="btn btn-primary btn-lg asu-primary-button pl-4 pr-4 clickable" id="get-started">Get Started
-        </button>
-      <div class="role-selection">
-        <div class="input-group">
-          <label class="input-group-text bg-transparent border-0 text-white">I am
-            </label>
-          <div>
-            <button class="btn btn-lg btn-primary dropdown-toggle asu-primary-button" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Choose
+    <div class="jumbotron jumbotron-fluid bg-transparent clearfix pt-5 pb-5 pl-0 pr-0 m-0 ml-auto mr-auto">
+        <div class="jumbotron-content d-inline-block rounded pt-5 pb-5 pl-5 pr-0 mt-0 float-left">
+            <h1 class="display-4" data-reader-text="Dare to Dream">Nothing is Impossible !!</h1>
+            <blockquote class="blockquote">
+                <p data-reader-text="However difficult life may seem, there is always something you can do and succeed at."
+                   class="mb-0 pa-3">
+                    However difficult life may seem, there is always something you can do and succeed at.
+                </p>
+                <footer class="blockquote-footer text-warning pa-2">Stephen Hawkings</footer>
+            </blockquote>
+            <button type="button" class="btn btn-primary btn-lg asu-primary-button pl-4 pr-4 clickable"
+                    id="get-started">Get Started
             </button>
-            <div class="dropdown-menu">
-              <a class="dropdown-item pl-4 pr-4 pt-3 pb-3" href="#">A Job Seeker</a>
-              <a class="dropdown-item pl-4 pr-4 pt-3 pb-3" href="./family.html">A Family Member</a>
-              <a class="dropdown-item pl-4 pr-4 pt-3 pb-3" href="#">An Educator</a>
-              <a class="dropdown-item pl-4 pr-4 pt-3 pb-3" href="#">An Employer</a> <a class="dropdown-item pl-4 pr-4 pt-3 pb-3" href="#">A Provider</a>
+            <div class="role-selection">
+                <div class="input-group">
+                    <label class="input-group-text bg-transparent border-0 text-white">I am
+                    </label>
+                    <div>
+                        <button class="btn btn-lg btn-primary dropdown-toggle asu-primary-button" type="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Choose
+                        </button>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item pl-4 pr-4 pt-3 pb-3" href="#">A Job Seeker</a>
+                            <a class="dropdown-item pl-4 pr-4 pt-3 pb-3" href="./family.html">A Family Member</a>
+                            <a class="dropdown-item pl-4 pr-4 pt-3 pb-3" href="#">An Educator</a>
+                            <a class="dropdown-item pl-4 pr-4 pt-3 pb-3" href="#">An Employer</a> <a
+                                class="dropdown-item pl-4 pr-4 pt-3 pb-3" href="#">A Provider</a>
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
-        </div>
-      </div>
 
+        </div>
     </div>
-  </div>
 </div>
 
 <div class="container-fluid pt-5 pb-5 role-selection-container">
-  <div class="row justify-content-center">
-    <div class="col-sm-12">
-      <p class="display-4 mb-3 text-center display-font">I am a ...</p>
-    </div>
+    <div class="row justify-content-center">
+        <div class="col-sm-12">
+            <p class="display-4 mb-3 text-center display-font">I am a ...</p>
+        </div>
 
-    <div class="col-sm-12 text-center">
-      <ul class="list-unstyled">
-        <li class="d-sm-block d-md-inline-block pt-1 pb-0 p-sm-1">
-          <a href="#" class="btn btn-primary asu-primary-button btn-block p-4">Job Seeker</a>
-        </li>
-        <li class="d-sm-block d-md-inline-block pt-1 pb-0 p-sm-1">
-          <a href="./family.html" class="btn btn-primary asu-primary-button btn-block p-4">Family Member</a>
-        </li>
-        <li class="d-sm-block d-md-inline-block pt-1 pb-0 p-sm-1">
-          <a href="#" class="btn btn-primary asu-primary-button btn-block p-4">Educator</a>
-        </li>
-        <li class="d-sm-block d-md-inline-block pt-1 pb-0 p-sm-1">
-          <a href="#" class="btn btn-primary asu-primary-button btn-block p-4">Employer</a>
-        </li>
-        <li class="d-sm-block d-md-inline-block pt-1 pb-0 p-sm-1">
-          <a href="#" class="btn btn-primary asu-primary-button btn-block p-4">Provider</a>
-        </li>
-      </ul>
+        <div class="col-sm-12 text-center">
+            <ul class="list-unstyled">
+                <li class="d-sm-block d-md-inline-block pt-1 pb-0 p-sm-1">
+                    <a href="#" class="btn btn-primary asu-primary-button btn-block p-4">Job Seeker</a>
+                </li>
+                <li class="d-sm-block d-md-inline-block pt-1 pb-0 p-sm-1">
+                    <a href="./family.html" class="btn btn-primary asu-primary-button btn-block p-4">Family Member</a>
+                </li>
+                <li class="d-sm-block d-md-inline-block pt-1 pb-0 p-sm-1">
+                    <a href="#" class="btn btn-primary asu-primary-button btn-block p-4">Educator</a>
+                </li>
+                <li class="d-sm-block d-md-inline-block pt-1 pb-0 p-sm-1">
+                    <a href="#" class="btn btn-primary asu-primary-button btn-block p-4">Employer</a>
+                </li>
+                <li class="d-sm-block d-md-inline-block pt-1 pb-0 p-sm-1">
+                    <a href="#" class="btn btn-primary asu-primary-button btn-block p-4">Provider</a>
+                </li>
+            </ul>
+        </div>
     </div>
-  </div>
 </div>
 
 <div class="container-fluid pt-5 pb-5 home-cards-container">
-  <div class="container">
-    <div class="row justify-content-center">
-      <div class="col-8 col-md-4 mt-3">
-        <div class="card">
-          <img class="card-img-top" src="./public/images/person-2.jpg" height="232px" width="348px" alt="Image for Testimonial of a person">
-          <div class="card-body">
-            <h5 class="card-title">Never Give Up !!</h5>
-            <p class="card-text">After years of hardships. I was able to find the perfect job thanks to the various things that happened through my life.</p>
-            <a href="./testimonial.html" class="btn btn-primary asu-primary-button">Read More</a>
-          </div>
+    <div class="container">
+        <div class="row">
+            <p class="pa-2 text-justify text-light text-center">
+                AZ Employment First (AZ EF) is a grassroots effort that began forming around the topic of employment
+                for individuals who have disabilities in 2013.
+                <br>
+                <br>
+                Since then, AZ Employment First has been instrumental in the
+                addressing the necessity to increase successful
+                employment outcomes for individuals who have
+                disabilities
+            </p>
         </div>
-      </div>
-      <div class="col-8 col-md-4 mt-3">
-        <div class="card">
-          <img class="card-img-top" src="./public/images/featured-program.png" height="232px" width="348px" alt="Executive Order for Arizona as Employment First State.">
-          <div class="card-body">
-            <h5 class="card-title">Opportunity for All</h5>
-            <p class="card-text">Everyone in our society has the opportunity to get a job and participate in the workforce. This executive order means more and better jobs for individuals with disabilities.</p>
-            <a href="http://www.azemploymentfirst.org" target="_blank" class="btn btn-primary asu-primary-button">Learn More</a>
-          </div>
+        <div class="row justify-content-center mt-md-4 mb-md-4">
+            <div class="col-8 col-md-4 mt-3">
+                <div class="card">
+                    <img class="card-img-top" src="./public/images/person-2.jpg" height="232px" width="348px"
+                         alt="Image for Testimonial of a person">
+                    <div class="card-body">
+                        <h5 class="card-title">Never Give Up !!</h5>
+                        <p class="card-text">After years of hardships. I was able to find the perfect job thanks to the
+                            various things that happened through my life.</p>
+                        <a href="./testimonial.html" class="btn btn-primary asu-primary-button">Read More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-8 col-md-4 mt-3">
+                <div class="card">
+                    <img class="card-img-top" src="./public/images/featured-program.png" height="232px" width="348px"
+                         alt="Executive Order for Arizona as Employment First State.">
+                    <div class="card-body">
+                        <h5 class="card-title">Opportunity for All</h5>
+                        <p class="card-text">Everyone in our society has the opportunity to get a job and participate in
+                            the workforce. This executive order means more and better jobs for individuals with
+                            disabilities.</p>
+                        <a href="http://www.azemploymentfirst.org" target="_blank"
+                           class="btn btn-primary asu-primary-button">Learn More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-8 col-md-4 mt-3">
+                <div class="card">
+                    <img class="card-img-top" src="./public/images/person-4.jpg" height="232px" width="348px"
+                         alt="Image for Testimonial of a person">
+                    <div class="card-body">
+                        <h5 class="card-title">Limits exist only in your mind.</h5>
+                        <p class="card-text">After years of hardships. I was able to find the perfect job thanks to the
+                            various things that happened through my life.</p>
+                        <a href="./testimonial.html" class="btn btn-primary asu-primary-button">Read More</a>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
-      <div class="col-8 col-md-4 mt-3">
-        <div class="card">
-          <img class="card-img-top" src="./public/images/person-4.jpg" height="232px" width="348px" alt="Image for Testimonial of a person">
-          <div class="card-body">
-            <h5 class="card-title">Limits exist only in your mind.</h5>
-            <p class="card-text">After years of hardships. I was able to find the perfect job thanks to the various things that happened through my life.</p>
-            <a href="./testimonial.html" class="btn btn-primary asu-primary-button">Read More</a>
-          </div>
-        </div>
-      </div>
     </div>
-  </div>
 
 </div>
 
 <div class="footer container-fluid bg-light pt-3 pb-3">
-  {% include 'partials/footer.nunjucks' %}
+    {% include 'partials/footer.nunjucks' %}
 </div>
 
 {% endblock %}

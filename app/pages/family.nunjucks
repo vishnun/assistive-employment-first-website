@@ -7,6 +7,7 @@
 
 {% import 'macros/page-title-macro.nunjucks' as pt %} {{pt.pageTitle("Family Role in Employment First")}}
 
+<div class="family" id="family">
 <div class="container pt-5 pb-5 role-selection-container">
   <div class="row justify-content-center">
     <div class="col-sm-12">
@@ -19,12 +20,12 @@
     <div class="container">
         <div class="row text-center">
           <div class="col-sm-12">
-                <div class="card card1">
+                <div class="card">
                   <div class="card-body">
                         <h3 class="card-title h3" data-reader-text="RESOURCES - Youth and Young Adults">RESOURCES - Youth and Young Adults</h3>
                         <p class="card-text p1">These resources are tailored for families supporting a jobseeker between the ages of 14 and 26.</p>
                         <!--<button type="button" id="youth_btn" onclick="goToYouthPage()" class="btn btn-primary btn1">LEARN MORE</button>-->
-                        <a class="btn btn-large btn-primary btn1" href="youth1.html" data-toggle="tooltip" title="Clicking this button will take you to the resources page for Youth and Young Adults">LEARN MORE</a>
+                        <a class="btn btn-large btn-primary asu-primary-button" href="youth1.html" data-toggle="tooltip" title="Clicking this button will take you to the resources page for Youth and Young Adults">Learn More</a>
                     </div>
                 </div>
             </div>
@@ -37,11 +38,11 @@
     <div class="container">
         <div class="row text-center">
           <div class="col col-sm-12">
-                <div class="card card1">
+                <div class="card">
                   <div class="card-body">
                         <h3 class="card-title h3">RESOURCES - Adults</h3>
                         <p class="card-text p1">These resources are tailored for families supporting a jobseeker 27 or older.</p>
-                        <button type="button" id="adults_btn" class="btn btn-primary btn1" data-toggle="tooltip" title="Clicking this button will take you to the resources page for Adults">LEARN MORE</button>
+                        <button type="button" id="adults_btn" class="btn btn-primary asu-primary-button" data-toggle="tooltip" title="Clicking this button will take you to the resources page for Adults">Learn More</button>
                     </div>
                 </div>
             </div>
@@ -59,7 +60,7 @@
           <div class="card-body">
             <h3 class="card-title h3">TESTIMONIAL</h3>
             <p class="card-text">"Talking to employers is critical. Now they understand because Kyle has worked there and they see his dedication and perormance. He has only missed one day of work in 2 years!”</p>
-            <a href="./testimonial.html" class="btn btn-primary btn1" data-toggle="tooltip" title="Clicking this button will help you read more about this testimonial">Learn More</a>
+            <a href="./testimonial.html" class="btn btn-primary asu-primary-button" data-toggle="tooltip" title="Clicking this button will help you read more about this testimonial">Learn More</a>
           </div> 
         </div>
       </div>
@@ -76,6 +77,7 @@
       </div>
       </div>
   </div>
+</div>
 </div>
 
 <div class="footer bg-light pt-3 pb-3">

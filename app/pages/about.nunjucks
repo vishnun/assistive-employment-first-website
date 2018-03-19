@@ -5,10 +5,7 @@
 {% block content %}
 
 
-<div class="header" id="about-page">
-    {% import 'macros/nav-macro.nunjucks' as nav %}
-    {{nav.active('about')}}
-</div>
+{% import 'macros/nav-macro.nunjucks' as nav %} {{nav.active('about')}}
 
 {% import 'macros/page-title-macro.nunjucks' as pt %} {{pt.pageTitle("About Us")}}
 
@@ -38,7 +35,7 @@
                 Medicaid, Department of Justice and the Department of Labor are requiring states to prioritize
                 integrated services for everyone who has a disability.</p>
         </div>
-        <div class="col-12 col-md-4">
+        <div class="col-12 col-md-4 position-fixed" style="right: 0;">
             <h3 class="pa-2">AZ Employment First Documents</h3>
             <div class="list-group">
                 <a href="http://sonoranucedd.fcm.arizona.edu/sites/sonoranucedd.fcm.arizona.edu/files/Employment%20First%20Executive%20Summary.pdf"

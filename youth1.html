@@ -15,8 +15,6 @@
   <link rel="icon" href="./favicon.png?" type="image/x-icon" />
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
-  <link href="https://fonts.googleapis.com/css?family=Noto+Sans" rel="stylesheet">
-
   <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
 
   <link rel="stylesheet" href="public/css/styles.min.css">
@@ -99,8 +97,8 @@
 
 
 
-<div class="youth" id="youth page">
-   <div class="container-fluid pt-5 pb-5 youth-cards-container">
+<div id="youth">
+   <div class="container-fluid pt-5 pb-5 bg2">
   <div class="container">
     <div class="row justify-content-center">
       <div class="col-8 col-md-6 mt-2">
@@ -109,7 +107,7 @@
           <div class="card-body">
             <h3 class="card-title">State Agencies</h3>
             <p class="card-text">Click here for a list of state agencies that provide support in seeking and maintaining employment. Individual agencies have their own eligibility requirements. </p>
-            <a href="StateAgencies.html" class="btn btn-primary btn1" data-toggle="tooltip" title="Click this button to got to State Agencies page">Learn More</a>
+            <a href="StateAgencies.html" class="btn btn-primary asu-primary-button" data-toggle="tooltip" title="Click this button to got to State Agencies page">Learn More</a>
           </div>
         </div>
       </div>
@@ -119,14 +117,14 @@
           <div class="card-body">
             <h3 class="card-title">Tool Kits</h3>
             <p class="card-text">Click here for checklists, tools, and lessons on many skills that are useful for finding and keeping employment. </p><br>
-            <a href="#" class="btn btn-primary btn1" data-toggle="tooltip" title="Click this button to got to Tool Kits page">Learn More</a>
+            <a href="#" class="btn btn-primary asu-primary-button" data-toggle="tooltip" title="Click this button to got to Tool Kits page">Learn More</a>
           </div>
         </div>
       </div>
    </div>
   </div>
 </div>
-<div class="container-fluid pt-5 pb-5 youth-cards-container">
+<div class="container-fluid pt-5 pb-5 bg2">
   <div class="container">
     <div class="row justify-content-center">
       <div class="col-8 col-md-6 mt-2">
@@ -135,7 +133,7 @@
           <div class="card-body">
             <h3 class="card-title">Community Programs</h3>
             <p class="card-text">Click here for a  list of community programs which provide career training and support. These programs are available to anyone with a need.</p>
-            <a href="#" class="btn btn-primary btn1" data-toggle="tooltip" title="Click this button to got to Community Programs page" >Learn More</a>
+            <a href="#" class="btn btn-primary asu-primary-button" data-toggle="tooltip" title="Click this button to got to Community Programs page" >Learn More</a>
           </div>
         </div>
       </div>
@@ -145,14 +143,14 @@
           <div class="card-body">
             <h3 class="card-title">Advocacy Resources</h3>
             <p class="card-text">Click here for local, state and national support and advocacy organizations.</p><br>
-            <a href="#" target="_blank" class="btn btn-primary btn1" data-toggle="tooltip" title="Click this button to got to Advocacy Resources Page" >Learn More</a>
+            <a href="#" target="_blank" class="btn btn-primary asu-primary-button" data-toggle="tooltip" title="Click this button to got to Advocacy Resources Page" >Learn More</a>
           </div>
         </div>
       </div>
    </div>
   </div>
 </div>
-<div class="container-fluid pt-5 pb-5 youth-cards-container">
+<div class="container-fluid pt-5 pb-5 bg2">
   <div class="container">
     <div class="row justify-content-center">
       <div class="col-8 col-md-6 mt-2">
@@ -161,7 +159,7 @@
           <div class="card-body">
             <h3 class="card-title">Providers Offering Employment Services</h3>
             <p class="card-text">Click here for a list of service providers offering employment assistance. These providers work with state agencies, so eligibility is required. In some cases, families may choose to pay for services without state support. </p>
-            <a href="#" class="btn btn-primary btn1" data-toggle="tooltip" title="Click this button to got to Providers Offering Employment Services Page">Learn More</a>
+            <a href="#" class="btn btn-primary asu-primary-button" data-toggle="tooltip" title="Click this button to got to Providers Offering Employment Services Page">Learn More</a>
           </div>
         </div>
       </div>
@@ -171,7 +169,7 @@
           <div class="card-body">
             <h3 class="card-title">Additional Articles and References</h3>
             <p class="card-text">Click here for media, articles, and guidance documents. </p><br><br><br><br>
-            <a href="#" target="_blank" class="btn btn-primary btn1" data-toggle="tooltip" title="Click this button to got to Additional Articles and References">Learn More</a> 
+            <a href="#" target="_blank" class="btn btn-primary asu-primary-button" data-toggle="tooltip" title="Click this button to got to Additional Articles and References">Learn More</a> 
           </div>
         </div>
       </div>
@@ -222,29 +220,68 @@
 
 
   <div class="ef-assistive-icon position-fixed bg-info">
-    <button type="button" class="clickable assistive-support btn btn-outline-primary text-white" aria-label="assistive support">
+    <button type="button" class="clickable assistive-support btn btn-outline-primary text-white"
+            aria-label="assistive support">
         <i aria-hidden="true" class="fab fa-accessible-icon fa-3x"></i>
-        <span aria-hidden="true" class="float-right ml-3">Assistive<br>Support</span>
+        <span aria-hidden="true" class="float-right" style="margin-left: 16px;">Assistive<br>Support</span>
     </button>
 </div>
-<div class="ef-assistive-drawer position-fixed">
-    <div class="ef-assistive-drawer-container bg-white d-flex flex-column">
-        <div class="p-2">
-            <button type="button" class="rounded-circle clickable mic" aria-label="speech command mic">
-                <i aria-hidden="true" class="fas fa-microphone fa-3x"></i>
-            </button>
-        </div>
-        <div class="p-2 border-top">
-            <button type="button" class="rounded clickable" id="zoom-in-text"
-                    aria-label="Increases text size">
-                <i aria-hidden="true" class="fas fa-font fa-3x"></i>
-            </button>
-            <button type="button" class="rounded clickable" id="zoom-out-text"
-                    aria-label="Reduce text size">
-                <i aria-hidden="true" class="fas fa-font fa-2x"></i>
-            </button>
-        </div>
-    </div>
+
+
+<div class="ef-assistive-drawer position-fixed border-1">
+    <ul class="list-group ef-assistive-drawer-list ">
+        <li class="list-group-item list-group-item-action flex-column align-items-start">
+            <div class="list-group-item-title  w-100 justify-content-between border-bottom border-dark text-dark">
+                <h5 class="mb-0">Voice Commands</h5>
+                <small><i aria-hidden="true" aria-label="Info about voice commands" class="fas fa-question-circle"></i>
+                </small>
+            </div>
+            <div class="mb-0">
+                <button type="button" class="rounded-circle clickable mic"
+                        id="speech-command-toggle"
+                        aria-label="speech command toggle">
+                    <i aria-hidden="true" class="fas fa-microphone fa-3x"></i>
+                </button>
+            </div>
+        </li>
+        <li class="list-group-item list-group-item-action flex-column align-items-start">
+            <div class="list-group-item-title d-flex w-100 justify-content-between border-bottom border-dark text-dark">
+                <h5 class="mb-0">Screen Reader</h5>
+                <small><i aria-hidden="true" aria-label="Info about voice commands" class="fas fa-question-circle"></i>
+                </small>
+            </div>
+            <div class="mb-0">
+                <button type="button" class="rounded-circle clickable speaker"
+                        id="screen-reader-toggle"
+                        aria-label="screen reader toggle">
+                    <i aria-hidden="true" class="fas fa-volume-up fa-2x"></i>
+                </button>
+            </div>
+        </li>
+        <li class="list-group-item list-group-item-action flex-column align-items-start">
+            <div class="list-group-item-title d-flex w-100 justify-content-between border-bottom border-dark text-dark">
+                <h5 class="mb-0">Text Size</h5>
+                <small><i aria-hidden="true" aria-label="Info about voice commands" class="fas fa-question-circle"></i>
+                </small>
+            </div>
+            <div class="mb-0" style="vertical-align: bottom">
+                <div class="d-inline-block text-center text-dark">
+                    <button type="button" class="rounded clickable" id="zoom-in-text"
+                            aria-label="Increases text size">
+                        <i aria-hidden="true" class="fas fa-font fa-3x"></i>
+                    </button>
+                    <small class="d-block">Increase</small>
+                </div>
+                <div class="d-inline-block text-center text-dark ml-3">
+                    <button type="button" class="rounded clickable" id="zoom-out-text"
+                            aria-label="Reduce text size">
+                        <i aria-hidden="true" class="fas fa-font fa-2x"></i>
+                    </button>
+                    <small class="d-block">Decrease</small>
+                </div>
+            </div>
+        </li>
+    </ul>
 </div>
 
 

@@ -78,6 +78,13 @@ gulp.task('watch', function() {
 });
 
 
+gulp.task('custom-fonts', function () {
+	return gulp.src('app/fonts/**/*.+(woff|woff2)')
+		.pipe(gulp.dest('public/fonts'));
+
+});
+
+
 // // Copies index.html, replacing <script> and <link> tags to reference production URLs
 // gulp.task('html', function() {
 //   return gulp.src('app/index.html')
@@ -128,7 +135,7 @@ gulp.task('serve', ['default', 'webserver']);
 
 
 
-gulp.task('default', ['sass', 'fonts', 'images'], function(callback) {
+gulp.task('default', ['sass','custom-fonts', 'fonts', 'images'], function(callback) {
 	gulp.start('nunjucks');
 	gulp.start('useref');
 	callback();

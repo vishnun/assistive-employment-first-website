@@ -877,6 +877,12 @@
 html {
   font-size: 100%; }
 
+:root, body {
+  font-family: "Inter UI", "sans-serif", "helvetica", "roboto" !important; }
+
+.pa-0 {
+  font-size: 0.5rem; }
+
 .pa-1 {
   font-size: 1rem; }
 
@@ -919,7 +925,7 @@ html {
     border: 1px solid #cc214a; }
 
 .display-font {
-  font-family: "Noto Sans", sans-serif, roboto; }
+  font-family: "Inter UI", sans-serif, roboto; }
 
 .ef-calendar {
   transition: all 0.5s ease;
@@ -964,17 +970,23 @@ html {
 .ef-assistive-drawer {
   transition: height 0.5s ease;
   height: 0;
-  width: 146px;
+  width: 220px;
   left: 10px;
   bottom: 76px;
   overflow: hidden;
   background: white;
   border: 0px solid #000;
   font-size: 16px; }
-  .ef-assistive-drawer .ef-calendar-container {
+  .ef-assistive-drawer .ef-assistive-drawer-list {
     position: relative; }
+    .ef-assistive-drawer .ef-assistive-drawer-list h5 {
+      font-size: 20px; }
+    .ef-assistive-drawer .ef-assistive-drawer-list .list-group-item {
+      padding: 12px 16px; }
+      .ef-assistive-drawer .ef-assistive-drawer-list .list-group-item .list-group-item-title {
+        margin-bottom: 6px; }
   .ef-assistive-drawer.show {
-    height: 200px;
+    height: 350px;
     border: 1px solid #000; }
 
 .ef-nav {
@@ -1008,15 +1020,15 @@ html {
       border-style: solid; }
 
 .home-bg {
-  min-height: 650px;
+  min-height: 580px;
   background-color: #000000;
   position: relative; }
   .home-bg .jumbotron-fluid {
-    background-image: url(../images/stephen-hawking-6.png);
+    background-image: url(../images/home-bg-stephen-hawking.jpg);
     background-position: right;
     background-repeat: no-repeat;
     background-size: contain;
-    height: 650px;
+    height: 580px;
     max-width: 1522px; }
   .home-bg .jumbotron {
     position: absolute;
@@ -1024,7 +1036,7 @@ html {
     right: 0;
     left: 0; }
   .home-bg .jumbotron-content {
-    max-width: 50%;
+    max-width: 60%;
     background: rgba(0, 0, 0, 0.6);
     color: white; }
 
@@ -1046,88 +1058,69 @@ html {
 .about-title {
   color: red; }
 
-.btn1 {
+#youth .btn1 {
   align-content: center; }
 
-.h3 {
-  font-weight: bold;
+#youth .bg2 {
+  background-color: #413c38; }
+
+#youth .h3 {
   font-size: 2rem;
   color: white; }
 
-.youth-cards-container {
-  background-color: #413c38; }
-
-.testimonial {
-  color: white;
-  max-width: 336px;
-  margin-left: auto; }
-
-.resources {
-  color: white;
-  max-width: 336px;
-  height: 325px;
-  margin-left: 20px;
-  margin-right: auto; }
-
-.bg {
-  background-color: #413c38; }
-
-.card1 {
-  background-color: #DFB13F; }
-
-.card2 {
-  background-color: #DFB13F;
-  width: auto;
-  height: auto; }
-
-.card3 {
-  width: auto;
-  height: 500px;
-  margin: 0 auto;
-  /* Added */
-  float: none;
-  /* Added */
-  margin-bottom: 10px;
-  /* Added */ }
-
-.col1 {
-  margin-left: auto; }
-
-.col2 {
-  margin-right: auto; }
-
-.h3 {
-  font-weight: bold;
-  font-size: 2rem;
-  color: #000000; }
-
-.btn1 {
-  align-content: center;
-  font-size: 1.25rem;
-  background-color: #000000;
-  color: white; }
-
-.logo {
-  width: 120px;
-  height: 111px; }
-
-.p2 {
-  width: 165px;
-  color: white; }
-
-.p1 {
-  font-size: 1.25rem;
-  color: #000000; }
-
-.p3 {
-  font-size: 1.25rem;
-  font-weight: bold;
-  text-align: center;
-  color: #000000; }
-
-.link1 {
-  color: black;
-  font-size: 1.25rem; }
+#family {
+  /*.btn1 {
+	align-content:center;
+	font-size:1.25rem;
+	color:white;
+}*/ }
+  #family .testimonial {
+    color: white;
+    max-width: 336px;
+    margin-left: auto; }
+  #family .resources {
+    color: white;
+    max-width: 336px;
+    height: 325px;
+    margin-left: 20px;
+    margin-right: auto; }
+  #family .bg {
+    background-color: #413c38; }
+  #family .card2 {
+    width: auto;
+    height: auto; }
+  #family .card3 {
+    width: auto;
+    height: 500px;
+    margin: 0 auto;
+    /* Added */
+    float: none;
+    /* Added */
+    margin-bottom: 10px;
+    /* Added */ }
+  #family .col1 {
+    margin-left: auto; }
+  #family .col2 {
+    margin-right: auto; }
+  #family .h3 {
+    font-weight: bold;
+    font-size: 2rem;
+    color: #000000; }
+  #family .logo {
+    width: 120px;
+    height: 111px; }
+  #family .p2 {
+    width: 165px;
+    color: white; }
+  #family .p1 {
+    font-size: 1.25rem;
+    color: #000000; }
+  #family .p3 {
+    font-size: 1.25rem;
+    text-align: center;
+    color: #000000; }
+  #family .link1 {
+    font-size: 1.25rem; }
 
 #state-agencies .jumbotron {
   position: absolute;
@@ -1141,7 +1134,7 @@ html {
   color: white; }
 
 #state-agencies .accordion {
-  background-color: #EDC153;
+  background-color: white;
   color: #444;
   cursor: pointer;
   padding: 18px;
@@ -1151,7 +1144,7 @@ html {
   border: none;
   text-align: left;
   outline: none;
-  font-size: 15px;
+  font-size: 1.25rem;
   transition: 0.4s; }
 
 #state-agencies .panel {
@@ -1164,7 +1157,7 @@ html {
   padding: 0 18px; }
 
 #state-agencies .active, #state-agencies .accordion:hover {
-  background-color: white; }
+  background-color: #eaeaea; }
 
 #state-agencies .p {
   font-weight: bold;
@@ -1182,8 +1175,11 @@ html {
   content: "\2212"; }
 
 #state-agencies .card-text {
-  font-weight: bold;
-  color: #000000; }
+  font-size: 1.25rem;
+  text-align: center; }
+
+#state-agencies .bg3 {
+  background-color: #413c38; }
 
 @media screen and (min-width: 768px) and (max-width: 850px) {
   .navbar .navbar-container {
@@ -1201,9 +1197,9 @@ html {
 
 @media screen and (max-width: 1441px) {
   .home-bg {
-    min-height: 480px; }
+    min-height: 420px; }
     .home-bg .jumbotron-fluid {
-      height: 480px; } }
+      height: 420px; } }
 
 /*
  * Social Buttons for Bootstrap

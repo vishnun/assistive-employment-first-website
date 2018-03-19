@@ -5,17 +5,14 @@ $(function () {
 });
 
 function initScreenReader() {
-  
-  if (!Settings.screenReaderOn()) {
-    return;
-  }
-  
   var reader = new ScreenReader();
   var readEls = $("[data-reader-text]");
   
   readEls.on('mouseenter', function () {
     var text = $(this).data('reader-text') || $(this).text();
-    reader.read(text);
+    if (Settings.isScreenReaderToggledOn()) {
+      reader.read(text);
+    }
   });
 }
 
@@ -36,6 +33,12 @@ function bindAssistiveSupportButtons() {
   
   $('.assistive-support').on('click', function () {
     $('.ef-assistive-drawer').toggleClass('show');
+  });
+  
+  
+  $('#screen-reader-toggle').on('click', function () {
+    Settings.toggleScreenReader();
+    initScreenReader();
   });
   
   $('#zoom-in-text').on('click', function () {

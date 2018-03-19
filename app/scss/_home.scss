@@ -1,13 +1,13 @@
 .home-bg {
-  min-height: 650px;
+  min-height: 580px;
   background-color: #000000;
   position: relative;
   .jumbotron-fluid {
-    background-image: url(../images/stephen-hawking-6.png);
+    background-image: url(../images/home-bg-stephen-hawking.jpg);
     background-position: right;
     background-repeat: no-repeat;
     background-size: contain;
-    height: 650px;
+    height: 580px;
     max-width: 1522px;
   }
   .jumbotron {
@@ -17,7 +17,7 @@
     left: 0;
   }
   .jumbotron-content {
-    max-width: 50%;
+    max-width: 60%;
     background: rgba(0, 0, 0, 0.6);
     color: white;
   }
