@@ -10,10 +10,10 @@
   {{nav.active('contact')}}
 </div>
 
-{% import 'macros/page-title-macro.nunjucks' as pt %} {{pt.pageTitle("Contact Us")}}
+{% import 'macros/page-title-macro.nunjucks' as pt %} {{pt.pageTitle("We'd love to help you!")}}
 
 
-  <p>We'd love to help you</p>
+  
 <div class="container-fluid pt-5 pb-5 home-cards-container">
   <div class="container">
     <div class="row justify-content-center">
@@ -31,7 +31,7 @@
     				<textarea class="form-control" id="message" rows="5" placeholder = "Message"></textarea>
   					</div>
 				</form>
-            <a href="#" class="btn btn-primary">Send</a>
+            <a href="#" class="btn btn-primary asu-primary-button">Send</a>
           </div>
         </div>
       </div>
@@ -39,9 +39,10 @@
         <div class="card">
         	<div class="card-body">
         		<div>
+        		<p><b>Sonoran UCEDD</b><br/>Department of Family & Community<br/>Medicine University of Arizona | College of Medicine</p>
             	<p><b>Phone:</b> 520.626.0442<br/>
             	<b>Fax:</b> 520.626.0081<br/>
-            	<b>Email:</b> </p>
+            	<b>Email:</b>  ucedd@email.arizona.edu</p>
             	</div>
             	<div>
             	<p><b>We are located at:</b><br/>1521 E. Helen St. <br/>Tucson, AZ 85721</p>
@@ -62,5 +63,7 @@
 
 </div>
 
-
+<div class="footer container-fluid bg-light pt-3 pb-3">
+    {% include 'partials/footer.nunjucks' %}
+</div>
 {% endblock %}
