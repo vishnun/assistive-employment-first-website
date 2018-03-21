@@ -15,104 +15,61 @@
 
 <div class="container-fluid pt-5 pb-5 home-cards-container">
     <div class="container">
-        <div class="row justify-content-center mt-md-4 mb-md-4">
-            <div class="col-8 col-md-4 mt-3">
+        <div class="row mt-md-4 mb-md-4">
+            <div class="col-md-4 mt-3">
                 <div class="card">
-                    <img class="card-img-top" src="./public/images/dummy_person.png" height="232px" width="348px"
+                    <img class="card-img-top img-fluid" src="./public/images/testimonial_person.jpg"
+                         height="232px" width="348px"
                          alt="Image for Testimonial of a person">
                     <div class="card-body">
-                        <h5 class="card-title">Lorema Ipsuma</h5>
-                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                            ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
-                            in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
-                            non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                        <h5 class="card-title">Walton Cash</h5>
+                        <p class="card-text">
+                            Being a differently person, it was always difficult for me find out open opportunities
+                            of employment. The AZ employment first initiative helped me to apply to a lot of software
+                            developer opportunities. After interviewing with a few potential employers, I was able to
+                            narrow down to one awesome employer, all thanks to the help provided by AZ Employment first.
+                            I recommend this initiative to everyone who is differently abled.
                         </p>
-                        <a href="http://www.azemploymentfirst.org" target="_blank"
+                        <a href="./testimonial.html" target="_blank"
                            class="btn btn-primary asu-primary-button">Learn More</a>
                     </div>
                 </div>
             </div>
-            <div class="col-8 col-md-4 mt-3">
+            <div class="col-md-4 mt-3">
                 <div class="card">
-                    <img class="card-img-top" src="./public/images/dummy_person.png" height="232px" width="348px"
+                    <img class="card-img-top img-fluid" src="./public/images/testimonial_person.jpg"
+                         height="232px" width="348px"
                          alt="Image for Testimonial of a person">
                     <div class="card-body">
-                        <h5 class="card-title">Ipsuma Lorema</h5>
-                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                            ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
-                            in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
-                            non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                        <h5 class="card-title">Walton Cash</h5>
+                        <p class="card-text">
+                            Being a differently person, it was always difficult for me find out open opportunities
+                            of employment. The AZ employment first initiative helped me to apply to a lot of software
+                            developer opportunities. After interviewing with a few potential employers, I was able to
+                            narrow down to one awesome employer, all thanks to the help provided by AZ Employment first.
+                            I recommend this initiative to everyone who is differently abled.
                         </p>
-                        <a href="./testimonial.html" class="btn btn-primary asu-primary-button">Read More</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-8 col-md-4 mt-3">
-                <div class="card">
-                    <img class="card-img-top" src="./public/images/dummy_person.png" height="232px" width="348px"
-                         alt="Image for Testimonial of a person">
-                    <div class="card-body">
-                        <h5 class="card-title">Lorema Ipsuma</h5>
-                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                            ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
-                            in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
-                            non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                        </p>
-                        <a href="./testimonial.html" class="btn btn-primary asu-primary-button">Read More</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="row justify-content-center mt-md-4 mb-md-4">
-            <div class="col-8 col-md-4 mt-3">
-                <div class="card">
-                    <img class="card-img-top" src="./public/images/dummy_person.png" height="232px" width="348px"
-                         alt="Image for Testimonial of a person">
-                    <div class="card-body">
-                        <h5 class="card-title">Lorema Ipsuma</h5>
-                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                            ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
-                            in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
-                            non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                        </p>
-                        <a href="http://www.azemploymentfirst.org" target="_blank"
+                        <a href="./testimonial.html" target="_blank"
                            class="btn btn-primary asu-primary-button">Learn More</a>
                     </div>
                 </div>
             </div>
-            <div class="col-8 col-md-4 mt-3">
+            <div class="col-md-4 mt-3">
                 <div class="card">
-                    <img class="card-img-top" src="./public/images/dummy_person.png" height="232px" width="348px"
+                    <img class="card-img-top img-fluid" src="./public/images/testimonial_person.jpg"
+                         height="232px" width="348px"
                          alt="Image for Testimonial of a person">
                     <div class="card-body">
-                        <h5 class="card-title">Ipsuma Lorema</h5>
-                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                            ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
-                            in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
-                            non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                        <h5 class="card-title">Walton Cash</h5>
+                        <p class="card-text">
+                            Being a differently person, it was always difficult for me find out open opportunities
+                            of employment. The AZ employment first initiative helped me to apply to a lot of software
+                            developer opportunities. After interviewing with a few potential employers, I was able to
+                            narrow down to one awesome employer, all thanks to the help provided by AZ Employment first.
+                            I recommend this initiative to everyone who is differently abled.
                         </p>
-                        <a href="./testimonial.html" class="btn btn-primary asu-primary-button">Read More</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-8 col-md-4 mt-3">
-                <div class="card">
-                    <img class="card-img-top" src="./public/images/dummy_person.png" height="232px" width="348px"
-                         alt="Image for Testimonial of a person">
-                    <div class="card-body">
-                        <h5 class="card-title">Lorema Ipsuma</h5>
-                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                            ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
-                            in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
-                            non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                        </p>
-                        <a href="./testimonial.html" class="btn btn-primary asu-primary-button">Read More</a>
+                        <a href="./testimonial.html" target="_blank"
+                           class="btn btn-primary asu-primary-button">Learn More</a>
                     </div>
                 </div>
             </div>
