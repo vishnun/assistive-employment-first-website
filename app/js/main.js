@@ -11,10 +11,10 @@ function initScreenReader() {
   
 
     var readElCallback = function (e) {
-        var text = $(this).data('reader-text') || $(this).text();
-        var readerRate = parseInt(localStorage.getItem("readerRate"));
         if (Settings.isScreenReaderToggledOn()) {
-            reader.read(text,readerRate);
+            var text = $(this).data('reader-text') || $(this).text();  
+            var readerRate = parseFloat(localStorage.getItem("readerRate"));
+            reader.read(text, parseFloat(readerRate));
         }
     };
     readEls.on('mouseenter', _.debounce(readElCallback, 1000));

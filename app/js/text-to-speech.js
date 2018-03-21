@@ -46,7 +46,7 @@ var ScreenReader = function () {
     var selectedOption = 'Samantha';
     var params = {
       voice: null,
-      rate: readerRate||1,
+      rate: parseFloat(readerRate) || 1,
       pitch: 1
     };
     
