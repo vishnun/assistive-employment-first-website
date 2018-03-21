@@ -24,6 +24,12 @@ var Settings = {
       var toggle = localStorage.getItem('screenReader');
       return toggle === "true";
     }
+  },
+
+  changeReaderSettings: function(rate){
+    if(localStorageExists()){
+      localStorage.setItem("readerRate",rate);
+    }
   }
 };
 

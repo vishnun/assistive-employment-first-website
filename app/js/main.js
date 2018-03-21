@@ -6,12 +6,15 @@ $(function () {
 
 function initScreenReader() {
   var reader = new ScreenReader();
+  
   var readEls = $("[data-reader-text]");
+  
 
     var readElCallback = function (e) {
         var text = $(this).data('reader-text') || $(this).text();
+        var readerRate = parseInt(localStorage.getItem("readerRate"));
         if (Settings.isScreenReaderToggledOn()) {
-            reader.read(text);
+            reader.read(text,readerRate);
         }
     };
     readEls.on('mouseenter', _.debounce(readElCallback, 1000));
@@ -49,6 +52,10 @@ function bindAssistiveSupportButtons() {
     }
     $rootEl.css('font-size', parseInt(currentFontSize) + 1 + 'px');
     Settings.updateFontSize($rootEl.css('font-size'));
+  });
+  $('#changeReaderRange').on('change', function () {
+    var val = $(this).val();
+    Settings.changeReaderSettings(val);
   });
 
   $('#zoom-out-text').on('click', function () {

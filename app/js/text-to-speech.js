@@ -39,14 +39,14 @@ var ScreenReader = function () {
     
   };
   
-  function readIt(text) {
+  function readIt(text,readerRate) {
       event && event.preventDefault();
     
     // var selectedOption = voiceSelect.selectedOptions[0].getAttribute('data-name');
     var selectedOption = 'Samantha';
     var params = {
       voice: null,
-      rate: 1,
+      rate: readerRate||1,
       pitch: 1
     };
     
