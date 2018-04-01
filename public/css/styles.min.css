@@ -1049,6 +1049,17 @@ html {
     height: 350px;
     border: 1px solid #000; }
 
+#assistive-arrow {
+  height: 48px;
+  width: 48px;
+  top: 50%;
+  left: 50%;
+  background-image: url(../images/arrow.png);
+  position: absolute;
+  z-index: 999999;
+  background-position: center;
+  background-size: contain; }
+
 .ef-nav {
   background-color: white; }
   .ef-nav .navbar-nav .nav-item .nav-link {
