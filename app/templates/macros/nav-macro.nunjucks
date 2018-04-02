@@ -1,7 +1,7 @@
 {% macro active(activePage='home', activeSubPage="") %}
 <!-- Macro stuff here -->
-<div class="header bg-white container-fluid sticky-top">
-  <nav class="navbar navbar-expand-lg navbar-light ef-nav pt-0 pb-0 bg-white">
+<div class="header sticky-top">
+  <nav class="navbar container-fluid navbar-expand-lg navbar-light ef-nav pt-0 pb-0">
     <div class="container-fluid navbar-container pl-3 pr-3">
       <a class="navbar-brand pt-3 pb-3" href="./">
               <img src="./public/images/logo.png" height="75" alt="AZ Employment First - Job Opportunities Build Success">

@@ -2,12 +2,15 @@ $asu-gold: #ffb204;
 $asu-dark-bg: #353535;
 $asu-maroon: #c13657;
 
+$bg-color: #ffe37d;
+
 html {
   font-size: 100%;
 }
 
 :root, body {
   font-family: "Inter UI", "sans-serif", "helvetica", "roboto" !important;
+  background-color: $bg-color;
 }
 
 .pa-0 {

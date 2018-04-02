@@ -1,5 +1,7 @@
+$nav-item-color: #ffa500ba;
 .ef-nav {
-  background-color: white;
+  background-color: $bg-color;
+  box-shadow: 1px 1px 15px #424242;
 
   .navbar-nav {
     .nav-item {
@@ -10,7 +12,7 @@
 
       &.active,
       &:hover {
-        background-color: #eaeaea;
+        background-color: $nav-item-color;
 
         .nav-link {
           color: black;
@@ -27,7 +29,7 @@
 
         &.active,
         &:hover {
-          background-color: #eaeaea;
+          background-color: $nav-item-color;
           color: black;
         }
       }

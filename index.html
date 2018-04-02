@@ -25,7 +25,7 @@
 
 </head>
 
-<body class="bg-white">
+<body>
 <video id="video" aria-label="Video element used to assist for using mouse using color tracking"
        width="100%" height="100%" style="position:fixed;z-index: -1; left: 0; top: 0;"
        preload loop autoplay muted>
@@ -38,8 +38,8 @@
 
  
 <!-- Macro stuff here -->
-<div class="header bg-white container-fluid sticky-top">
-  <nav class="navbar navbar-expand-lg navbar-light ef-nav pt-0 pb-0 bg-white">
+<div class="header sticky-top">
+  <nav class="navbar container-fluid navbar-expand-lg navbar-light ef-nav pt-0 pb-0">
     <div class="container-fluid navbar-container pl-3 pr-3">
       <a class="navbar-brand pt-3 pb-3" href="./">
               <img src="./public/images/logo.png" height="75" alt="AZ Employment First - Job Opportunities Build Success">
@@ -104,7 +104,7 @@
  
 <!-- Macro stuff here -->
 
-<div class="page-title pt-3 pb-3 bg-warning" style="font-family: 'Noto Sans', san-serif;">
+<div class="page-title pt-3 pb-3 bg-dark text-light" style="font-family: 'Noto Sans', san-serif;">
   <div class="container">
     <h1 class="m-0 text-center pa-3 display-font">Dream it ! Believe it ! Achieve it !</h1>
   </div>
@@ -113,66 +113,101 @@
 
 
 
-<div class="home-bg" id="home-page">
-    <div class="jumbotron jumbotron-fluid bg-transparent clearfix pt-5 pb-5 pl-0 pr-0 m-0 ml-auto mr-auto">
-        <div class="jumbotron-content d-inline-block rounded pt-5 pb-5 pl-5 pr-0 mt-0 float-left">
-            <h1 class="display-4" data-reader-text="Nothing is Impossible!">Nothing is Impossible !!</h1>
-            <blockquote class="blockquote">
-                <p data-reader-text="The very famous scientist Stephen Hawking said, however difficult life may seem, there is always something you can do and succeed at."
-                   class="mb-0 pa-3">
-                    However difficult life may seem, there is always something you can do and succeed at.
-                </p>
-                <footer class="blockquote-footer text-warning pa-2">Stephen Hawkings</footer>
-            </blockquote>
-            <button type="button" class="btn btn-primary btn-lg asu-primary-button pl-4 pr-4 clickable"
-                    id="get-started" data-reader-text="click to get started and choose your role.">Get Started
-            </button>
-            <div class="role-selection">
-                <div class="input-group">
-                    <label class="input-group-text bg-transparent border-0 text-white">I am
-                    </label>
-                    <div>
-                        <button class="btn btn-lg btn-primary dropdown-toggle asu-primary-button"
-                                type="button" data-reader-text="Click to open dropdown to choose your role."
-                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Choose
-                        </button>
-                        <div class="dropdown-menu">
-                            <a class="dropdown-item pl-4 pr-4 pt-3 pb-3" data-reader-text="Click here if you are a Job Seeker" href="#">A Job Seeker</a>
-                            <a class="dropdown-item pl-4 pr-4 pt-3 pb-3" data-reader-text="Click here if you are a Family Member" href="./family.html">A Family Member</a>
-                            <a class="dropdown-item pl-4 pr-4 pt-3 pb-3" data-reader-text="Click here if you are an Educator" href="#">An Educator</a>
-                            <a class="dropdown-item pl-4 pr-4 pt-3 pb-3" data-reader-text="Click here if you are an Employer" href="#">An Employer</a> <a
-                                class="dropdown-item pl-4 pr-4 pt-3 pb-3" data-reader-text="Click here if you are a Provider" href="#">A Provider</a>
+<div class="home-bg container" id="home-page">
+
+    <div class="row">
+        <div class="col col-md-9 order-1 order-md-2">
+            <div class="pt-5 pr-5 pb-4 p-xs-2 text-center">
+                <h1 class="display-5" data-reader-text="AZ Employment First">AZ Employment First</h1>
+                <blockquote class="blockquote">
+                    <p data-reader-text class="pa-2">AZ Employment First (AZ EF) is a grassroots effort that began
+                        forming around the topic of employment for individuals who have disabilities in 2013.
+                    </p>
+                    <p class="pa-2 mb-0">
+                        Since then, AZ Employment First has been instrumental in the addressing the
+                        necessity to increase successful employment outcomes for individuals who have disabilities
+                    </p>
+                </blockquote>
+                <button type="button" class="btn btn-primary btn-lg asu-primary-button pl-4 pr-4 clickable"
+                        id="get-started" data-reader-text="click to get started and choose your role.">Get Started
+                </button>
+                <div class="role-selection" style="display: none;">
+                    <div class="input-group">
+                        <label class="input-group-text bg-transparent border-0">I am
+                        </label>
+                        <div>
+                            <button class="btn btn-lg btn-primary dropdown-toggle asu-primary-button" type="button"
+                                    data-reader-text="Click to open dropdown to choose your role."
+                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Choose
+                            </button>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item pl-4 pr-4 pt-3 pb-3"
+                                   data-reader-text="Click here if you are a Job Seeker" href="#">A Job Seeker</a>
+                                <a class="dropdown-item pl-4 pr-4 pt-3 pb-3"
+                                   data-reader-text="Click here if you are a Family Member" href="./family.html">A
+                                    Family
+                                    Member</a>
+                                <a class="dropdown-item pl-4 pr-4 pt-3 pb-3"
+                                   data-reader-text="Click here if you are an Educator" href="#">An Educator</a>
+                                <a class="dropdown-item pl-4 pr-4 pt-3 pb-3"
+                                   data-reader-text="Click here if you are an Employer" href="#">An Employer</a> <a
+                                    class="dropdown-item pl-4 pr-4 pt-3 pb-3"
+                                    data-reader-text="Click here if you are a Provider" href="#">A Provider</a>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
 
+            </div>
         </div>
+        <div class="col col-md-3 order-1 order-md-2">
+            <div class="text-center mt-5 m-xs-2">
+
+                <img src="./public/images/home-bg-stephen-hawking.jpg"
+                     width="100%" alt="Stephen Halking image" class="mb-2">
+
+                <blockquote class="blockquote">
+                    <p data-reader-text="The very famous scientist Stephen Hawking said, however difficult life may seem, there is always something you can do and succeed at."
+                       class="mb-0 pa-1">
+                        However difficult life may seem, there is always something you can do and succeed at.
+                    </p>
+                    <footer class="blockquote-footer text-primary pa-1">Stephen Hawkings</footer>
+                </blockquote>
+            </div>
+        </div>
+
     </div>
 </div>
 
 <div class="container-fluid pt-5 pb-5 role-selection-container">
     <div class="row justify-content-center">
         <div class="col-sm-12">
-            <p class="display-4 mb-3 text-center display-font" data-reader-text="Tagline: I am a. Select your role by clicking on one of the buttons below.">I am a ...</p>
+            <p class="display-4 mb-3 text-center display-font"
+               data-reader-text="Tagline: I am a. Select your role by clicking on one of the buttons below.">I am a
+                ...</p>
         </div>
 
         <div class="col-sm-12 text-center">
             <ul class="list-unstyled">
                 <li class="d-sm-block d-md-inline-block pt-1 pb-0 p-sm-1">
-                    <a href="#" class="btn btn-primary asu-primary-button btn-block p-4" data-reader-text="Click here if you are a Job Seeker">Job Seeker</a>
+                    <a href="#" class="btn btn-primary asu-primary-button btn-block p-4"
+                       data-reader-text="Click here if you are a Job Seeker">Job Seeker</a>
                 </li>
                 <li class="d-sm-block d-md-inline-block pt-1 pb-0 p-sm-1">
-                    <a href="./family.html" class="btn btn-primary asu-primary-button btn-block p-4" data-reader-text="Click here if you are a Family Member">Family Member</a>
+                    <a href="./family.html" class="btn btn-primary asu-primary-button btn-block p-4"
+                       data-reader-text="Click here if you are a Family Member">Family Member</a>
                 </li>
                 <li class="d-sm-block d-md-inline-block pt-1 pb-0 p-sm-1">
-                    <a href="#" class="btn btn-primary asu-primary-button btn-block p-4" data-reader-text="Click here if you are an Educator">Educator</a>
+                    <a href="#" class="btn btn-primary asu-primary-button btn-block p-4"
+                       data-reader-text="Click here if you are an Educator">Educator</a>
                 </li>
                 <li class="d-sm-block d-md-inline-block pt-1 pb-0 p-sm-1">
-                    <a href="#" class="btn btn-primary asu-primary-button btn-block p-4" data-reader-text="Click here if you are an Employer">Employer</a>
+                    <a href="#" class="btn btn-primary asu-primary-button btn-block p-4"
+                       data-reader-text="Click here if you are an Employer">Employer</a>
                 </li>
                 <li class="d-sm-block d-md-inline-block pt-1 pb-0 p-sm-1">
-                    <a href="#" class="btn btn-primary asu-primary-button btn-block p-4" data-reader-text="Click here if you are a Provider">Provider</a>
+                    <a href="#" class="btn btn-primary asu-primary-button btn-block p-4"
+                       data-reader-text="Click here if you are a Provider">Provider</a>
                 </li>
             </ul>
         </div>
@@ -182,21 +217,10 @@
 <div class="container-fluid pt-5 pb-5 home-cards-container">
     <div class="container">
         <div class="row">
-            <p class="pa-2 text-justify text-light text-center" data-reader-text>
-                AZ Employment First (AZ EF) is a grassroots effort that began forming around the topic of employment
-                for individuals who have disabilities in 2013.
-                <br>
-                <br>
-                Since then, AZ Employment First has been instrumental in the
-                addressing the necessity to increase successful
-                employment outcomes for individuals who have
-                disabilities
-            </p>
-        </div>
-        <div class="row justify-content-center mt-md-4 mb-md-4">
-            <div class="col-8 col-md-4 mt-3">
+            <div class="card-deck justify-content-center mt-md-4 mb-md-4">
                 <div class="card">
-                    <img class="card-img-top" src="./public/images/person-2.jpg" height="232px" width="348px"
+                    <img class="card-img-top" src="./public/images/person-2.jpg"
+                         height="232px" width="348px"
                          alt="Image for Testimonial of a person">
                     <div class="card-body">
                         <h5 class="card-title">Never Give Up !!</h5>
@@ -205,8 +229,6 @@
                         <a href="./testimonial.html" class="btn btn-primary asu-primary-button">Read More</a>
                     </div>
                 </div>
-            </div>
-            <div class="col-8 col-md-4 mt-3">
                 <div class="card">
                     <img class="card-img-top" src="./public/images/featured-program.png" height="232px" width="348px"
                          alt="Executive Order for Arizona as Employment First State.">
@@ -219,8 +241,6 @@
                            class="btn btn-primary asu-primary-button">Learn More</a>
                     </div>
                 </div>
-            </div>
-            <div class="col-8 col-md-4 mt-3">
                 <div class="card">
                     <img class="card-img-top" src="./public/images/person-4.jpg" height="232px" width="348px"
                          alt="Image for Testimonial of a person">

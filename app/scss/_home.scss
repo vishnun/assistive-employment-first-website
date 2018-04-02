@@ -1,6 +1,5 @@
 .home-bg {
   min-height: 580px;
-  background-color: #000000;
   position: relative;
   .jumbotron-fluid {
     background-image: url(../images/home-bg-stephen-hawking.jpg);
@@ -26,7 +25,6 @@
 
 .home-cards-container {
   box-shadow: 0px 7px 17px -10px #000 inset;
-  background-color: #000;
   .card {
     .card-text {
       min-height: 120px;

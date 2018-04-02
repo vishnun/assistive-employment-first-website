@@ -7,7 +7,7 @@ $(function() {
 
   $('#get-started').on('click', function() {
     $(this).hide();
-    $('.role-selection').show();
+    $('.role-selection').css('display', 'inline-block');
   });
   
 
