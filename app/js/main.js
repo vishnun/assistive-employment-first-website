@@ -40,7 +40,7 @@ function bindAssistiveSupportButtons() {
   });
 
 
-  $('#screen-reader-toggle').on('click', function () {
+  $('#screen-reader-toggle').on('change', function () {
     Settings.toggleScreenReader();
     initScreenReader();
   });
