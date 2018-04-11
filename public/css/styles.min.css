@@ -1106,36 +1106,38 @@ html {
       -ms-transform: translateX(26px);
       transform: translateX(26px); }
 
-.ef-nav {
+.header {
   background-color: #ffe37d;
-  box-shadow: 1px 1px 15px #424242; }
-  .ef-nav .navbar-nav .nav-item .nav-link {
-    color: #656565;
-    font-size: 1.1rem; }
-  .ef-nav .navbar-nav .nav-item.active, .ef-nav .navbar-nav .nav-item:hover {
-    background-color: #ffa500ba; }
-    .ef-nav .navbar-nav .nav-item.active .nav-link, .ef-nav .navbar-nav .nav-item:hover .nav-link {
-      color: black; }
-  .ef-nav .navbar-nav .dropdown-menu {
-    background-color: white; }
-    .ef-nav .navbar-nav .dropdown-menu .dropdown-item {
+  box-shadow: 0px 9px 15px -12px #424242; }
+  .header .ef-nav {
+    background-color: #ffe37d; }
+    .header .ef-nav .navbar-nav .nav-item .nav-link {
       color: #656565;
-      font-size: 1.2rem; }
-      .ef-nav .navbar-nav .dropdown-menu .dropdown-item.active, .ef-nav .navbar-nav .dropdown-menu .dropdown-item:hover {
-        background-color: #ffa500ba;
+      font-size: 1.1rem; }
+    .header .ef-nav .navbar-nav .nav-item.active, .header .ef-nav .navbar-nav .nav-item:hover {
+      background-color: #ffa500ba; }
+      .header .ef-nav .navbar-nav .nav-item.active .nav-link, .header .ef-nav .navbar-nav .nav-item:hover .nav-link {
         color: black; }
-    .ef-nav .navbar-nav .dropdown-menu.show:before {
-      content: '';
-      display: inline-block;
-      height: 0;
-      width: 0;
-      position: absolute;
-      right: 50%;
-      margin-right: -5px;
-      top: -9px;
-      border-color: transparent transparent #1a1a1a transparent;
-      border-width: 0 10px 10px 10px;
-      border-style: solid; }
+    .header .ef-nav .navbar-nav .dropdown-menu {
+      background-color: white; }
+      .header .ef-nav .navbar-nav .dropdown-menu .dropdown-item {
+        color: #656565;
+        font-size: 1.2rem; }
+        .header .ef-nav .navbar-nav .dropdown-menu .dropdown-item.active, .header .ef-nav .navbar-nav .dropdown-menu .dropdown-item:hover {
+          background-color: #ffa500ba;
+          color: black; }
+      .header .ef-nav .navbar-nav .dropdown-menu.show:before {
+        content: '';
+        display: inline-block;
+        height: 0;
+        width: 0;
+        position: absolute;
+        right: 50%;
+        margin-right: -5px;
+        top: -9px;
+        border-color: transparent transparent #1a1a1a transparent;
+        border-width: 0 10px 10px 10px;
+        border-style: solid; }
 
 .home-bg {
   min-height: 580px;
