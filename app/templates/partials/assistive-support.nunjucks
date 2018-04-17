@@ -66,24 +66,24 @@
             <img class="card-img-top" src="./public/images/head-tracking.jpg"
                  alt="Increase or decrease font size for better readability.">
             <div class="card-body">
-                <h5 class="card-title">Color Tracking for Mouse</h5>
+                <h5 class="card-title">Face Tracking for Mouse Control</h5>
 
                 <div class="card-text d-inline-flex">
                     <label class="switch">
                         <input class="toggle-switch clickable" type="checkbox"
-                               aria-label="Toggle Color Tracking for Mouse movement"
-                               id="toggle-color-tracker">
+                               aria-label="Toggle Face Tracking for Mouse movement"
+                               id="toggle-face-tracker">
                         <span class="slider round"></span>
                     </label>
-                    <div>
-                        <p class="m-0 text-center">
-                            Color to use:
-                            <span class="border border-primary rounded-circle"
-                                  style="display: inline-block;height: 17px;">
-                                <i class="fas fa-circle border rounded-circle" style="vertical-align: top;color: cyan"></i>
-                            </span>
-                        </p>
-                    </div>
+                    <!--<div>-->
+                        <!--<p class="m-0 text-center">-->
+                            <!--Color to use:-->
+                            <!--<span class="border border-primary rounded-circle"-->
+                                  <!--style="display: inline-block;height: 17px;">-->
+                                <!--<i class="fas fa-circle border rounded-circle" style="vertical-align: top;color: cyan"></i>-->
+                            <!--</span>-->
+                        <!--</p>-->
+                    <!--</div>-->
                 </div>
             </div>
         </div>

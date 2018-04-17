@@ -27,17 +27,55 @@
     <script src="js/settings.js"></script>
     <!-- endbuild -->
 
+    <style>
+        .rect {
+            border: 2px solid #a64ceb;
+            left: -1000px;
+            position: absolute;
+            top: -1000px;
+        }
+
+        video, canvas {
+            margin-left: -320px;
+            left: 50%;
+            top: 50%;
+            position: fixed;
+            z-index: 999;
+            margin-top: -240px;
+        }
+
+        .video-container {
+            height: 480px;
+            width: 640px;
+            z-index: 999;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            margin-left: -320px;
+            margin-top: -240px;
+        }
+
+        canvas {
+            z-index: 9999;
+        }
+    </style>
 
 </head>
 
 <body>
-<video id="video" aria-label="Video element used to assist for using mouse using color tracking"
-       width="100%" height="100%" style="position:fixed;z-index: -1; left: 0; top: 0;"
-       preload loop autoplay muted>
-    html5 video not supported
-</video>
 
-<!--<div id="assistive-arrow"></div>-->
+<div class="video-container">
+    <video id="video" width="640" height="480" preload autoplay loop muted></video>
+    <canvas id="guidelines" width="640" height="480"></canvas>
+    <div id="assistive-arrow"></div>
+</div>
+
+<!--<video id="video" aria-label="Video element used to assist for using mouse using color tracking"-->
+<!--width="100%" height="100%" style="position:fixed; left: 0; top: 0;"-->
+<!--preload loop autoplay muted>-->
+<!--html5 video not supported-->
+<!--</video>-->
+
 
 
 
@@ -256,24 +294,24 @@
             <img class="card-img-top" src="./public/images/head-tracking.jpg"
                  alt="Increase or decrease font size for better readability.">
             <div class="card-body">
-                <h5 class="card-title">Color Tracking for Mouse</h5>
+                <h5 class="card-title">Face Tracking for Mouse Control</h5>
 
                 <div class="card-text d-inline-flex">
                     <label class="switch">
                         <input class="toggle-switch clickable" type="checkbox"
-                               aria-label="Toggle Color Tracking for Mouse movement"
-                               id="toggle-color-tracker">
+                               aria-label="Toggle Face Tracking for Mouse movement"
+                               id="toggle-face-tracker">
                         <span class="slider round"></span>
                     </label>
-                    <div>
-                        <p class="m-0 text-center">
-                            Color to use:
-                            <span class="border border-primary rounded-circle"
-                                  style="display: inline-block;height: 17px;">
-                                <i class="fas fa-circle border rounded-circle" style="vertical-align: top;color: cyan"></i>
-                            </span>
-                        </p>
-                    </div>
+                    <!--<div>-->
+                        <!--<p class="m-0 text-center">-->
+                            <!--Color to use:-->
+                            <!--<span class="border border-primary rounded-circle"-->
+                                  <!--style="display: inline-block;height: 17px;">-->
+                                <!--<i class="fas fa-circle border rounded-circle" style="vertical-align: top;color: cyan"></i>-->
+                            <!--</span>-->
+                        <!--</p>-->
+                    <!--</div>-->
                 </div>
             </div>
         </div>
@@ -298,9 +336,14 @@
 <!--build:js public/js/main.min.js -->
 <script src="js/lib/jquery-extension.js"></script>
 <script src="js/lib/tracking/tracking-min.js"></script>
+<script src="js/lib/tracking/data/face-min.js"></script>
+<script src="js/lib/tracking/data/eye-min.js"></script>
+<script src="js/lib/tracking/data/mouth-min.js"></script>
+
 <script src="js/text-to-speech.js"></script>
 <script src="js/speech-commands.js"></script>
 <script src="js/color-tracking-navigation.js"></script>
+<script src="js/object-tracking-navigation.js"></script>
 
 <script src="js/home-page.js"></script>
 <script src="js/about-page.js"></script>

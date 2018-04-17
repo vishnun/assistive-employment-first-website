@@ -7,6 +7,9 @@ $bg-color: #ffe37d;
 html {
   font-size: 100%;
 }
+body {
+  position: relative;
+}
 
 :root, body {
   font-family: "Inter UI", "sans-serif", "helvetica", "roboto" !important;

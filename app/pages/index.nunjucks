@@ -134,7 +134,7 @@
                     </div>
                 </div>
                 <div class="card">
-                    <img class="card-img-top" src="./public/images/person-4.jpg" height="232px" width="348px"
+                    <img id="banner-img" class="card-img-top" src="./public/images/person-4.jpg" height="232px" width="348px"
                          alt="Image for Testimonial of a person">
                     <div class="card-body">
                         <h5 class="card-title">Limits exist only in your mind.</h5>
