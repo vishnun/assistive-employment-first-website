@@ -6,8 +6,9 @@ $(function () {
 });
 
 function initFaceTracker() {
+  var arrow = $("#assistive-arrow");
+  arrow.hide();
   $('#toggle-face-tracker').on('change', function () {
-    var arrow = $("#assistive-arrow");
     if ($(this).prop('checked')) {
       trackFace(arrow);
     } else {
