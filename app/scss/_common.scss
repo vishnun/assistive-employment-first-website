@@ -160,15 +160,25 @@ body {
   }
 }
 
+#object-pointer {
+  height: 40px;
+  width: 40px;
+  top: 50%;
+  left: 50%;
+  z-index: 9999;
+  position: absolute;
+  background-color: red;
+  border: 2px solid;
+}
+
 #assistive-arrow {
   height: 48px;
   width: 48px;
   top: 50%;
   left: 50%;
-  background-image: url(../images/arrow.png);
   position: absolute;
   z-index: 999999;
-  background-position: center;
+  background: url(../images/arrow.png) center;
   background-size: contain;
 }
 

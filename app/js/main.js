@@ -7,7 +7,7 @@ $(function () {
 
 function initFaceTracker() {
   var arrow = $("#assistive-arrow");
-  arrow.hide();
+  // arrow.hide();
   $('#toggle-face-tracker').on('change', function () {
     if ($(this).prop('checked')) {
       trackFace(arrow);
