@@ -1003,13 +1003,15 @@ body {
   z-index: 9999;
   position: absolute;
   background-color: red;
-  border: 2px solid; }
+  border: 2px solid;
+  display: none; }
 
 #assistive-arrow {
   height: 48px;
   width: 48px;
-  top: 50%;
-  left: 50%;
+  top: 500px;
+  left: 500px;
+  display: none;
   position: absolute;
   z-index: 999999;
   background: url(../images/arrow.png) center;

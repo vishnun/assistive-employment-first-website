@@ -6,14 +6,19 @@ $(function () {
 });
 
 function initFaceTracker() {
-  var arrow = $("#assistive-arrow");
-  // arrow.hide();
+  var mouse = $("#assistive-arrow");
+  var pointer = $('#object-pointer');
+  
   $('#toggle-face-tracker').on('change', function () {
     if ($(this).prop('checked')) {
-      trackFace(arrow);
+      pointer.show();
+      mouse.show();
+      trackFace(mouse, pointer);
     } else {
+      pointer.hide();
+      mouse.hide();
+      location.reload();
       stopFaceTracker();
-      arrow.hide();
     }
   });
 }
