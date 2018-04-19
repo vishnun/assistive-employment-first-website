@@ -8,26 +8,44 @@ $(function () {
 function initFaceTracker() {
   var mouse = $("#assistive-arrow");
   var pointer = $('#object-pointer');
+  var helpCenter = $('.controls-help');
+  var $faceTrackerToggle = $('#toggle-face-tracker');
   
-  $('#toggle-face-tracker').on('change', function () {
+  function startFaceTracking() {
+    pointer.show();
+    mouse.show();
+    helpCenter.show();
+    trackFace(mouse, pointer);
+  }
+  
+  function stopFaceTracking() {
+    pointer.hide();
+    mouse.hide();
+    helpCenter.hide();
+  }
+  
+  
+  $faceTrackerToggle.on('change', function () {
     if ($(this).prop('checked')) {
-      pointer.show();
-      mouse.show();
-      trackFace(mouse, pointer);
+      Settings.updateFaceTracker("true");
+      startFaceTracking();
     } else {
-      pointer.hide();
-      mouse.hide();
+      Settings.updateFaceTracker("false");
+      stopFaceTracking();
       location.reload();
-      stopFaceTracker();
     }
   });
+  
+  if (Settings.isFaceTrackerToggledOn()) {
+    startFaceTracking();
+    $faceTrackerToggle.prop('checked', true);
+  }
 }
 
 function initScreenReader() {
   var reader = new ScreenReader();
   
   var readEls = $("[data-reader-text]");
-  
   
   var readElCallback = function (e) {
     if (Settings.isScreenReaderToggledOn()) {

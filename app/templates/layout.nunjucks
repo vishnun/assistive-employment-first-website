@@ -27,55 +27,11 @@
     <script src="js/settings.js"></script>
     <!-- endbuild -->
 
-    <style>
-        .rect {
-            border: 2px solid #a64ceb;
-            left: -1000px;
-            position: absolute;
-            top: -1000px;
-        }
-
-        video, canvas {
-            margin-left: -320px;
-            left: 50%;
-            top: 50%;
-            position: fixed;
-            z-index: 999;
-            margin-top: -240px;
-        }
-
-        .video-container {
-            height: 480px;
-            width: 640px;
-            z-index: 999;
-            position: fixed;
-            top: 50%;
-            left: 50%;
-            margin-left: -320px;
-            margin-top: -240px;
-        }
-
-        canvas {
-            z-index: 9999;
-        }
-    </style>
-
 </head>
 
 <body>
-<div id="assistive-arrow"></div>
-<div class="video-container">
-    <div id="object-pointer"></div>
-    <video id="video" width="640" height="480" preload autoplay loop muted></video>
-    <canvas id="guidelines" width="640" height="480"></canvas>
-</div>
 
-<!--<video id="video" aria-label="Video element used to assist for using mouse using color tracking"-->
-<!--width="100%" height="100%" style="position:fixed; left: 0; top: 0;"-->
-<!--preload loop autoplay muted>-->
-<!--html5 video not supported-->
-<!--</video>-->
-
+{% include 'partials/object-color-tracking-navigation.nunjucks' %}
 
 {% block content %} {% endblock %}
 

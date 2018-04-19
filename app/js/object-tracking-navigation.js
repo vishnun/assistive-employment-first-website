@@ -139,10 +139,6 @@ function trackFace(mouse, pointer) {
   tracker.on('track', trackingCallback);
 }
 
-function stopFaceTracker() {
-  tracking.TrackerTask.stop();
-}
-
 
 $(function () {
   var mouse = $("#assistive-arrow");
@@ -155,6 +151,11 @@ $(function () {
       if (el) {
         el.click()
       }
+    }
+    if (event.which === 114) {
+      mouse.css({
+        left: 500, top: 500
+      });
     }
   });
   

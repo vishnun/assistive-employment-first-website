@@ -1,0 +1,10 @@
+<div id="assistive-arrow"></div>
+<div class="video-container">
+    <div id="object-pointer"></div>
+    <video id="video" width="320" height="240" preload autoplay loop muted></video>
+    <canvas id="guidelines" width="320" height="240"></canvas>
+</div>
+
+<div class="controls-help">
+    Press <strong>C</strong> to click on something. Press <strong>R</strong> to reset the mouse position.
+</div>

@@ -9,6 +9,29 @@ var Settings = {
     }
   },
   
+  updateFaceTracker: function (val) {
+    if (localStorageExists()) {
+      localStorage.setItem('faceTracker', val);
+    }
+  },
+  
+  toggleFaceTracker: function () {
+    if (localStorageExists()) {
+      if (this.isFaceTrackerToggledOn()) {
+        localStorage.setItem('faceTracker', "false");
+      } else {
+        localStorage.setItem('faceTracker', "true")
+      }
+    }
+  },
+  
+  isFaceTrackerToggledOn: function () {
+    if (localStorageExists()) {
+      var toggle = localStorage.getItem('faceTracker');
+      return toggle === "true";
+    }
+  },
+  
   toggleScreenReader: function () {
     if (localStorageExists()) {
       if (this.isScreenReaderToggledOn()) {
@@ -18,7 +41,6 @@ var Settings = {
       }
     }
   },
-  
   isScreenReaderToggledOn: function () {
     if (localStorageExists()) {
       var toggle = localStorage.getItem('screenReader');
