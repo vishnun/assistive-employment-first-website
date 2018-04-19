@@ -2,15 +2,15 @@ $(function () {
   bindCalendarButtons();
   bindAssistiveSupportButtons();
   initScreenReader();
-  initFaceTracker();
 });
 
-function initFaceTracker() {
+function bindFaceTracker() {
   var mouse = $("#assistive-arrow");
   var pointer = $('#object-pointer');
   var helpCenter = $('.controls-help');
   var $faceTrackerToggle = $('#toggle-face-tracker');
   var videoContainer = $('.video-container');
+  var $assistiveDrawer = $('.ef-assistive-drawer');
   
   function startFaceTracking() {
     videoContainer.show();
@@ -36,6 +36,7 @@ function initFaceTracker() {
       stopFaceTracking();
       location.reload();
     }
+    $assistiveDrawer.toggleClass('show');
   });
   
   if (Settings.isFaceTrackerToggledOn()) {
@@ -73,16 +74,18 @@ function bindCalendarButtons() {
 
 function bindAssistiveSupportButtons() {
   var $rootEl = $('html');
+  var $assistiveDrawer = $('.ef-assistive-drawer');
   
   $('.assistive-support').on('click', function () {
-    $('.ef-assistive-drawer').toggleClass('show');
+    $assistiveDrawer.toggleClass('show');
   });
-  
   
   $('#screen-reader-toggle').on('change', function () {
     Settings.toggleScreenReader();
     initScreenReader();
   });
+  
+  bindFaceTracker();
   
   $('#zoom-in-text').on('click', function () {
     var currentFontSize = $rootEl.css('font-size');
@@ -92,6 +95,8 @@ function bindAssistiveSupportButtons() {
     $rootEl.css('font-size', parseInt(currentFontSize) + 1 + 'px');
     Settings.updateFontSize($rootEl.css('font-size'));
   });
+  
+  
   $('#changeReaderRange').on('change', function () {
     var val = $(this).val();
     Settings.changeReaderSettings(val);
