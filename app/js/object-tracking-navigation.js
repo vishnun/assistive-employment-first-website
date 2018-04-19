@@ -1,4 +1,4 @@
-var gutterWidth = 80;
+var gutterWidth = 40;
 
 function drawGuides(canvas) {
   var ctx = canvas.getContext("2d");
@@ -37,9 +37,9 @@ function pointerInRight(canvas, x, y) {
   return xSatisfy && ySatisfy;
 }
 
-function moveMouseFor(mouse, canvas, coords) {
-  var x = coords.x;
-  var y = coords.y;
+function moveMouseFor(mouse, canvas, rect) {
+  var y = rect.y + rect.height / 2;
+  var x = canvas.width - (rect.x + rect.width / 2);
   if (pointerInTop(canvas, x, y)) {
     mouse.animate({
       top: "-=10"
@@ -128,7 +128,7 @@ function trackFace(mouse, pointer) {
       var top = rect.y + rect.height / 2 - 20;
       plotFaceRect(ctx, rect);
       highlightRectFor(canvas, rect);
-      moveMouseFor(mouse, canvas, {x: left, y: top});
+      moveMouseFor(mouse, canvas, rect);
       pointer.css({
         top: top,
         left: left

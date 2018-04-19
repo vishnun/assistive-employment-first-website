@@ -10,8 +10,10 @@ function initFaceTracker() {
   var pointer = $('#object-pointer');
   var helpCenter = $('.controls-help');
   var $faceTrackerToggle = $('#toggle-face-tracker');
+  var videoContainer = $('.video-container');
   
   function startFaceTracking() {
+    videoContainer.show();
     pointer.show();
     mouse.show();
     helpCenter.show();
@@ -19,11 +21,11 @@ function initFaceTracker() {
   }
   
   function stopFaceTracking() {
+    videoContainer.hide();
     pointer.hide();
     mouse.hide();
     helpCenter.hide();
   }
-  
   
   $faceTrackerToggle.on('change', function () {
     if ($(this).prop('checked')) {
