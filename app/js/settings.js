@@ -32,6 +32,29 @@ var Settings = {
     }
   },
   
+  updateColorTracker: function (val) {
+    if (localStorageExists()) {
+      localStorage.setItem('colorTracker', val);
+    }
+  },
+  
+  toggleColorTracker: function () {
+    if (localStorageExists()) {
+      if (this.isFaceTrackerToggledOn()) {
+        localStorage.setItem('colorTracker', "false");
+      } else {
+        localStorage.setItem('colorTracker', "true")
+      }
+    }
+  },
+  
+  isColorTrackerToggledOn: function () {
+    if (localStorageExists()) {
+      var toggle = localStorage.getItem('colorTracker');
+      return toggle === "true";
+    }
+  },
+  
   toggleScreenReader: function () {
     if (localStorageExists()) {
       if (this.isScreenReaderToggledOn()) {

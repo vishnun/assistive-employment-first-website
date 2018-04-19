@@ -4,23 +4,23 @@ $(function () {
   initScreenReader();
 });
 
-function bindFaceTracker() {
+function bindFaceAndColorTracker() {
   var mouse = $("#assistive-arrow");
   var pointer = $('#object-pointer');
   var helpCenter = $('.controls-help');
   var $faceTrackerToggle = $('#toggle-face-tracker');
+  var $colorTrackerToggle = $('#toggle-color-tracker');
   var videoContainer = $('.video-container');
   var $assistiveDrawer = $('.ef-assistive-drawer');
   
-  function startFaceTracking() {
+  function setupVisualsForTracking() {
     videoContainer.show();
     pointer.show();
     mouse.show();
     helpCenter.show();
-    trackFace(mouse, pointer);
   }
   
-  function stopFaceTracking() {
+  function stopTracking() {
     videoContainer.hide();
     pointer.hide();
     mouse.hide();
@@ -30,18 +30,37 @@ function bindFaceTracker() {
   $faceTrackerToggle.on('change', function () {
     if ($(this).prop('checked')) {
       Settings.updateFaceTracker("true");
-      startFaceTracking();
+      setupVisualsForTracking();
+      trackFace(mouse, pointer);
     } else {
       Settings.updateFaceTracker("false");
-      stopFaceTracking();
+      stopTracking();
+      location.reload();
+    }
+    $assistiveDrawer.toggleClass('show');
+  });
+  
+  $colorTrackerToggle.on('change', function () {
+    if ($(this).prop('checked')) {
+      Settings.updateColorTracker("true");
+      setupVisualsForTracking();
+      trackColor(mouse, pointer);
+    } else {
+      Settings.updateColorTracker("false");
+      stopTracking();
       location.reload();
     }
     $assistiveDrawer.toggleClass('show');
   });
   
   if (Settings.isFaceTrackerToggledOn()) {
-    startFaceTracking();
+    setupVisualsForTracking();
+    trackFace(mouse, pointer);
     $faceTrackerToggle.prop('checked', true);
+  } else if (Settings.isColorTrackerToggledOn()) {
+    setupVisualsForTracking();
+    trackColor(mouse, pointer);
+    $colorTrackerToggle.prop('checked', true);
   }
 }
 
@@ -85,7 +104,7 @@ function bindAssistiveSupportButtons() {
     initScreenReader();
   });
   
-  bindFaceTracker();
+  bindFaceAndColorTracker();
   
   $('#zoom-in-text').on('click', function () {
     var currentFontSize = $rootEl.css('font-size');

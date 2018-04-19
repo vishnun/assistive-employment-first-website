@@ -58,8 +58,8 @@
 
 <script src="js/text-to-speech.js"></script>
 <script src="js/speech-commands.js"></script>
-<script src="js/color-tracking-navigation.js"></script>
 <script src="js/object-tracking-navigation.js"></script>
+<script src="js/color-tracking-navigation.js"></script>
 
 <script src="js/home-page.js"></script>
 <script src="js/about-page.js"></script>

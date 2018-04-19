@@ -1034,7 +1034,7 @@ body {
 .ef-assistive-drawer {
   transition: height 0.5s ease;
   height: 0;
-  width: 385px;
+  width: 628px;
   left: 10px;
   bottom: 76px;
   overflow: hidden;

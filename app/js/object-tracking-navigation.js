@@ -37,7 +37,7 @@ function pointerInRight(canvas, x, y) {
   return xSatisfy && ySatisfy;
 }
 
-function moveMouseFor(mouse, canvas, rect) {
+function moveMouseForFace(mouse, canvas, rect) {
   var y = rect.y + rect.height / 2;
   var x = canvas.width - (rect.x + rect.width / 2);
   if (pointerInTop(canvas, x, y)) {
@@ -62,6 +62,35 @@ function moveMouseFor(mouse, canvas, rect) {
     mouse.animate({
       left: "+=10"
     }, 10);
+  }
+  
+}
+
+function moveMouseForColor(mouse, canvas, rect) {
+  var y = rect.y + rect.height / 2;
+  var x = canvas.width - (rect.x + rect.width / 2);
+  if (pointerInTop(canvas, x, y)) {
+    mouse.animate({
+      top: "-=5"
+    }, 20);
+  }
+  
+  if (pointerInBottom(canvas, x, y)) {
+    mouse.animate({
+      top: "+=5"
+    }, 20);
+  }
+  
+  if (pointerInLeft(canvas, x, y)) {
+    mouse.animate({
+      left: "-=5"
+    }, 20);
+  }
+  
+  if (pointerInRight(canvas, x, y)) {
+    mouse.animate({
+      left: "+=5"
+    }, 20);
   }
   
 }
@@ -100,7 +129,7 @@ function highlightRectFor(canvas, rect) {
   }
 }
 
-function plotFaceRect(ctx, rect) {
+function plotTrackedObject(ctx, rect) {
   ctx.beginPath();
   ctx.rect(rect.x, rect.y, rect.width, rect.height);
   ctx.stroke();
@@ -126,9 +155,9 @@ function trackFace(mouse, pointer) {
     event.data.forEach(function (rect) {
       var left = canvas.width - (rect.x + rect.width / 2 + 20 );
       var top = rect.y + rect.height / 2 - 20;
-      plotFaceRect(ctx, rect);
+      plotTrackedObject(ctx, rect);
       highlightRectFor(canvas, rect);
-      moveMouseFor(mouse, canvas, rect);
+      moveMouseForFace(mouse, canvas, rect);
       pointer.css({
         top: top,
         left: left
@@ -139,6 +168,36 @@ function trackFace(mouse, pointer) {
   tracker.on('track', trackingCallback);
 }
 
+function trackColor(mouse, pointer) {
+  var canvas = $('#guidelines')[0];
+  drawGuides(canvas);
+  
+  var tracker = new tracking.ColorTracker(['magenta']);
+  
+  tracker.setMinDimension(1);
+  tracker.setMinGroupSize(1);
+  
+  tracking.track('#video', tracker, {camera: true});
+  
+  var ctx = canvas.getContext("2d");
+  var trackingCallback = function (event) {
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+    drawGuides(canvas);
+    event.data.forEach(function (rect) {
+      var left = canvas.width - (rect.x + rect.width / 2 + 10 );
+      var top = rect.y + rect.height / 2 - 10;
+      plotTrackedObject(ctx, rect);
+      highlightRectFor(canvas, rect);
+      moveMouseForColor(mouse, canvas, rect);
+      pointer.css({
+        top: top,
+        left: left
+      });
+    });
+  };
+  
+  tracker.on('track', trackingCallback);
+}
 
 $(function () {
   var mouse = $("#assistive-arrow");
@@ -154,7 +213,7 @@ $(function () {
     }
     if (event.which === 114) {
       mouse.css({
-        left: 500, top: 500
+        left: 500, top: 100
       });
     }
   });

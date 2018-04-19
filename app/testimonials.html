@@ -271,6 +271,20 @@
                 </div>
             </div>
         </div>
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title">On Screen Keyboard</h5>
+
+                <div class="card-text d-inline-flex">
+                    <label class="switch">
+                        <input class="toggle-switch clickable" type="checkbox"
+                               aria-label="On Screen Keyboard"
+                               id="toggle-onscreen-keyboard">
+                        <span class="slider round"></span>
+                    </label>
+                </div>
+            </div>
+        </div>
     </div>
 
     <div class="card-group">
@@ -307,14 +321,40 @@
                         <span class="slider round"></span>
                     </label>
                     <!--<div>-->
-                        <!--<p class="m-0 text-center">-->
-                            <!--Color to use:-->
-                            <!--<span class="border border-primary rounded-circle"-->
-                                  <!--style="display: inline-block;height: 17px;">-->
-                                <!--<i class="fas fa-circle border rounded-circle" style="vertical-align: top;color: cyan"></i>-->
-                            <!--</span>-->
-                        <!--</p>-->
+                    <!--<p class="m-0 text-center">-->
+                    <!--Color to use:-->
+                    <!--<span class="border border-primary rounded-circle"-->
+                    <!--style="display: inline-block;height: 17px;">-->
+                    <!--<i class="fas fa-circle border rounded-circle" style="vertical-align: top;color: cyan"></i>-->
+                    <!--</span>-->
+                    <!--</p>-->
                     <!--</div>-->
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <img class="card-img-top" src="./public/images/head-tracking.jpg"
+                 alt="Track color for better control.">
+            <div class="card-body">
+                <h5 class="card-title">Color Tracking for Mouse Control</h5>
+
+                <div class="card-text d-inline-flex">
+                    <label class="switch">
+                        <input class="toggle-switch clickable" type="checkbox"
+                               aria-label="Toggle Color Tracking for Mouse movement"
+                               id="toggle-color-tracker">
+                        <span class="slider round"></span>
+                    </label>
+                    <div>
+                        <p class="m-0 text-center">
+                            Color to use:
+                            <span class="border border-primary rounded-circle"
+                                  style="display: inline-block;height: 17px;">
+                                <i class="fas fa-circle border rounded-circle"
+                                   style="vertical-align: top;color: cyan"></i>
+                            </span>
+                        </p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -345,8 +385,8 @@
 
 <script src="js/text-to-speech.js"></script>
 <script src="js/speech-commands.js"></script>
-<script src="js/color-tracking-navigation.js"></script>
 <script src="js/object-tracking-navigation.js"></script>
+<script src="js/color-tracking-navigation.js"></script>
 
 <script src="js/home-page.js"></script>
 <script src="js/about-page.js"></script>
