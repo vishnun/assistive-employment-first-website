@@ -12,13 +12,10 @@
 
 {% import 'macros/page-title-macro.nunjucks' as pt %} {{pt.pageTitle("We'd love to help you!")}}
 <style media="screen">
-body {
-    background-color:#f0f0f0;
- }
 #keyboard {
     display:inline-block;
     padding:10px 15px;
-    background-color:#ffe37d;
+    
     border:1px solid #009;
     border-radius:10px;
     text-align:center;
@@ -182,10 +179,10 @@ else {
 
               <form>
             <div class="form-group">
-            <input class="form-control" id="text" rows="1" placeholder="name"></input>
+            <input class="form-control" id="text" rows="1" placeholder="Your name"></input>
             </div>
             <div class="form-group">
-            <input class="form-control" id="text1" rows="1" placeholder = "emailaddress"></input>
+            <input class="form-control" id="text1" rows="1" placeholder = "Your email address"></input>
             </div>
             <div class="form-group">
             <textarea class="form-control" id="text2" rows="5" placeholder = "Message"></textarea>
