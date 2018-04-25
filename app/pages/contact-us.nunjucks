@@ -11,50 +11,216 @@
 </div>
 
 {% import 'macros/page-title-macro.nunjucks' as pt %} {{pt.pageTitle("We'd love to help you!")}}
+<style media="screen">
+body {
+    background-color:#f0f0f0;
+ }
+#keyboard {
+    display:inline-block;
+    padding:10px 15px;
+    background-color:#ffe37d;
+    border:1px solid #009;
+    border-radius:10px;
+    text-align:center;
+    box-shadow:4px 4px 4px #999;
+    width: 400px;
+ }
+#keyboard div {
+    margin:5px 0;
+ }
+#space {
+    width:184px;
+ }
+#keyboard label {
+    margin-top:20px;
+    font-family:serif;
+    text-decoration:underline;
+ }
+#keyboard input {
+    box-shadow:2px 2px 2px #666;
+ }
+#keyboard input[type="text"] {
+    margin-top:20px;
+    border:1px solid #666;
+    border-radius:4px;
+    box-shadow:none;
+ }
+#keyboard #back {
+    font-weight:bold;
+    font-size: 10px;
+ }
+ #keyboard #button {
+    font-weight:bold;
+    font-size: 10px;
+ }
+</style>
 
 
-  
+
+<script src="js/v-keyboard.js"></script>
+
+<script>
+(function() {
+   '.use strict';
+   var i,c;
+function init(){ 
+  /* get all the input elements within the div whose id is "keyboard */
+   i=document.getElementById('keyboard').getElementsByTagName('input'); 
+   
+/* loop through all the elements */   
+
+for(c=0;c<i.length;c++) {
+/* find all the the input type="button" elements */
+if(i[c].type==='button') { 
+ /* add an onclick handler to each of them  and set the function to call */
+   i[c].addEventListener('onclick',makeClickHandler(c));
+   }
+  }
+/* this is the type="reset" input */
+document.getElementById('clear').onclick=function() {
+/* remove all the characters from the input type="text" element */
+   document.getElementById('text').value='';
+   }
+ }
+function makeClickHandler(c) {
+   i[c].onclick=function() {
+/* find the non-text button  which has an id */
+if(i[c].id==='back') {
+/* remove last character from the input the type="text" element using regular expression */
+   document.getElementById('text').value=
+   document.getElementById('text').value.replace(/.$/,'');
+
+ }
+/* find the text buttons */
+else {
+/* add characters to the input type="text" element */
+   document.getElementById('text').value+=this.value.toLowerCase();
+
+   }
+  };
+ }
+
+   window.addEventListener?
+   window.addEventListener('click',init,false):
+   window.attachEvent('onclick',init);
+})();
+</script>
+
+
+ 
 <div class="container-fluid pt-5 pb-5 home-cards-container">
   <div class="container">
     <div class="row justify-content-center">
-      <div class="col-8 col-md-6 mt-3">
+      <div class="col-6 col-md-5 mt-3">
         <div class="card">
-        	<div class="card-body">
-            	<form>
-  					<div class="form-group">
-    				<input class="form-control" id="name" rows="1" placeholder = "Your name"></input>
-    				</div>
-    				<div class="form-group">
-    				<input class="form-control" id="email" rows="1" placeholder = "Your email address"></input>
-    				</div>
-    				<div class="form-group">
-    				<textarea class="form-control" id="message" rows="5" placeholder = "Message"></textarea>
-  					</div>
-				</form>
+          <div class="card-body">
+<div id="keyboard">
+<div>
+
+
+ <input type="button" value="Q">
+ <input type="button" value="W">
+ <input type="button" value="E">
+ <input type="button" value="R">
+ <input type="button" value="T">
+ <input type="button" value="Y">
+ <input type="button" value="U">
+ <input type="button" value="I">
+ <input type="button" value="O">
+ 
+
+</div><div>
+  <input type="button" value="P">
+ <input type="button" value="A">
+ <input type="button" value="S">
+ <input type="button" value="D">
+ <input type="button" value="F">
+ <input type="button" value="G">
+ <input type="button" value="H">
+ <input type="button" value="J">
+ <input type="button" value="K">
+ 
+
+ 
+</div><div>
+  <input type="button" value="L">
+ <input type="button" value="Z">
+ <input type="button" value="X">
+ <input type="button" value="C">
+ <input type="button" value="V">
+ <input type="button" value="B">
+ <input type="button" value="N">
+ <input type="button" value="M">
+ <input type="button" value=".">
+ </div>
+<div>
+ <input type="button" value="0">
+ <input type="button" value="1">
+ <input type="button" value="2">
+ <input type="button" value="3">
+ <input type="button" value="4">
+ <input type="button" value="5">
+ <input type="button" value="6">
+ <input type="button" value="7">
+ <input type="button" value="8">
+</div>
+<div>
+ <input type="button" value="9">
+ <input type="button" value="@">
+ <input type="button" value=",">
+ <input type="button" value="$">
+ <input type="button" value="#">
+ <input type="button" value="(">
+ <input type="button" value=")">
+ <input type="button" value="&">
+ <input type="button" value="*">
+</div>
+<input id="back" type="button" value="&#8592;">
+ <input id="space" type="button" value=" ">
+ <input id="clear" type="reset" value="clear">
+<div>
+
+              <form>
+            <div class="form-group">
+            <input class="form-control" id="text" rows="1" placeholder="name"></input>
+            </div>
+            <div class="form-group">
+            <input class="form-control" id="text1" rows="1" placeholder = "emailaddress"></input>
+            </div>
+            <div class="form-group">
+            <textarea class="form-control" id="text2" rows="5" placeholder = "Message"></textarea>
+            </div>
+             </form>
             <a href="#" class="btn btn-primary asu-primary-button">Send</a>
+            <div id="container" class="ui-widget-content v-keyboard-container"></div>
           </div>
         </div>
       </div>
+    </div>
+  
+
+
+</div>
       <div class="col-8 col-md-6 mt-3">
         <div class="card">
-        	<div class="card-body">
-        		<div>
-        		<p><b>Sonoran UCEDD</b><br/>Department of Family & Community<br/>Medicine University of Arizona | College of Medicine</p>
-            	<p><b>Phone:</b> 520.626.0442<br/>
-            	<b>Fax:</b> 520.626.0081<br/>
-            	<b>Email:</b>  ucedd@email.arizona.edu</p>
-            	</div>
-            	<div>
-            	<p><b>We are located at:</b><br/>1521 E. Helen St. <br/>Tucson, AZ 85721</p>
-            	</div>
-  				<button type="button" class="btn btn-fb"><i class="fab fa-facebook"></i></button>
-				<!--Twitter-->
-				<button type="button" class="btn btn-tw"><i class="fab fa-twitter"></i></button>
-				<!--Google +-->
-				<button type="button" class="btn btn-gplus"><i class="fab fa-google-plus"></i></button>
-				<!--Linkedin-->
-				<button type="button" class="btn btn-li"><i class="fab fa-linkedin"></i></button>
-				<!--Instagram-->
+          <div class="card-body">
+            <div>
+            <p><b>Sonoran UCEDD</b><br/>Department of Family & Community<br/>Medicine University of Arizona | College of Medicine</p>
+              <p><b>Phone:</b> 520.626.0442<br/>
+              <b>Fax:</b> 520.626.0081<br/>
+              <b>Email:</b>  ucedd@email.arizona.edu</p>
+              </div>
+              <div>
+              <p><b>We are located at:</b><br/>1521 E. Helen St. <br/>Tucson, AZ 85721</p>
+              </div>
+          <button type="button" class="btn btn-fb"><i class="fab fa-facebook"></i></button>
+        <!--Twitter-->
+        <button type="button" class="btn btn-tw"><i class="fab fa-twitter"></i></button>
+        <!--Google +-->
+        <button type="button" class="btn btn-gplus"><i class="fab fa-google-plus"></i></button>
+        <!--Linkedin-->
+        <button type="button" class="btn btn-li"><i class="fab fa-linkedin"></i></button>
+        <!--Instagram-->
           </div>
         </div>
       </div>
