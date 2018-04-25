@@ -1,3 +1,7 @@
+// DialogFlow is used to handle the machine learning way of extracting useful information from the voice commands.
+
+// It uses speech recognition to get the user command and sends it to dialog flow to extract the keywords used for interaction on the browser.
+
 var accessToken = "a364a593a00349f1ba80c89172914701";
 var baseUrl = "https://api.api.ai/v1/";
 

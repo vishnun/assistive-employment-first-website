@@ -33,12 +33,16 @@
 
 <body>
 
+<!-- Including the html code needed for object and color tracking navigation system for accessibility. -->
 {% include 'partials/object-color-tracking-navigation.nunjucks' %}
 
+<!-- The code for each page is inserted here before the final html page is generated. This templating helps us to minimize duplication. -->
 {% block content %} {% endblock %}
 
+<!-- As requested by our clients, we have added a calender at the bottom where the user can see some events. The template below has the code for that. -->
 {% include 'partials/calendar.nunjucks' %}
 
+<!-- This template consists of the assistive-support widget to give the user the tools for assistive tech. -->
 {% include 'partials/assistive-support.nunjucks' %}
 
 
@@ -50,6 +54,9 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
+
+<!-- We use the build system to optimize the js and compile it into one minified file. The ones coming externally are left as is above -->
+
 
 <!--build:js public/js/main.min.js -->
 <script src="js/lib/jquery-extension.js"></script>

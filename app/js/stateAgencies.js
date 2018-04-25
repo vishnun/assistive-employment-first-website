@@ -1,3 +1,4 @@
 $(document).ready(function(){
-    $('[data-toggle="tooltip"]').tooltip();   
+    // Initiates tool tips.
+    $('[data-toggle="tooltip"]').tooltip();
 });

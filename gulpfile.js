@@ -103,6 +103,7 @@ gulp.task('clean', function() {
 		.pipe(clean());
 });
 
+// Used if you need to update the browser when the code is updated.
 gulp.task('browserSync', function() {
 	browserSync.init({
 		server: {
@@ -111,6 +112,7 @@ gulp.task('browserSync', function() {
 	})
 });
 
+// compiles all nunjucks templates and creates the html files for the pages in the destination directory.
 gulp.task('nunjucks', function() {
 	// Gets .html and .nunjucks files in pages
 	return gulp.src('app/pages/**/*.+(html|nunjucks)')
@@ -122,6 +124,7 @@ gulp.task('nunjucks', function() {
 		.pipe(gulp.dest('app'))
 });
 
+// Starts a webserver to serve the app locally.
 gulp.task('webserver', function() {
 	gulp.src('.')
 		.pipe(webserver({
@@ -134,14 +137,14 @@ gulp.task('server', ['default', 'webserver']);
 gulp.task('serve', ['default', 'webserver']);
 
 
-
+// Combines the tasks that are needed to build the project.
 gulp.task('default', ['sass','custom-fonts', 'fonts', 'images'], function(callback) {
 	gulp.start('nunjucks');
 	gulp.start('useref');
 	callback();
 });
 
-
+// Just an alias for the default task.
 gulp.task('build', ['default'], function() {
 	console.log('Now run :   gulp serve');
 });
