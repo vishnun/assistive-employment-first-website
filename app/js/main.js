@@ -1,3 +1,4 @@
+// The main.js file has code which handles the initiation of interactions on the website.
 $(function () {
   bindCalendarButtons();
   bindAssistiveSupportButtons();

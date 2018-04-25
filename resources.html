@@ -28,6 +28,7 @@
 
 <body>
 
+<!-- Including the html code needed for object and color tracking navigation system for accessibility. -->
 <div id="assistive-arrow"></div>
 <div class="video-container">
     <div id="object-pointer"></div>
@@ -39,13 +40,14 @@
     Press <strong>C</strong> to click on something. Press <strong>R</strong> to reset the mouse position.
 </div>
 
+<!-- The code for each page is inserted here before the final html page is generated. This templating helps us to minimize duplication. -->
 
 
 
 <div class="header" id="contact-page">
   
   
-<!-- Macro stuff here -->
+<!-- Macro used for navigation to avoid duplication of code and to generate the right navigation for each page. -->
 <div class="header sticky-top">
   <nav class="navbar container-fluid navbar-expand-lg navbar-light ef-nav pt-0 pb-0">
     <div class="container-fluid navbar-container pl-3 pr-3">
@@ -111,7 +113,7 @@
 </div>
 
  
-<!-- Macro stuff here -->
+<!-- Using a macro to make sure we don't duplicate the code for page title and all titles look the same. -->
 
 <div class="page-title pt-3 pb-3 bg-dark text-light" style="font-family: 'Noto Sans', san-serif;">
   <div class="container">
@@ -138,6 +140,7 @@
 
 
 
+<!-- As requested by our clients, we have added a calender at the bottom where the user can see some events. The template below has the code for that. -->
 <div class="ef-calendar-icon position-fixed bg-info">
     <button type="button" class="clickable expand-calendar btn btn-outline-primary text-white" aria-label="events calendar">
         <i aria-hidden="true" class="fas fa-calendar-alt fa-3x"></i>
@@ -156,6 +159,7 @@
 </div>
 
 
+<!-- This template consists of the assistive-support widget to give the user the tools for assistive tech. -->
 <div class="ef-assistive-icon position-fixed bg-info">
     <button type="button" class="clickable assistive-support btn btn-outline-primary text-white"
             aria-label="assistive support">
@@ -299,6 +303,9 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
+
+<!-- We use the build system to optimize the js and compile it into one minified file. The ones coming externally are left as is above -->
+
 
 <script src="public/js/main.min.js"></script>
 

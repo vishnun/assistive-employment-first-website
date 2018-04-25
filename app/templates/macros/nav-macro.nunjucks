@@ -1,5 +1,5 @@
 {% macro active(activePage='home', activeSubPage="") %}
-<!-- Macro stuff here -->
+<!-- Macro used for navigation to avoid duplication of code and to generate the right navigation for each page. -->
 <div class="header sticky-top">
   <nav class="navbar container-fluid navbar-expand-lg navbar-light ef-nav pt-0 pb-0">
     <div class="container-fluid navbar-container pl-3 pr-3">

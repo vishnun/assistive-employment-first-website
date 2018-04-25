@@ -1,3 +1,5 @@
+// ScreenReader is using the web-speech-synthesis api to convert text from html elements using our selectors into speech.
+
 var ScreenReader = function () {
   
   var speechSynthesis = window.mozSpeechSynthesis || window.msSpeechSynthesis || window.oSpeechSynthesis || window.webkitSpeechSynthesis || window.speechSynthesis,

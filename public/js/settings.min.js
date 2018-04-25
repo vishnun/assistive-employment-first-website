@@ -2,6 +2,8 @@ function localStorageExists() {
   return typeof(Storage) !== "undefined";
 }
 
+// Settings object is used across the pages to handle the settings on localstorage. They toggle on and off various features.
+
 var Settings = {
   updateFontSize: function (fontSize) {
     if (localStorageExists()) {

@@ -1,5 +1,5 @@
 {% macro pageTitle(title='') %}
-<!-- Macro stuff here -->
+<!-- Using a macro to make sure we don't duplicate the code for page title and all titles look the same. -->
 
 <div class="page-title pt-3 pb-3 bg-dark text-light" style="font-family: 'Noto Sans', san-serif;">
   <div class="container">
