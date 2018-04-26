@@ -61,6 +61,8 @@ function bindFaceAndColorTracker() {
     setupVisualsForTracking();
     trackColor(mouse, pointer);
     $colorTrackerToggle.prop('checked', true);
+  } else {
+    stopTracking();
   }
 }
 
